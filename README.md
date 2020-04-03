@@ -1,0 +1,2 @@
+# practica
+primera practica git
