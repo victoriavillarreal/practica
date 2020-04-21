@@ -37,3 +37,37 @@ ul li{
     padding: 0;
 }
 
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: grey;
+}
+
+.lista-footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+    font-size: 12px;
+    position: relative;
+    left: -29px;
+}
+
+.iconos-redes{
+    top: 22px;
+    width: 75px;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+}
+
+.logo-deezer{
+    width: 52px;
+    height: 48px;
+    position: relative;
+    right: -104px;
+    top: 8px;
+}
+
+
+
