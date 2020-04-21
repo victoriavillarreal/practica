@@ -1,3 +1,38 @@
-body{
-    color: aquamarine;
+/* MOBILE FIRST */
+*{box-sizing: border-box;}
+
+
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+}
+
+.headerimage{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.lista-header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 2;
+    right: 48px;
+    top: 17px;
+    width: 30%;
+    justify-content: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+.lista-header li a{
+    text-transform: uppercase;
+    width: 20%;
+    padding: 0;
 }
