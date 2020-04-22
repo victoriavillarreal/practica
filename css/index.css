@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%; 
+    height: 112px;
 }
 
 .headerimage{
@@ -21,10 +22,11 @@
     flex-wrap: wrap;
     position: absolute;
     z-index: 2;
-    right: 48px;
-    top: 17px;
+    right: 31px;
+    top: 7px;
     width: 30%;
     justify-content: center;
+    margin: 3px;
 }
 
 ul li{
@@ -34,7 +36,21 @@ ul li{
 .lista-header li a{
     text-transform: uppercase;
     width: 20%;
-    padding: 0;
+    padding: 2px;
+    text-decoration:none;
+    color: black;
+}
+
+.buscador{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.imagen-buscador{
+    width: 200px;
 }
 
 .main-footer{
