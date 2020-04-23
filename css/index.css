@@ -1,9 +1,20 @@
 /* MOBILE FIRST */
-*{box-sizing: border-box;}
+*{box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;}
 
-html{
+body{
     display: flex;
     justify-content: center;
+    margin:0;
+    background-color: rgba(179, 170, 170, 0.582);
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .main-header{
     display: flex;
@@ -26,7 +37,7 @@ html{
     position: absolute;
     z-index: 2;
     right: 31px;
-    top: 7px;
+    top: -2px;
     width: 30%;
     justify-content: center;
     margin: 3px;
@@ -42,6 +53,7 @@ ul li{
     padding: 2px;
     text-decoration:none;
     color: black;
+    font-size: 90%;
 }
 
 .buscador{
@@ -49,13 +61,16 @@ ul li{
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    margin-top: 4%;
-    margin-bottom: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .imagen-buscador{
-    width: 200px;
+    width: 25vh;
+    height: 3vh;
 }
+
+
 
 .main-footer{
     display: flex;
@@ -89,23 +104,38 @@ ul li{
     top: 1vh;
 }
 
+.titulos{
+    display:flex;}
+
 h1{
     writing-mode: vertical-rl;
     text-orientation: sideways;
     transform: rotate(-180deg);
     margin-bottom: 5vh;
+    margin-left: -4vh;
 }
 
 div.body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    border-bottom: black 2px solid;
+    padding-block-start: 26px;
+}
+
+.primerbody{
+    border-top: black solid 2px;
+}
+
+.cuartobody{
+    border-bottom: 0px;
 }
 
 img.secciones{
     border-radius: 50%;
     height: 9vh;
     width: 23vw;
+    border: 1px solid black;
 }
 
 p{
