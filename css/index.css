@@ -1,7 +1,8 @@
 /* MOBILE FIRST */
 *{box-sizing: border-box;
     width: fit-content;
-    height: fit-content;}
+    height: fit-content;
+    font-family: 'Julius Sans One'}
 
 body{
     display: flex;
@@ -15,7 +16,12 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border-right: rgb(2555,215,0) solid 3px;
+    border-left: rgb(2555,215,0) solid 3px;
 }
+
+
+
 .main-header{
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +34,17 @@ body{
     width: 100%;
     position: relative;
     z-index: 1;
+}
+
+.imagen-logo{
+    position: absolute;
+    width: 14%;
+    height: 6%;
+    z-index: 3;
+    top: 15px;
+    left: 28px;
+    border: black 1px solid;
+    border-radius: 50%;
 }
 
 .lista-header{
@@ -54,6 +71,21 @@ ul li{
     text-decoration:none;
     color: black;
     font-size: 90%;
+    font-weight: bolder;
+}
+
+.frase{
+    z-index: 3;
+    color: white;
+    top: 84px;
+    position: absolute;
+    left: 149px;
+    font-size: 76%;
+}
+
+.frase p{
+    font-family: 'Prociono';
+
 }
 
 .buscador{
@@ -86,6 +118,7 @@ ul li{
     font-size: 12px;
     position: relative;
     left: -8vw;
+    font-weight: bold;
 }
 
 .iconos-redes{
@@ -112,7 +145,7 @@ h1{
     text-orientation: sideways;
     transform: rotate(-180deg);
     margin-bottom: 5vh;
-    margin-left: -4vh;
+    margin-left: -2vh;
 }
 
 div.body{
