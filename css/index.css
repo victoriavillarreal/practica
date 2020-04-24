@@ -147,6 +147,7 @@ h1{
     margin-left: -2vh;
 }
 
+
 div.body{
     display: flex;
     flex-wrap: wrap;
@@ -176,26 +177,43 @@ p{
 }
 p.uno{
     position: relative;
-    left: -2vw;
+    left: -1vw;
     top: 1vh;
     width: 50%;
     text-align: center;
 }
 p.dos{
     position: relative;
-    left: 31vw;
-    top: -1vh;
+    left: 24vw;
+    top: -6vh;
+    width: 50%;
+    text-align: center;
 }
+
 p.tres{
     position: relative;
-    left: 54vw;
-    top: -3vh;
+    left: 53vw;
+    top: -10vh;
 }
 
+p.cuatro{
+    position: relative;
+    left: 2vh;
+    top:1vh;
+}
 
+p.cinco{
+    position: relative;
+    left: 28vw;
+    top: -1vh;
+    width: 50%;
+    text-align: center;
+}
 
-
-
-
-
-
+p.seis{
+    width:50%;
+    text-align: center;
+    top: -6vh;
+    left:25vh;
+    position: relative;
+}
