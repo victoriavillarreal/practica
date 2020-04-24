@@ -217,3 +217,46 @@ p.seis{
     left:25vh;
     position: relative;
 }
+
+p.siete{
+    width: 50%;
+    padding-left: 1vh;
+    padding-top: 0.5vh;
+}
+
+p.ocho{
+    width: 50%;
+    padding-left: 12.5vh;
+    position: relative;
+    top: -4vh;
+}
+
+p.nueve{
+    width: 50%;
+    position: relative;
+    top: -6.5vh;
+    left: 23vh;
+}
+
+p.diez{
+    width: 50%;
+    position: relative;
+    top: 1vh;
+    left: 2vh;
+}
+
+p.once{
+    width: 50%;
+    position: relative;
+    top: -1.5vh;
+    left: 11.5vh;
+    text-align: center;
+}
+
+p.doce{
+    width:50%;
+    position: relative;
+    top: -6vh;
+    left: 23.5vh;
+}
+
