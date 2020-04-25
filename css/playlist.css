@@ -343,5 +343,10 @@ ul li{
     top: 4vh;
 }
 
+p.detalles.cambio{
+    font-size: 13px;
+}
 
-
+.margen{
+    margin-bottom: 24px;
+}
