@@ -1,6 +1,6 @@
 /* MOBILE FIRST */
 *{box-sizing: border-box;
-    /* width: fit-content; */
+    width: fit-content; 
     height: fit-content;}
 
 body{
@@ -138,7 +138,7 @@ p.nombre{
     border: 1px solid #000000;
     padding: 5px;
     position: absolute;
-    left: 31vw;
+    left: 35vw;
     top: 27vh;
     margin-bottom: 5vh;
 }
@@ -232,6 +232,7 @@ p.nombre{
     left: 3vw;
     top: -2vh;
     font-size: 24px;
+    width: fit-content;
 }
 
 h1.artista{
@@ -273,6 +274,7 @@ p.detalles{
     border-top: solid black 2px;
     margin-bottom: 2vh;
     border-right: solid black 2px;
+    border-bottom: solid black 2px;
 }
 
 .cancion3{
@@ -354,7 +356,8 @@ ul li{
 }
 
 p.detalles.cambio{
-    font-size: 13px;
+    font-size: 12px;
+    margin-bottom: 15px;
 }
 
 .margen{
@@ -363,8 +366,8 @@ p.detalles.cambio{
 
 audio{
     display: flex;
-    width: 34vh;
-    height: 6vh;
+    width: 27vh;
+    height: 5vh;
 }
 
 }
