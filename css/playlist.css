@@ -268,7 +268,6 @@ p.detalles{
     border-top: solid black 2px;
     border-bottom: solid black 2px;
 }
-}
 
 div.canciones{
     padding-left: 1vw;
@@ -349,4 +348,6 @@ p.detalles.cambio{
 
 .margen{
     margin-bottom: 24px;
+}
+
 }
