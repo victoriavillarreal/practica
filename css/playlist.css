@@ -1,6 +1,6 @@
 /* MOBILE FIRST */
 *{box-sizing: border-box;
-    width: fit-content;
+    /* width: fit-content; */
     height: fit-content;}
 
 body{
@@ -170,7 +170,7 @@ div.canciones{
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    padding-bottom: 2vh;
+    padding: 0 1vh 2vh 1vh;
     background-color: #bab6b6;
 }
 
@@ -188,8 +188,8 @@ h2.chico{
 
 audio{
     display: flex;
-    width: 34vh;
-    height: 6vh;
+    width: 27vh;
+    height: 4vh;
 }
 
 .cancion1{
@@ -197,6 +197,10 @@ audio{
     border-bottom: dashed black 2px;
 }
 .cancion2{
+    border-bottom: dashed black 2px;
+}
+
+.cancion3{
     border-bottom: solid black 2px;
     margin-bottom: 5vh;
 }
@@ -207,6 +211,10 @@ audio{
     background-color: rgb(220, 187, 12);
     padding: 2px;
     font-size: 13px;
+}
+
+p.detalles.cambio{
+    font-size: 12px;
 }
 
 
@@ -351,6 +359,12 @@ p.detalles.cambio{
 
 .margen{
     margin-bottom: 24px;
+}
+
+audio{
+    display: flex;
+    width: 34vh;
+    height: 6vh;
 }
 
 }
