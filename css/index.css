@@ -101,13 +101,12 @@ ul li{
     height: 3vh;
 }
 
-
-
 .main-footer{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     background-color: grey;
+    margin-top: 5vh;
 }
 
 .lista-footer{
@@ -134,6 +133,15 @@ ul li{
     position: relative;
     right: -16vw;
     top: 1vh;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .titulos{
@@ -177,34 +185,33 @@ p{
 }
 p.uno{
     position: relative;
-    left: -1vw;
+    left: 1vw;
     top: 1vh;
     width: 50%;
     text-align: center;
 }
 p.dos{
     position: relative;
-    left: 24vw;
-    top: -6vh;
+    left: 25vw;
+    top: -2vh;
     width: 50%;
     text-align: center;
 }
 
 p.tres{
     position: relative;
-    left: 53vw;
-    top: -10vh;
+    left: 49vw;
+    top: -8vh;
 }
 
 p.cuatro{
     position: relative;
-    left: 2vh;
     top:1vh;
 }
 
 p.cinco{
     position: relative;
-    left: 28vw;
+    left: 22vw;
     top: -1vh;
     width: 50%;
     text-align: center;
@@ -213,20 +220,20 @@ p.cinco{
 p.seis{
     width:50%;
     text-align: center;
-    top: -6vh;
-    left:25vh;
+    top: -4vh;
+    left: 22vh;
     position: relative;
 }
 
 p.siete{
     width: 50%;
-    padding-left: 1vh;
+    padding-left: 3vh;
     padding-top: 0.5vh;
 }
 
 p.ocho{
     width: 50%;
-    padding-left: 12.5vh;
+    padding-left: 14.5vh;
     position: relative;
     top: -4vh;
 }
@@ -235,7 +242,7 @@ p.nueve{
     width: 50%;
     position: relative;
     top: -6.5vh;
-    left: 23vh;
+    left: 25vh;
 }
 
 p.diez{
