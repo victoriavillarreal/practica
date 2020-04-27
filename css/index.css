@@ -20,8 +20,6 @@ body{
     border-left: rgb(2555,215,0) solid 3px;
 }
 
-
-
 .main-header{
     display: flex;
     flex-wrap: wrap;
@@ -73,18 +71,13 @@ ul li{
     font-weight: bolder;
 }
 
-.frase{
-    z-index: 3;
-    color: white;
-    top: 84px;
-    position: absolute;
-    left: 149px;
-    font-size: 76%;
-}
-
-.frase p{
-    font-family: 'Prociono';
-
+.frase img{
+    z-index: 2;
+    width: 74vw;
+    height: 4vh;
+    position: relative;
+    top: -4vh;
+    left: 18vw;
 }
 
 .buscador{

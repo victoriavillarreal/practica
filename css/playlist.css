@@ -70,18 +70,13 @@ ul li{
     font-weight: bolder;
 }
 
-.frase{
-    z-index: 3;
-    color: white;
-    top: 84px;
-    position: absolute;
-    left: 149px;
-    font-size: 76%;
-}
-
-.frase p{
-    font-family: 'Prociono';
-
+.frase img{
+    z-index: 2;
+    width: 74vw;
+    height: 4vh;
+    position: relative;
+    top: -4vh;
+    left: 18vw;
 }
 
 .buscador{
@@ -220,6 +215,15 @@ p.detalles.cambio{
 
 /* DESKTOP */
 @media only screen and (min-device-width: 1200px){
+
+.frase img{
+    z-index: 2;
+    width: 34vw;
+    height: 4vh;
+    position: relative;
+    top: -4vh;
+    left: 33vw;
+}
 
 div.body{
     width: 90%;
@@ -369,5 +373,6 @@ audio{
     width: 27vh;
     height: 5vh;
 }
+
 
 }
