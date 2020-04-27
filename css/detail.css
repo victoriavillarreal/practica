@@ -1,0 +1,345 @@
+/* MOBILE FIRST */
+*{box-sizing: border-box;
+    width: fit-content; 
+    height: fit-content;
+    font-family: 'Julius Sans One'}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0;
+    background-color: rgba(179, 170, 170, 0.582);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-right: rgb(2555,215,0) solid 3px;
+    border-left: rgb(2555,215,0) solid 3px;
+}
+
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+    height: 112px;
+}
+
+.headerimage{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.imagen-logo{
+    position: absolute;
+    width: 17%;
+    height: 7%;
+    z-index: 3;
+    top: 3px;
+    left: 28px;
+    border-radius: 50%;
+}
+
+.lista-header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 2;
+    right: 31px;
+    top: -2px;
+    width: 30%;
+    justify-content: center;
+    margin: 3px;
+}
+
+ul li{
+    list-style: none;
+}
+
+.lista-header li a{
+    text-transform: uppercase;
+    width: 20%;
+    padding: 2px;
+    text-decoration:none;
+    color: black;
+    font-size: 90%;
+    font-weight: bolder;
+}
+
+.frase{
+    z-index: 3;
+    color: white;
+    top: 84px;
+    position: absolute;
+    left: 149px;
+    font-size: 76%;
+}
+
+.frase p{
+    font-family: 'Prociono';
+
+}
+
+.buscador{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.imagen-buscador{
+    width: 25vh;
+    height: 3vh;
+}
+
+
+
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: grey;
+}
+
+.lista-footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 42vw;
+    font-size: 12px;
+    position: relative;
+    left: -8vw;
+    font-weight: bold;
+}
+
+.iconos-redes{
+    top: 3vh;
+    width: 20vw;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+}
+
+.logo-deezer{
+    width: 15vw;
+    height: 6vh;
+    position: relative;
+    right: -16vw;
+    top: 1vh;
+}
+
+.barra-opciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.barra-opciones ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+ul li.barra {
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 2px solid black;
+    padding-right: 5%;
+}
+
+ul li a.opcion {
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+}
+
+.titulos{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    margin: 0 12px;
+    justify-content: center;
+}
+
+.titulos h2{
+    margin-bottom: 4vh;
+    text-transform: uppercase;
+    font-size: 36px; 
+}
+
+.body{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    padding: 0 1vh 2vh 1vh;
+    background-color: #bab6b6;
+    padding-top: 2vh;
+    margin: 0 12px;
+    border-bottom: dashed black 1px;
+}
+
+.primeracolumn{
+    display: flex;
+    flex-wrap: wrap;
+    width: 34%;
+    height:100%;
+}
+
+
+.artista h2{
+    margin-left: -1.5vh;
+    font-size: 30px;
+    text-align: center;
+}
+    
+
+.fotos .secciones{
+    border-radius: 50%;
+    height: 9vh;
+    width: 23vw;
+    border: 1px solid black;
+    margin-left: 1.5vh;
+}
+
+p.dos{
+    width: 77%;
+    background-color: rgb(2555,215,0)
+}
+
+.nombres .dos{
+    padding: 0.7vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 78%;
+    margin-left: 9px;
+    font-weight: bold;
+}
+
+.segundacolumn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:66%;
+    border-left: solid 2px black;
+    padding-left: 11px;
+}
+
+.lascanciones{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.top .imagentop .cancion{
+    border-radius: 50%;
+    height: 5vh;
+    width: 13vw;
+    border: 1px solid black;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border-bottom: dashed 1px black;
+    width: 102%;
+    padding: 10px 0;
+}
+
+.artista{
+    display: flex;
+    flex-wrap: wrap;
+    height:100%;
+}
+
+.primeracolumn .artista .h2{
+    height:100%;
+}
+
+.top5{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.foto-genero img{
+    border-radius: 50%;
+    height: 9vh;
+    width: 23vw;
+    border: 1px solid black;
+}
+
+.imagen-artistag img{
+    border-radius: 50%;
+    height: 5vh;
+    width: 13vw;
+    border: 1px solid black;
+}
+
+.datostop audio{
+    width: 139px;
+    height: 28px;
+}
+
+.nombrecancion{
+    margin: 0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color:black;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.datostop{
+    margin-left: 16px;
+}
+
+.datostop a{
+    text-decoration: none;
+}
+
+.sinborde{
+    border-bottom: 0;
+}
+
+.noborder{
+    border-bottom:0;
+}
+
+.top5 h2{
+    text-decoration: underline;
+}
+
+.nobordetop{
+    border-top:0;
+}
+
+.letrachica{
+    font-size:11px;
+}
+
+.letramediana{
+    font-size:14px;
+}
+
+.artista .distintomargin{
+    margin-left:2vh;
+}
+
+.artista .otromargin{
+    margin-left:0vh;
+}
