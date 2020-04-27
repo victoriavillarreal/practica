@@ -114,19 +114,20 @@ ul li{
     font-weight: bold;
 }
 
-.iconos-redes{
-    top: 3vh;
-    width: 20vw;
-    justify-content: space-between;
-    display: flex;
+.iconofooter{
+    width: 8vw;
+    height: 4vh;
     position: relative;
+    top: 2vh;
+    margin-right: 2vw;
+    left: -6vw;
 }
 
 .logo-deezer{
     width: 15vw;
     height: 6vh;
     position: relative;
-    right: -16vw;
+    right: -7vw;
     top: 1vh;
 }
 
