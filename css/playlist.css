@@ -70,18 +70,13 @@ ul li{
     font-weight: bolder;
 }
 
-.frase{
-    z-index: 3;
-    color: white;
-    top: 84px;
-    position: absolute;
-    left: 149px;
-    font-size: 76%;
-}
-
-.frase p{
-    font-family: 'Prociono';
-
+.frase img{
+    z-index: 2;
+    width: 74vw;
+    height: 4vh;
+    position: relative;
+    top: -4vh;
+    left: 18vw;
 }
 
 .buscador{
@@ -118,18 +113,35 @@ ul li{
 }
 
 .iconos-redes{
-    top: 3vh;
+    /* top: 3vh;
     width: 20vw;
     justify-content: space-between;
     display: flex;
+    position: relative; */
+}
+
+.bordes{
+    border-radius: 50%;
+}
+
+.aparte{
+    width: 12vw;
+}
+
+.iconofooter{
+    width: 8vw;
+    height: 4vh;
     position: relative;
+    top: 2vh;
+    margin-right: 2vw;
+    left: -6vw;
 }
 
 .logo-deezer{
     width: 15vw;
     height: 6vh;
     position: relative;
-    right: -16vw;
+    right: -7vw;
     top: 1vh;
 }
 
@@ -220,6 +232,15 @@ p.detalles.cambio{
 
 /* DESKTOP */
 @media only screen and (min-device-width: 1200px){
+
+.frase img{
+    z-index: 2;
+    width: 34vw;
+    height: 4vh;
+    position: relative;
+    top: -4vh;
+    left: 33vw;
+}
 
 div.body{
     width: 90%;
@@ -347,12 +368,21 @@ ul li{
     width: 6vw;
     height: 9vh;
     position: relative;
-    right: -29vw;
+    right: -24vw;
 }
 
-.iconos-redes{
+/* .iconos-redes{
     position: relative;
     top: 4vh;
+} */
+
+.iconofooter{
+    width: 6vw;
+    height: 7vh;
+    position: relative;
+    top: 2vh;
+    margin-right: 2vw;
+    left: -1vw;
 }
 
 p.detalles.cambio{
@@ -371,3 +401,7 @@ audio{
 }
 
 
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 9c2d14f8e900d3538efc522e8ad309b4d55a647e
