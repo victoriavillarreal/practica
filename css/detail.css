@@ -340,3 +340,22 @@ p.dos{
 .artista .otromargin{
     margin-left:0vh;
 }
+
+
+/*desktop*/
+@media (min-width:1024px){
+
+    .body{
+        width: 40%;
+        padding: 0 5px 0px 5px;
+        margin: 0 auto;
+    }
+    .fotos .secciones{
+        width: 80%;
+        height: 34%;
+    }
+    .top .imagentop .cancion{
+        height: 10%;
+    }
+
+}
