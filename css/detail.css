@@ -392,5 +392,12 @@ p.dos{
         border-radius: 50%;
         width: 13vw;
         height: 12vw;
+        border: 1px solid black;
+    }
+    .cancioncorregi{
+        border-radius: 50%;
+        height: 13vw;
+        width: 13vw;
+        border: 1px solid black;
     }
 }
