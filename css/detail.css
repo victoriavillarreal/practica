@@ -345,7 +345,6 @@ p.dos{
     margin-left:0vh;
 }
 
-<<<<<<< HEAD
 .cancion{
     display:flex;
     flex-wrap: wrap;
@@ -427,7 +426,6 @@ p.album{
 
 .fecha p{
     text-align: center;
-=======
 
 /*desktop*/
 @media (min-width:1024px){
@@ -487,5 +485,4 @@ p.album{
         width: 13vw;
         border: 1px solid black;
     }
->>>>>>> 46306ad91744d94e34fefa069b2c81b0c43cb5af
 }
