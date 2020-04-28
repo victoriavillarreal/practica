@@ -127,11 +127,8 @@ ul li{
     width: 15vw;
     height: 6vh;
     position: relative;
-<<<<<<< HEAD
     right: -9vw;
-=======
     right: -7vw;
->>>>>>> 46306ad91744d94e34fefa069b2c81b0c43cb5af
     top: 1vh;
 }
 
@@ -426,9 +423,10 @@ p.album{
 
 .fecha p{
     text-align: center;
+}
 
 /*desktop*/
-@media (min-width:1024px){
+@media only screen and (min-device-width: 1200px){
 
     .body{
         display: flex;
