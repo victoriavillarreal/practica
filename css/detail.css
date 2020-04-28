@@ -126,7 +126,7 @@ ul li{
     width: 15vw;
     height: 6vh;
     position: relative;
-    right: -16vw;
+    right: -9vw;
     top: 1vh;
 }
 
@@ -212,7 +212,7 @@ ul li a.opcion {
 
 p.dos{
     width: 77%;
-    background-color: rgb(2555,215,0)
+    background-color: rgb(2555,215,0);
 }
 
 .nombres .dos{
@@ -338,4 +338,87 @@ p.dos{
 
 .artista .otromargin{
     margin-left:0vh;
+}
+
+.cancion{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.cancion h2{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(-180deg);
+    margin-left: 0vh;
+    height: 180px;
+    text-align: center;
+}
+
+.lasfotos{
+    display: flex;
+    width:48%;
+    align-items: center;
+}
+
+.losdetalles{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 42%;
+    font-size: 19px;
+    position: relative;
+    right: -54px;
+    border-left: dashed 2px black;
+    padding: 30px 16px;
+}
+
+.unpocochico{
+    font-size: 104%;
+}
+
+.unpocomaschico{
+    font-size: 106%;
+}
+
+.letramedium{
+    font-size: 128%;
+}
+
+.letramediummas{
+    font-size: 147%;
+}
+
+.margin{
+    margin-top:36% 0;
+}
+
+.fotos{
+    align-items: center;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+p.album{
+    text-align:center;
+}
+
+.fotos a{
+    text-decoration:none;
+    color:black;
+}
+
+.losdetalles a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(2555,215,0);
+    width: 82px;
+    display: flex;
+    padding: 0px 46px;
+    justify-content: center;
+}
+
+.fecha p{
+    text-align: center;
 }
