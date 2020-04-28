@@ -346,9 +346,12 @@ p.dos{
 @media (min-width:1024px){
 
     .body{
-        width: 40%;
-        padding: 0 5px 0px 5px;
-        margin: 0 auto;
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    padding: 0 1vh 2vh 1vh;
+
     }
     .fotos .secciones{
         width: 80%;
@@ -357,5 +360,32 @@ p.dos{
     .top .imagentop .cancion{
         height: 10%;
     }
-
+    .frase img{
+        z-index: 2;
+        width: 34vw;
+        height: 4vh;
+        position: relative;
+        top: -4vh;
+        left: 33vw;
+    }
+    div.body{
+        width: 90%;
+        justify-items: center;
+        align-items: center;
+    }
+    .top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        border-bottom: dashed 1px black;
+        padding: 10px 0;
+        width: auto;
+    }
+    .lascanciones {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
 }
