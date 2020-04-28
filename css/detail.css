@@ -388,4 +388,9 @@ p.dos{
         flex-direction: row;
         width: 100%;
     }
+    .cancioncorreg {
+        border-radius: 50%;
+        width: 13vw;
+        height: 12vw;
+    }
 }
