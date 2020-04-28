@@ -114,19 +114,24 @@ ul li{
     font-weight: bold;
 }
 
-.iconos-redes{
-    top: 3vh;
-    width: 20vw;
-    justify-content: space-between;
-    display: flex;
+.iconofooter{
+    width: 8vw;
+    height: 4vh;
     position: relative;
+    top: 2vh;
+    margin-right: 2vw;
+    left: -6vw;
 }
 
 .logo-deezer{
     width: 15vw;
     height: 6vh;
     position: relative;
+<<<<<<< HEAD
     right: -9vw;
+=======
+    right: -7vw;
+>>>>>>> 46306ad91744d94e34fefa069b2c81b0c43cb5af
     top: 1vh;
 }
 
@@ -340,6 +345,7 @@ p.dos{
     margin-left:0vh;
 }
 
+<<<<<<< HEAD
 .cancion{
     display:flex;
     flex-wrap: wrap;
@@ -421,4 +427,65 @@ p.album{
 
 .fecha p{
     text-align: center;
+=======
+
+/*desktop*/
+@media (min-width:1024px){
+
+    .body{
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    padding: 0 1vh 2vh 1vh;
+
+    }
+    .fotos .secciones{
+        width: 80%;
+        height: 34%;
+    }
+    .top .imagentop .cancion{
+        height: 10%;
+    }
+    .frase img{
+        z-index: 2;
+        width: 34vw;
+        height: 4vh;
+        position: relative;
+        top: -4vh;
+        left: 33vw;
+    }
+    div.body{
+        width: 90%;
+        justify-items: center;
+        align-items: center;
+    }
+    .top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        border-bottom: dashed 1px black;
+        padding: 10px 0;
+        width: auto;
+    }
+    .lascanciones {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+    .cancioncorreg {
+        border-radius: 50%;
+        width: 13vw;
+        height: 12vw;
+        border: 1px solid black;
+    }
+    .cancioncorregi{
+        border-radius: 50%;
+        height: 13vw;
+        width: 13vw;
+        border: 1px solid black;
+    }
+>>>>>>> 46306ad91744d94e34fefa069b2c81b0c43cb5af
 }

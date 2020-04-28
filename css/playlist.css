@@ -8,7 +8,6 @@ body{
     justify-content: center;
     margin:0;
     background-color: rgba(179, 170, 170, 0.582);
-
 }
 
 .container{
@@ -110,22 +109,6 @@ ul li{
     position: relative;
     left: -8vw;
     font-weight: bold;
-}
-
-.iconos-redes{
-    /* top: 3vh;
-    width: 20vw;
-    justify-content: space-between;
-    display: flex;
-    position: relative; */
-}
-
-.bordes{
-    border-radius: 50%;
-}
-
-.aparte{
-    width: 12vw;
 }
 
 .iconofooter{
@@ -351,8 +334,12 @@ div.info{
 .lista-footer{
     font-size: 16px;
     position: relative;
-    top: 2vh;
-    left: -2vw;
+    top: 1vh;
+    left: -4vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 17vw;
+    justify-content: center;
 }
 
 ul li{
@@ -368,21 +355,16 @@ ul li{
     width: 6vw;
     height: 9vh;
     position: relative;
-    right: -24vw;
+    right: -49vw;
 }
 
-/* .iconos-redes{
-    position: relative;
-    top: 4vh;
-} */
-
 .iconofooter{
-    width: 6vw;
-    height: 7vh;
+    width: 4vw;
+    height: 5vh;
     position: relative;
-    top: 2vh;
-    margin-right: 2vw;
-    left: -1vw;
+    top: 3vh;
+    margin-right: 4vw;
+    left: 21vw;
 }
 
 p.detalles.cambio{
