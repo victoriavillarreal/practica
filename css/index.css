@@ -176,89 +176,21 @@ img.secciones{
 p{
     margin: 0px; 
     padding: 0px; 
-}
-p.uno{
-    position: relative;
-    left: 1vw;
-    top: 1vh;
-    width: 50%;
     text-align: center;
-}
-p.dos{
-    position: relative;
-    left: 25vw;
-    top: -2vh;
-    width: 50%;
-    text-align: center;
+    margin-top: 1vh;
 }
 
-p.tres{
-    position: relative;
-    left: 49vw;
-    top: -8vh;
+.caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:11vh;
+    margin-right:1vh;
 }
 
-p.cuatro{
-    position: relative;
-    top:1vh;
-}
-
-p.cinco{
-    position: relative;
-    left: 22vw;
-    top: -1vh;
-    width: 50%;
-    text-align: center;
-}
-
-p.seis{
-    width:50%;
-    text-align: center;
-    top: -4vh;
-    left: 22vh;
-    position: relative;
-}
-
-p.siete{
-    width: 50%;
-    padding-left: 3vh;
-    padding-top: 0.5vh;
-}
-
-p.ocho{
-    width: 50%;
-    padding-left: 14.5vh;
-    position: relative;
-    top: -4vh;
-}
-
-p.nueve{
-    width: 50%;
-    position: relative;
-    top: -6.5vh;
-    left: 25vh;
-}
-
-p.diez{
-    width: 50%;
-    position: relative;
-    top: 1vh;
-    left: 2vh;
-}
-
-p.once{
-    width: 50%;
-    position: relative;
-    top: -1.5vh;
-    left: 11.5vh;
-    text-align: center;
-}
-
-p.doce{
-    width:50%;
-    position: relative;
-    top: -6vh;
-    left: 23.5vh;
+div.fotos{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -281,6 +213,7 @@ div.body{
     border: 0px;
     background-color: #bab6b6;
     margin: 9px;
+    border-radius:2%;
 }
 
 p.nombre{
@@ -328,9 +261,7 @@ div.todoslosbody{
     border: 0px;
 }
 
-.tercerbody{
-    padding-bottom: 3vh;
-}
+
 
 h1{
     writing-mode: horizontal-tb;
@@ -346,9 +277,9 @@ h1{
 div.fotos{
     display: flex;
     flex-wrap: wrap;
-    width: 43vw;
-    justify-content: space-around;
-    padding: 17px 17px 17px 3px;
+    width: 42vw;
+    justify-content: center;
+    
 }
 
 img.secciones{
@@ -358,80 +289,6 @@ img.secciones{
 
 p{
     font-size: 20px;
-}
-
-p.uno{
-    position: relative;
-    left: 3vw;
-}
-
-p.dos{
-    position: relative;
-    left: 16.5vw;
-    width: 67%;
-}
-
-p.tres{
-    position: relative;
-    left: 31vw;
-}
-
-p.cuatro{
-    position: relative;
-    left: 3vw;
-}
-
-p.cinco{
-    position: relative;
-    left: 16.5vw;
-    top: -2vh;
-}
-
-p.seis{
-    width: 52%;
-    position: relative;
-    top: -5vh;
-    left: 62vh;
-}
-
-p.siete{
-    position: relative;
-    left: 1.5vw;
-    width: 131px;
-    top: 1vh;
-    padding-top: 0;
-}
-
-p.ocho{
-    position: relative;
-    top: -2.5vh;
-    left: 19vw;
-    padding-left: 0px;
-}
-
-p.nueve{
-    position: relative;
-    top: -5.5vh;
-    left: 69vh;
-}
-
-p.diez{
-    position: relative;
-    top: 1vh;
-    left: 10vh;
-}
-
-p.once{
-    width: 67%;
-    position: relative;
-    top: -2.5vh;
-    left: 35vh;
-}
-
-p.doce{
-    position: relative;
-    top: -8.5vh;
-    left: 66.5vh;
 }
 
 .lista-footer{
@@ -466,4 +323,23 @@ p.doce{
     left: 21vw;
 }
 
+
+
+.caja{
+    width: 33%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:18px;
 }
+
+p{
+    font-size: 20px;
+    width: 96%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding-top:1.5vw;
+
+}
+
