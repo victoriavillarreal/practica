@@ -261,3 +261,213 @@ p.doce{
     left: 23.5vh;
 }
 
+
+/* DESKTOP */
+@media only screen and (min-device-width: 1200px){
+
+.frase img{
+    z-index: 2;
+    width: 34vw;
+    height: 4vh;
+    position: relative;
+    top: -4vh;
+    left: 33vw;
+}
+
+div.body{
+    width: 90%;
+    justify-items: center;
+    align-items: center;
+}
+
+p.nombre{
+    position: relative;
+    left: 3vw;
+    top: -2vh;
+    font-size: 24px;
+    width: fit-content;
+}
+
+.imagen-buscador {
+    width: 74vh;
+    height: 4vh;
+}
+
+.container{
+    border-right: solid 8px  rgb(220, 187, 12);
+    border-left: solid 8px  rgb(220, 187, 12);
+}
+
+.frase p{
+    position: relative;
+    left: 33vw;
+    font-size: 20px;
+    top: -3vh;
+}
+
+.lista-header{
+    position: absolute;
+    top: 15px;
+    font-size: 19px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+div.todoslosbody{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 4vh;
+}
+
+div.body{
+    border: 0px;
+    width: 43vw;
+    background-color: #bab6b6;
+    margin: 9px;
+}
+
+.primerbody{
+    border: 0px;
+}
+
+.tercerbody{
+    padding-bottom: 3vh;
+}
+
+h1{
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    position: relative;
+    left: 17vw;
+    margin-top: 0;
+    background-color: rgb(220, 187, 12);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div.fotos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 43vw;
+    justify-content: space-around;
+}
+
+img.secciones{
+    height: 18vh;
+    width: 12vw;
+    margin: 8px;
+}
+
+p{
+    font-size: 20px;
+}
+
+p.uno{
+    position: relative;
+    left: 3vw;
+}
+
+p.dos{
+    position: relative;
+    left: 16.5vw;
+    width: 67%;
+}
+
+p.tres{
+    position: relative;
+    left: 31.5vw;
+}
+
+p.cuatro{
+    position: relative;
+    left: 3vw;
+}
+
+p.cinco{
+    position: relative;
+    left: 16.5vw;
+    top: -2vh;
+}
+
+p.seis{
+    width: 52%;
+    position: relative;
+    top: -5vh;
+    left: 58vh;
+}
+
+p.siete{
+    position: relative;
+    left: 0.5vw;
+    width: 131px;
+    top: 1vh;
+    padding-top: 0;
+}
+
+p.ocho{
+    position: relative;
+    top: -2.5vh;
+    left: 20vw;
+    padding-left: 0px;
+}
+
+p.nueve{
+    position: relative;
+    top: -5.5vh;
+    left: 63vh;
+}
+
+p.diez{
+    position: relative;
+    top: 1vh;
+    left: 10vh;
+}
+
+p.once{
+    width: 67%;
+    position: relative;
+    top: -2.5vh;
+    left: 32.5vh;
+}
+
+p.doce{
+    position: relative;
+    top: -8.5vh;
+    left: 61.5vh;
+}
+
+.lista-footer{
+    font-size: 16px;
+    position: relative;
+    top: 1vh;
+    left: -4vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 17vw;
+    justify-content: center;
+}
+
+.main-footer{
+    height: 11vh;
+    margin-top: 7vh;
+}
+
+.logo-deezer{
+    width: 6vw;
+    height: 9vh;
+    position: relative;
+    right: -49vw;
+}
+
+.iconofooter{
+    width: 4vw;
+    height: 5vh;
+    position: relative;
+    top: 3vh;
+    margin-right: 4vw;
+    left: 21vw;
+}
+
+}

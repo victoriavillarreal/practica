@@ -214,7 +214,7 @@ ul li a.opcion {
 
 p.dos{
     width: 77%;
-    background-color: rgb(2555,215,0);
+    background-color: rgb(220, 187, 12);
 }
 
 .nombres .dos{
@@ -414,7 +414,7 @@ p.album{
 .losdetalles a{
     text-decoration: none;
     color: black;
-    background-color: rgb(2555,215,0);
+    background-color: rgb(220, 187, 12);
     width: 82px;
     display: flex;
     padding: 0px 46px;

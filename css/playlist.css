@@ -92,8 +92,6 @@ ul li{
     height: 3vh;
 }
 
-
-
 .main-footer{
     display: flex;
     flex-wrap: wrap;
@@ -372,7 +370,7 @@ p.detalles.cambio{
     margin-bottom: 15px;
 }
 
-.margen{
+.margen{ 
     margin-bottom: 24px;
 }
 
