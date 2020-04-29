@@ -428,20 +428,34 @@ p.album{
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
 
-    .body{
+    
+    
+    .lista-header{
+        position: absolute;
+        top: 15px;
+        font-size: 19px;
+        justify-content: space-around;
         display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 80%;
-    padding: 0 1vh 2vh 1vh;
+        flex-direction: row;
+    }
+    .primeracolumn{
+         width: 17%;
+         justify-content: center;  
+         flex-direction: row;
 
     }
     .fotos .secciones{
-        width: 80%;
-        height: 34%;
+        width: 23vh;
+       
+    }
+    .segundacolumn{
+        width: 83%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-left: solid 2px black;
     }
     .top .imagentop .cancion{
-        height: 10%;
+       width: 6vw;
     }
     .frase img{
         z-index: 2;
@@ -457,13 +471,10 @@ p.album{
         align-items: center;
     }
     .top {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: 15px;
-        border-bottom: dashed 1px black;
-        padding: 10px 0;
-        width: auto;
+        border-bottom: 0;
+        width: 33%;
+        border-right: 1px dashed black;
+        justify-content: center;
     }
     .lascanciones {
         display: flex;
@@ -482,5 +493,27 @@ p.album{
         height: 13vw;
         width: 13vw;
         border: 1px solid black;
+    }
+    .fotos{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .fotos .secciones{
+        width: 27%;
+    }
+    .losdetalles{
+        flex-direction: row;
+        justify-content: center;
+        width: 48%;
+    }
+    .losdetalles a{
+        margin-left: 68px;
+    }
+    p .track{
+        margin: 0 16px;
+    }
+    p .album{
+        margin: 0 16px
+        ;
     }
 }
