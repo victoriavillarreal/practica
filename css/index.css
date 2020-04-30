@@ -8,7 +8,7 @@ body{
     display: flex;
     justify-content: center;
     margin:0;
-    background-color: rgba(179, 170, 170, 0.582);
+    background-image: url(../img/fondo.jpg);
 
 }
 
@@ -78,6 +78,10 @@ ul li{
     position: relative;
     top: -33px;
     left: 71px;
+}
+
+div.banner{
+    display: none;
 }
 
 .buscador{
@@ -202,6 +206,7 @@ div.fotos{
 
 .titulogrande{
     margin-bottom: 7%;
+    color: white;
 }
 
 .titulogrande p{
@@ -249,6 +254,21 @@ div.body{
     flex-direction: row;
 }
 
+div.banner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 97%;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+img.banner{
+    width: 23%;
+    height: 12vw;
+}
+
 div.todoslosbody{
     display: flex;
     flex-wrap: wrap;
@@ -260,8 +280,6 @@ div.todoslosbody{
 .primerbody{
     border: 0px;
 }
-
-
 
 h1{
     writing-mode: horizontal-tb;
@@ -354,4 +372,6 @@ p{
     width: 100%;
     justify-content: center;
     margin-bottom:0;
+}
+
 }
