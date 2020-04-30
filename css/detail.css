@@ -534,10 +534,11 @@ p.album{
     .losdetalles{
         flex-direction: row;
         justify-content: center;
-        width: 48%;
+        width: 63%;
     }
     .losdetalles a{
         margin-left: 68px;
+        width:147px;
     }
     p .track{
         margin: 0 16px;
@@ -551,5 +552,33 @@ p.album{
     }
 
     .fotos img.ftrack{
-        width: 14%;
+        width: 18%;
+    }
+
+    .cancion{
+        height:100%;
+    }
+
+    .cancion h2{
+        font-size:27px;
+    }
+
+    .losdetalles{
+        font-size:27px;
+    }
+
+    .lasfotos{
+        width:34%;
+    }
+
+    .cancion .letramedium{
+        font-size:23px;
+    }
+
+    .cancion .unpocochico{
+        font-size:20px;
+    }
+
+    .cancion .unpocomaschico{
+        font-size: 20px;
     }

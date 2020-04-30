@@ -1,7 +1,8 @@
 /* MOBILE FIRST */
 *{box-sizing: border-box;
     width: fit-content;
-    height: fit-content; }
+    height: fit-content;
+}
 
 body{
     display: flex;
