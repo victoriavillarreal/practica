@@ -107,8 +107,8 @@ ul li{
 .lista-footer{
     display: flex;
     flex-wrap: wrap;
-    width: 42vw;
-    font-size: 12px;
+    width: 37vw;
+    font-size: 10px;
     position: relative;
     left: -8vw;
     font-weight: bold;
@@ -127,8 +127,7 @@ ul li{
     width: 15vw;
     height: 6vh;
     position: relative;
-    right: -9vw;
-    right: -7vw;
+    right: 0vw;
     top: 1vh;
 }
 
@@ -198,7 +197,6 @@ ul li a.opcion {
 
 
 .artista h2{
-    margin-left: -1.5vh;
     font-size: 30px;
     text-align: center;
 }
@@ -209,7 +207,6 @@ ul li a.opcion {
     height: 9vh;
     width: 23vw;
     border: 1px solid black;
-    margin-left: 1.5vh;
 }
 
 p.dos{
@@ -230,7 +227,7 @@ p.dos{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:66%;
+    width:65%;
     border-left: solid 2px black;
     padding-left: 11px;
 }
@@ -359,7 +356,7 @@ p.dos{
 .lasfotos{
     display: flex;
     width:48%;
-    align-items: center;
+    align-items:center;
 }
 
 .losdetalles{
@@ -400,6 +397,7 @@ p.dos{
     flex-wrap:wrap;
     flex-direction: column;
     margin-top: 10px;
+    margin-left:10px;
 }
 
 p.album{
@@ -425,11 +423,47 @@ p.album{
     text-align: center;
 }
 
+.generos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 34%;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.fotos img.fotogenero{
+    margin-left: 0;
+}
+
+.datostop p.daddy{
+    font-size:88%;
+}
+
+.datostop a{
+    color:black;
+}
+
+.nomargin{
+    margin:0;
+}
+
+.artista .regg{
+    font-size:92%;
+}
+
+.body .unog{
+    width:34.5%
+}
+
+.taylor{
+    font-size:142%;
+}
+
+
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
 
-    
-    
     .lista-header{
         position: absolute;
         top: 15px;
@@ -455,7 +489,8 @@ p.album{
         border-left: solid 2px black;
     }
     .top .imagentop .cancion{
-       width: 6vw;
+       width: 4vw;
+       height:8vh;
     }
     .frase img{
         z-index: 2;
@@ -482,24 +517,14 @@ p.album{
         flex-direction: row;
         width: 100%;
     }
-    .cancioncorreg {
-        border-radius: 50%;
-        width: 13vw;
-        height: 12vw;
-        border: 1px solid black;
-    }
-    .cancioncorregi{
-        border-radius: 50%;
-        height: 13vw;
-        width: 13vw;
-        border: 1px solid black;
-    }
+    
     .fotos{
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width:102%;
     }
     .fotos .secciones{
-        width: 27%;
+        width: 40%;
     }
     .losdetalles{
         flex-direction: row;
@@ -513,7 +538,9 @@ p.album{
         margin: 0 16px;
     }
     p .album{
-        margin: 0 16px
-        ;
+        margin: 0 16px;
     }
-}
+
+    p.dos{
+        width:87%;
+    }
