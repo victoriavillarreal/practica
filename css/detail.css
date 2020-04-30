@@ -464,6 +464,11 @@ p.album{
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
 
+    .imagen-buscador {
+        width: 26%;
+        height: 10%;
+    }
+
     .lista-header{
         position: absolute;
         top: 15px;
@@ -543,4 +548,8 @@ p.album{
 
     p.dos{
         width:87%;
+    }
+
+    .fotos img.ftrack{
+        width: 14%;
     }

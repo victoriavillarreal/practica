@@ -311,8 +311,8 @@ h2.chico{
 }
 
 .imagen-buscador {
-    width: 74vh;
-    height: 4vh;
+        width: 26%;
+        height: 10%;
 }
 
 .container{
@@ -388,10 +388,4 @@ audio{
     height: 5vh;
 }
 
-}
 
-
-<<<<<<< HEAD
-=======
-}
->>>>>>> 9c2d14f8e900d3538efc522e8ad309b4d55a647e
