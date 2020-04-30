@@ -75,8 +75,8 @@ ul li{
     width: 74vw;
     height: 4vh;
     position: relative;
-    top: -4vh;
-    left: 18vw;
+    top: -33px;
+    left: 71px;
 }
 
 .buscador{
@@ -84,13 +84,13 @@ ul li{
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .imagen-buscador{
-    width: 25vh;
-    height: 3vh;
+    width: 48%;
+    height: 8%;
 }
 
 .main-footer{
@@ -98,34 +98,34 @@ ul li{
     flex-wrap: wrap;
     width: 100%;
     background-color: grey;
-    margin-top: 5vh;
+    margin-top: 10%;
 }
 
 .lista-footer{
     display: flex;
     flex-wrap: wrap;
-    width: 42vw;
+    width: 45%;
     font-size: 12px;
     position: relative;
-    left: -8vw;
+    left: -23px;
     font-weight: bold;
 }
 
 .iconofooter{
     width: 8vw;
-    height: 4vh;
+    height: 20%;
     position: relative;
-    top: 2vh;
-    margin-right: 2vw;
-    left: -6vw;
+    top: 19px;
+    margin-right: 5px;
+    left: -16%;
 }
 
 .logo-deezer{
-    width: 15vw;
-    height: 6vh;
+    width: 15%;
+    height: 15%;
     position: relative;
-    right: -7vw;
-    top: 1vh;
+    right: -5%;
+    top: 7px;
 }
 
 p{
@@ -144,18 +144,18 @@ h1{
     writing-mode: vertical-rl;
     text-orientation: sideways;
     transform: rotate(-180deg);
-    margin-bottom: 5vh;
-    margin-left: -2vh;
+    margin-left: 0;
     font-family: 'Julius Sans One'
 }
 
 
 div.body{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     border-bottom: black 2px solid;
     padding-block-start: 26px;
+    width:90%;
+    padding-block-end: 26px;
 }
 
 .primerbody{
@@ -168,29 +168,43 @@ div.body{
 
 img.secciones{
     border-radius: 50%;
-    height: 9vh;
-    width: 23vw;
     border: 1px solid black;
+    width: 123%;
+    height:10vh;
 }
 
 p{
     margin: 0px; 
     padding: 0px; 
     text-align: center;
-    margin-top: 1vh;
+    margin-top: 20%;
 }
 
 .caja{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:11vh;
-    margin-right:1vh;
+    width:25%;
+    margin-right:8%;
 }
 
 div.fotos{
     display: flex;
     flex-wrap: wrap;
+}
+
+.todoslosbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulogrande{
+    margin-bottom: 7%;
+}
+
+.titulogrande p{
+    font-size: 200%;
 }
 
 
@@ -199,46 +213,30 @@ div.fotos{
 
 .frase img{
     z-index: 2;
-    width: 34vw;
-    height: 4vh;
+    width: 71%;
     position: relative;
-    top: -4vh;
-    left: 33vw;
+    left: 50%;
 }
 
 div.body{
     justify-items: center;
     align-items: center;
-    width:42vw;
+    flex-direction: column;
+    width:48%;
     border: 0px;
     background-color: #bab6b6;
     margin: 9px;
     border-radius:2%;
 }
 
-p.nombre{
-    position: relative;
-    left: 3vw;
-    top: -2vh;
-    font-size: 24px;
-    width: fit-content;
-}
-
 .imagen-buscador {
-    width: 74vh;
-    height: 4vh;
+    width: 26%;
+    height: 10%;
 }
 
 .container{
     border-right: solid 8px  rgb(220, 187, 12);
     border-left: solid 8px  rgb(220, 187, 12);
-}
-
-.frase p{
-    position: relative;
-    left: 33vw;
-    font-size: 20px;
-    top: -3vh;
 }
 
 .lista-header{
@@ -254,7 +252,8 @@ div.todoslosbody{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    margin-top: 4vh;
+    margin-top: 3%;
+    flex-direction:row ;
 }
 
 .primerbody{
@@ -266,8 +265,6 @@ div.todoslosbody{
 h1{
     writing-mode: horizontal-tb;
     transform: rotate(0deg);
-    position: relative;
-    left: 17vw;
     margin-top: 0;
     background-color: rgb(220, 187, 12);
     padding: 10px;
@@ -277,14 +274,14 @@ h1{
 div.fotos{
     display: flex;
     flex-wrap: wrap;
-    width: 42vw;
+    width: 100%;
     justify-content: center;
     
 }
 
 img.secciones{
-    height: 18vh;
-    width: 12vw;
+    height: 8vw;
+    width: 113%;
 }
 
 p{
@@ -294,24 +291,24 @@ p{
 .lista-footer{
     font-size: 16px;
     position: relative;
-    top: 1vh;
-    left: -4vw;
+    top: 2px;
+    left: -4%;
     display: flex;
     flex-wrap: wrap;
-    width: 17vw;
+    width: 17%;
     justify-content: center;
 }
 
 .main-footer{
-    height: 11vh;
-    margin-top: 7vh;
+    margin-top: 5%;
 }
 
 .logo-deezer{
     width: 6vw;
-    height: 9vh;
+    height: 11vh;
     position: relative;
-    right: -49vw;
+    right: -50%;
+    top: 10px;
 }
 
 .iconofooter{
@@ -326,20 +323,34 @@ p{
 
 
 .caja{
-    width: 33%;
+    width: 25%;
     display:flex;
     flex-direction: column;
     align-items: center;
     padding:18px;
+    margin-right:3%;
 }
 
 p{
-    font-size: 20px;
+    font-size: 15px;
     width: 96%;
     text-align: center;
     left: 0;
     right: 0;
-    padding-top:1.5vw;
-
+    padding-top: 18px;
+    margin: 0;
 }
 
+.titulogrande p{
+    background-color: none;
+    font-family: 'Julius Sans One';
+    font-size:200%;
+    font-weight: bold;
+}
+
+.titulogrande{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom:0;
+}
