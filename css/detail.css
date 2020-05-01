@@ -487,6 +487,7 @@ body .bodygenero{
 }
 
 
+
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
 
@@ -508,21 +509,6 @@ body .bodygenero{
 
     .lista-header li a{
         padding:0;
-    }
-
-    div.banner{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 97%;
-        margin-top: 2%;
-        padding: 1%;
-    }
-    
-    img.banner{
-        width: 23%;
-        height: 12vw;
     }
 
     .primeracolumn{
@@ -735,3 +721,50 @@ body .bodygenero{
         text-align:center;
     }
 
+    
+    div.banner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    
+    .banner{
+        width:90%;
+        margin:auto;
+        overflow:hidden;
+    }
+    
+    .banner ul{
+        display:flex;
+        padding:0;
+        width:800%;
+       
+        
+        animation: cambio 7s infinite;
+        
+    }
+    
+    .banner li{
+        width:400%;
+        list-style:none;
+    }
+    
+    .banner img{
+            width: 113%;
+            height: 12vw;
+    }
+    
+    @keyframes cambio {
+        0% {margin-left: 0;}
+        20% {margin-left:0;}
+    
+        25% {margin-left: 0%;}
+        45% {margin-left:0%;}
+    
+        50% {margin-left: -100%;}
+        70% {margin-left:-100%;}
+    
+        75%{margin-left: -100%;}
+        100% {margin-left:-100%;}
+    }
