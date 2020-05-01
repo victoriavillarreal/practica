@@ -182,7 +182,7 @@ div.canciones{
     align-items: center;
     width: 100%;
     padding: 0 1vh 2vh 1vh;
-    background-color: #bab6b6f2;
+    background-color: #9e9c9cf2;
 }
 
 div.body{
@@ -234,6 +234,7 @@ audio{
 
 p.detalles{
     font-size:87%;
+    font-weight: bold;
 }
 
 p.detalles.cambio{
@@ -263,26 +264,7 @@ p.detalles.cambio{
     left: 33vw;
 }
 
-div.banner{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 97%;
-    margin-top: 2%;
-    padding: 1%;
-}
 
-img.banner{
-    width: 23%;
-    height: 12vw;
-}
-
-div.body{
-    width: 90%;
-    justify-items: center;
-    align-items: center;
-}
 
 p.nombre{
     font-size: 155%;
@@ -318,15 +300,15 @@ p.detalles{
 }
 
 .cancion1{
-    border-top: #bab6b6f2 solid 3px;
+    border-top:   #9e9c9cf2 solid 3px;
     border-right: dashed black 3px;
-    border-bottom: solid #bab6b6f2 3px;
+    border-bottom: solid #9e9c9cf2 3px;
 }
 
 .cancion2{
-    border-top: #bab6b6f2 solid 3px;
+    border-top: #9e9c9cf2 solid 3px;
     border-right: dashed black 3px;
-    border-bottom: solid #bab6b6f2 3px;
+    border-bottom: solid #9e9c9cf2 3px;
     margin-bottom: 2vh;
 
 }
@@ -442,4 +424,52 @@ audio{
     color: white;
 }
 
+<<<<<<< HEAD
+=======
+div.banner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.banner{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
+
+.banner ul{
+    display:flex;
+    padding:0;
+    width:800%;
+   
+    
+    animation: cambio 7s infinite;
+    
+}
+
+.banner li{
+    width:400%;
+    list-style:none;
+}
+
+.banner img{
+        width: 113%;
+        height: 12vw;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left:0;}
+
+    25% {margin-left: 0%;}
+    45% {margin-left:0%;}
+
+    50% {margin-left: -100%;}
+    70% {margin-left:-100%;}
+
+    75%{margin-left: -100%;}
+    100% {margin-left:-100%;}
+>>>>>>> 9f692314869ab9f71a7e674860cebb6b7c3f326f
 }

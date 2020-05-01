@@ -186,7 +186,7 @@ ul li a.opcion {
     height: fit-content;
     align-items: center;
     padding: 0 1vh 2vh 1vh;
-    background-color: #bab6b6f2;
+    background-color: #9e9c9cf2;
     padding-top: 2vh;
     margin: 0 12px;
     border-bottom: dashed black 1px;
@@ -374,7 +374,7 @@ p.dos{
 
 .lasfotos{
     display: flex;
-    width:48%;
+    width:39%;
     align-items:center;
 }
 
@@ -387,7 +387,7 @@ p.dos{
     position: relative;
     right: -54px;
     border-left: dashed 2px black;
-    padding: 30px 16px;
+    padding: 30px 33px;
 }
 
 .unpocochico{
@@ -395,7 +395,7 @@ p.dos{
 }
 
 .unpocomaschico{
-    font-size: 106%;
+    font-size: 102%;
 }
 
 .letramedium{
@@ -411,7 +411,6 @@ p.dos{
 }
 
 .fotos{
-    align-items: center;
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
@@ -423,6 +422,13 @@ p.dos{
     text-decoration:none;
     color:black;
     text-align: center;
+    padding-top: 15px;
+}
+
+div.dato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .losdetalles a{
@@ -481,6 +487,7 @@ body .bodygenero{
 }
 
 
+
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
 
@@ -504,6 +511,7 @@ body .bodygenero{
     padding:0;
 }
 
+<<<<<<< HEAD
 div.banner{
     display: flex;
     flex-wrap: wrap;
@@ -518,6 +526,12 @@ img.banner{
     width: 23%;
     height: 12vw;
 }
+=======
+    .primeracolumn{
+         width: 17%;
+         justify-content: center;  
+         flex-direction: row;
+>>>>>>> 9f692314869ab9f71a7e674860cebb6b7c3f326f
 
 .primeracolumn{
     width: 17%;
@@ -579,6 +593,7 @@ div.dato{
     align-content: center;
 }
 
+<<<<<<< HEAD
 .fotos{
     display: flex;
     flex-wrap: wrap;
@@ -586,6 +601,15 @@ div.dato{
     align-items: baseline;
     justify-content: center;
 }
+=======
+    .fotos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
+>>>>>>> 9f692314869ab9f71a7e674860cebb6b7c3f326f
 
 .fotos a{
     margin-top: 16px;
@@ -605,10 +629,18 @@ p.album {
     width: 63%;
 }
 
+<<<<<<< HEAD
 .losdetalles a{
     margin-left: 68px;
     width:147px;
 }
+=======
+    .losdetalles a{
+        margin-left: 68px;
+        width:147px;
+        padding:0;
+    }
+>>>>>>> 9f692314869ab9f71a7e674860cebb6b7c3f326f
 
 p .track{
     margin: 0 16px;
@@ -725,4 +757,58 @@ ul li a.opcion{
     font-size: 160%;
 }
 
-}
+    .fotos a{
+        padding-top:0;
+    }
+
+    .losdetalles a p{
+        text-align:center;
+    }
+
+    
+    div.banner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    
+    .banner{
+        width:90%;
+        margin:auto;
+        overflow:hidden;
+    }
+    
+    .banner ul{
+        display:flex;
+        padding:0;
+        width:800%;
+       
+        
+        animation: cambio 7s infinite;
+        
+    }
+    
+    .banner li{
+        width:400%;
+        list-style:none;
+    }
+    
+    .banner img{
+            width: 113%;
+            height: 12vw;
+    }
+    
+    @keyframes cambio {
+        0% {margin-left: 0;}
+        20% {margin-left:0;}
+    
+        25% {margin-left: 0%;}
+        45% {margin-left:0%;}
+    
+        50% {margin-left: -100%;}
+        70% {margin-left:-100%;}
+    
+        75%{margin-left: -100%;}
+        100% {margin-left:-100%;}
+    }
