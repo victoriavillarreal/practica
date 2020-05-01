@@ -484,188 +484,190 @@ body .bodygenero{
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
 
-    .imagen-buscador {
-        width: 26%;
-        height: 10%;
-    }
+.imagen-buscador {
+    width: 26%;
+    height: 10%;
+}
 
-    .lista-header{
-        position: absolute;
-        top: 77px;
-        font-size: 19px;
-        justify-content: space-around;
-        display: flex;
-        flex-direction: row;
-        right: 31px;
-        width: 44%;
-    }
+.lista-header{
+    position: absolute;
+    top: 77px;
+    font-size: 19px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    right: 31px;
+    width: 44%;
+}
 
-    .lista-header li a{
-        padding:0;
-    }
+.lista-header li a{
+    padding:0;
+}
 
-    div.banner{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 97%;
-        margin-top: 2%;
-        padding: 1%;
-    }
+div.banner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 97%;
+    margin-top: 2%;
+    padding: 1%;
+}
     
-    img.banner{
-        width: 23%;
-        height: 12vw;
+img.banner{
+    width: 23%;
+    height: 12vw;
+}
+
+.primeracolumn{
+    width: 17%;
+    justify-content: center;  
+    flex-direction: row;
+}
+    
+.fotos .secciones{
+    width: 23vh;
+}
+    
+.segundacolumn{
+    width: 83%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-left: solid 2px black;
+}
+    
+.top .imagentop .cancion{
+    width: 4vw;
+    height:8vh;
+}
+    
+.frase p{
+    z-index: 2;
+    width: 34vw;
+    height: 4vh;
+    position: relative;
+    top: -12vw;
+    left: 85vw;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+div.body{
+    width: 90%;
+    justify-items: center;
+    align-items: center;
+}
+    
+.top {
+    border-bottom: 0;
+    width: 33%;
+    border-right: 1px dashed black;
+    justify-content: center;
+}
+    
+.lascanciones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.dato{
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.fotos a{
+    margin-top: 16px;
+}
+
+p.album {
+    width: 102%;
+}  
+
+.fotos .secciones{
+    width: 40%;
+}
+
+.losdetalles{
+    flex-direction: row;
+    justify-content: center;
+    width: 63%;
+}
+
+.losdetalles a{
+    margin-left: 68px;
+    width:147px;
+}
+
+p .track{
+    margin: 0 16px;
+}
+    
+p .album{
+    margin: 0 16px;
+}
+
+p.dos{
+    width:87%;
+}
+
+.fotos img.ftrack{
+    width: 63%;
+}
+
+.cancion{
+    height:100%;
+}
+
+.cancion h2{
+    font-size:27px;
+}
+
+.losdetalles{
+    font-size:27px;
+}
+
+.lasfotos{
+    width:34%;
     }
 
-    .primeracolumn{
-         width: 17%;
-         justify-content: center;  
-         flex-direction: row;
+.cancion .letramedium{
+    font-size:23px;
+}
 
-    }
-    .fotos .secciones{
-        width: 23vh;
-       
-    }
-    .segundacolumn{
-        width: 83%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        border-left: solid 2px black;
-    }
-    .top .imagentop .cancion{
-       width: 4vw;
-       height:8vh;
-    }
-    .frase p{
-        z-index: 2;
-        width: 34vw;
-        height: 4vh;
-        position: relative;
-        top: -12vw;
-        left: 85vw;
-        font-family: 'Cedarville Cursive', cursive;
-    }
+.cancion .unpocochico{
+    font-size:20px;
+}
 
-    div.body{
-        width: 90%;
-        justify-items: center;
-        align-items: center;
-    }
-    .top {
-        border-bottom: 0;
-        width: 33%;
-        border-right: 1px dashed black;
-        justify-content: center;
-    }
-    .lascanciones {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-    }
+.cancion .unpocomaschico{
+    font-size: 20px;
+}
 
-    div.dato{
-        width: 41%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-    }
+.body .generos{
+    width:17%;
+}
 
-    .fotos{
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* width:102%; */
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: center;
-    }
+.top .imagentop img.cancion {
+    width: 6vw;
+    height: 10vh;
+}
 
-    .fotos a{
-        margin-top: 16px;
-    }
+.artista h2.regg{
+    font-size:140%;
+}
 
-    p.album {
-        width: 102%;
-    }  /* borrar este */
-
-    .fotos .secciones{
-        width: 40%;
-    }
-
-    .losdetalles{
-        flex-direction: row;
-        justify-content: center;
-        width: 63%;
-    }
-
-    .losdetalles a{
-        margin-left: 68px;
-        width:147px;
-    }
-
-    p .track{
-        margin: 0 16px;
-    }
-    p .album{
-        margin: 0 16px;
-    }
-
-    p.dos{
-        width:87%;
-    }
-
-    .fotos img.ftrack{
-        width: 63%;
-    }
-
-    .cancion{
-        height:100%;
-    }
-
-    .cancion h2{
-        font-size:27px;
-    }
-
-    .losdetalles{
-        font-size:27px;
-    }
-
-    .lasfotos{
-        width:34%;
-    }
-
-    .cancion .letramedium{
-        font-size:23px;
-    }
-
-    .cancion .unpocochico{
-        font-size:20px;
-    }
-
-    .cancion .unpocomaschico{
-        font-size: 20px;
-    }
-
-    .body .generos{
-        width:17%;
-    }
-
-    .top .imagentop img.cancion {
-        width: 6vw;
-        height: 10vh;
-    }
-
-    .artista h2.regg{
-        font-size:140%;
-    }
-
-    .frase p{
+.frase p{
     z-index: 2;
     position: relative;
     top: -12vw;
@@ -674,53 +676,53 @@ body .bodygenero{
     font-size: 326%;
     color: white;
     width: fit-content;
-    }
+}
 
-    .datostop p.nombreg{
-        padding-top:27px;
-    }
+.datostop p.nombreg{
+    padding-top:27px;
+}
 
-    .lista-footer{
-        font-size: 114%;
-        display: flex;
-        flex-wrap: wrap;
-        width: 17%;
-        left: -2vh;
-        justify-content: center;
-    }
+.lista-footer{
+    font-size: 114%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 17%;
+    left: -2vh;
+    justify-content: center;
+}
     
-    ul li{
-        padding-right: 1vw;
-        font-size:65%;
-    }
+ul li{
+    padding-right: 1vw;
+    font-size:65%;
+}
     
-    .main-footer{
-        height: 11vh;
-        margin-top: 7vh;
-    }
+.main-footer{
+    height: 11vh;
+    margin-top: 7vh;
+}
     
-    .logo-deezer{
-        width: 6vw;
-        height: 9vh;
-        position: relative;
-        right: -49vw;
-    }
+.logo-deezer{
+    width: 6vw;
+    height: 9vh;
+    position: relative;
+    right: -49vw;
+}
     
-    .iconofooter{
-        width: 4vw;
-        height: 5vh;
-        position: relative;
-        top: 3vh;
-        margin-right: 4vw;
-        left: 21vw;
-    }
+.iconofooter{
+    width: 4vw;
+    height: 5vh;
+    position: relative;
+    top: 3vh;
+    margin-right: 4vw;
+    left: 21vw;
+}
 
-    body .bodytrack{
-        width:95%;
-    }
+body .bodytrack{
+    width:95%;
+}
 
-    ul li a.opcion{
-        font-size: 160%;
-    }
+ul li a.opcion{
+    font-size: 160%;
+}
 
 }

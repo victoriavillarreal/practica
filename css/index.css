@@ -45,7 +45,6 @@ body{
     border-radius: 50%;
 }
 
-
 .lista-header{
     display: flex;
     flex-direction: row;
@@ -259,14 +258,14 @@ div.body{
 }
 
 .lista-header{
-        position: absolute;
-        top: 77px;
-        font-size: 19px;
-        justify-content: space-around;
-        display: flex;
-        flex-direction: row;
-        right: 31px;
-        width: 41%;
+    position: absolute;
+    top: 77px;
+    font-size: 19px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    right: 31px;
+    width: 41%;
 }
 
 div.banner{
@@ -358,8 +357,6 @@ p{
     left: 21vw;
 }
 
-
-
 .caja{
     width: 25%;
     display:flex;
@@ -400,4 +397,6 @@ p{
     font-family: 'Cedarville Cursive', cursive;
     font-size: 326%;
     color: white;
+}
+
 }
