@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin:0;
-    background-color: rgba(179, 170, 170, 0.582);
+    background-image: url(../img/fondo.jpg);
 }
 
 .container{
@@ -81,6 +81,10 @@ ul li{
     font-size: 243%;
     color: white}
 
+div.banner{
+    display: none;
+}
+
 .buscador{
     display:flex;
     flex-wrap: wrap;
@@ -94,8 +98,6 @@ ul li{
     width: 25vh;
     height: 3vh;
 }
-
-
 
 .main-footer{
     display: flex;
@@ -149,13 +151,13 @@ ul li{
 ul li.barra {
     display: flex;
     flex-wrap: wrap;
-    border-right: 2px solid black;
+    border-right: 2px solid white;
     padding-right: 5%;
 }
 
 ul li a.opcion {
     text-decoration: none;
-    color:black;
+    color:white;
     text-transform: uppercase;
 }
 
@@ -163,10 +165,9 @@ ul li a.opcion {
     display: flex;
     flex-wrap: wrap;
     width:100%;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
     margin: 0 12px;
     justify-content: center;
+    color: white;
 }
 
 .titulos h2{
@@ -499,6 +500,21 @@ p.album{
         padding:0;
     }
 
+    div.banner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 97%;
+        margin-top: 2%;
+        padding: 1%;
+    }
+    
+    img.banner{
+        width: 23%;
+        height: 12vw;
+    }
+
     .primeracolumn{
          width: 17%;
          justify-content: center;  
@@ -629,3 +645,4 @@ p.album{
         font-size: 326%;
         color: white;
     }
+}
