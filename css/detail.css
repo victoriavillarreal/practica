@@ -374,7 +374,7 @@ p.dos{
 
 .lasfotos{
     display: flex;
-    width:48%;
+    width:39%;
     align-items:center;
 }
 
@@ -387,7 +387,7 @@ p.dos{
     position: relative;
     right: -54px;
     border-left: dashed 2px black;
-    padding: 30px 16px;
+    padding: 30px 33px;
 }
 
 .unpocochico{
@@ -395,7 +395,7 @@ p.dos{
 }
 
 .unpocomaschico{
-    font-size: 106%;
+    font-size: 102%;
 }
 
 .letramedium{
@@ -411,7 +411,6 @@ p.dos{
 }
 
 .fotos{
-    align-items: center;
     display: flex;
     flex-wrap:wrap;
     flex-direction: column;
@@ -423,6 +422,13 @@ p.dos{
     text-decoration:none;
     color:black;
     text-align: center;
+    padding-top: 15px;
+}
+
+div.dato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .losdetalles a{
@@ -576,9 +582,6 @@ body .bodygenero{
     }
 
     .fotos{
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* width:102%; */
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -607,6 +610,7 @@ body .bodygenero{
     .losdetalles a{
         margin-left: 68px;
         width:147px;
+        padding:0;
     }
 
     p .track{
@@ -723,4 +727,11 @@ body .bodygenero{
         font-size: 160%;
     }
 
-}
+    .fotos a{
+        padding-top:0;
+    }
+
+    .losdetalles a p{
+        text-align:center;
+    }
+
