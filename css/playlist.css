@@ -182,7 +182,7 @@ div.canciones{
     align-items: center;
     width: 100%;
     padding: 0 1vh 2vh 1vh;
-    background-color: #bab6b6f2;
+    background-color: #9e9c9cf2;
 }
 
 div.body{
@@ -233,6 +233,7 @@ audio{
 
 p.detalles{
     font-size:87%;
+    font-weight: bold;
 }
 
 p.detalles.cambio{
@@ -298,15 +299,15 @@ p.detalles{
 }
 
 .cancion1{
-    border-top: #bab6b6f2 solid 3px;
+    border-top:   #9e9c9cf2 solid 3px;
     border-right: dashed black 3px;
-    border-bottom: solid #bab6b6f2 3px;
+    border-bottom: solid #9e9c9cf2 3px;
 }
 
 .cancion2{
-    border-top: #bab6b6f2 solid 3px;
+    border-top: #9e9c9cf2 solid 3px;
     border-right: dashed black 3px;
-    border-bottom: solid #bab6b6f2 3px;
+    border-bottom: solid #9e9c9cf2 3px;
     margin-bottom: 2vh;
 
 }
