@@ -182,7 +182,7 @@ div.canciones{
     align-items: center;
     width: 100%;
     padding: 0 1vh 2vh 1vh;
-    background-color: #bab6b6;
+    background-color: #bab6b6f2;
 }
 
 div.body{
@@ -203,7 +203,7 @@ div.info{
 }
 
 h2.chico{
-    font-size: 126%;
+    font-size: 118%;
 }
 
 audio{
@@ -231,8 +231,12 @@ audio{
     font-size: 76%;
 }
 
+p.detalles{
+    font-size:87%;
+}
+
 p.detalles.cambio{
-    font-size: 82%;
+    font-size: 61%;
 }
 
 .frase p {
@@ -313,21 +317,22 @@ p.detalles{
 }
 
 .cancion1{
-    border-top: solid rgb(220, 187, 12) 3px;
-    border-right: solid rgb(220, 187, 12) 3px;
-    border-bottom: solid rgb(220, 187, 12) 3px;
+    border-top: #bab6b6f2 solid 3px;
+    border-right: dashed black 3px;
+    border-bottom: solid #bab6b6f2 3px;
 }
 
 .cancion2{
-    border-top: solid rgb(220, 187, 12) 3px;
+    border-top: #bab6b6f2 solid 3px;
+    border-right: dashed black 3px;
+    border-bottom: solid #bab6b6f2 3px;
     margin-bottom: 2vh;
-    border-right: solid rgb(220, 187, 12) 3px;
-    border-bottom: solid rgb(220, 187, 12) 3px;
+
 }
 
 .cancion3{
-    border-top: solid rgb(220, 187, 12) 3px;
-    border-bottom: solid rgb(220, 187, 12) 3px;
+    border-top: #bab6b6f2 solid 3px;
+    border-bottom: solid #bab6b6f2 3px;
     margin-bottom: 4vw;
 }
 
@@ -337,7 +342,7 @@ div.canciones{
 
 
 h2.chico{
-    font-size: 145%;
+    font-size: 142%;
     padding-bottom: 1.3%;
 }
 
@@ -370,6 +375,7 @@ div.info{
         display: flex;
         flex-direction: row;
         right: 31px;
+        width:20%;
 }
 
 .lista-footer{
@@ -406,7 +412,7 @@ ul li{
 }
 
 p.detalles.cambio{
-    font-size: 95%;
+    font-size: 82%;
     margin-bottom: 7%;
 }
 
@@ -416,8 +422,8 @@ p.detalles.cambio{
 
 audio{
     display: flex;
-    width: 27vh;
-    height: 5vh;
+    width: 26vh;
+    height: 6vh;
 }
 
 

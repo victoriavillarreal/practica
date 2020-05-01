@@ -163,6 +163,7 @@ div.body{
     padding-block-start: 26px;
     width:90%;
     padding-block-end: 26px;
+    background-color: #bab6b6f2;
 }
 
 .primerbody{
@@ -212,7 +213,8 @@ div.fotos{
 }
 
 .titulogrande p{
-    font-size: 200%;
+    font-size: 145%;
+    font-family: 'Julius Sans One';
 }
 
 .frase p {
@@ -241,7 +243,7 @@ div.body{
     flex-direction: column;
     width:48%;
     border: 0px;
-    background-color: #bab6b6;
+    background-color: #bab6b6f2;
     margin: 9px;
     border-radius:2%;
 }
@@ -380,8 +382,7 @@ p{
 .titulogrande p{
     background-color: none;
     font-family: 'Julius Sans One';
-    font-size:200%;
-    font-weight: bold;
+    font-size:400%;
 }
 
 .titulogrande{
