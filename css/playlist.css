@@ -1,7 +1,8 @@
 /* MOBILE FIRST */
 *{box-sizing: border-box;
     width: fit-content; 
-    height: fit-content;}
+    height: fit-content;
+    font-family: 'Julius Sans One';}
 
 body{
     display: flex;
@@ -46,15 +47,15 @@ body{
 
 .lista-header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     position: absolute;
     z-index: 2;
-    right: 31px;
-    top: -2px;
-    width: 30%;
+    right: 8px;
+    top: 76px;
     justify-content: center;
-    margin: 3px;
+    margin: 6px;
+    width: 274px;
 }
 
 ul li{
@@ -64,9 +65,9 @@ ul li{
 .lista-header li a{
     text-transform: uppercase;
     width: 20%;
-    padding: 2px;
+    padding: 5px;
     text-decoration:none;
-    color: black;
+    color: white;
     font-size: 90%;
     font-weight: bolder;
 }
@@ -229,6 +230,16 @@ p.detalles.cambio{
     font-size: 82%;
 }
 
+.frase p {
+    z-index: 2;
+    position: relative;
+    top: -19vh;
+    left: 59vw;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 243%;
+    color: white;
+}
+
 
 /* DESKTOP */
 @media only screen and (min-device-width: 1200px){
@@ -332,12 +343,13 @@ div.info{
 }
 
 .lista-header{
-    position: absolute;
-    top: 15px;
-    font-size: 19px;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
+        position: absolute;
+        top: 77px;
+        font-size: 19px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        right: 31px;
 }
 
 .lista-footer{
@@ -389,3 +401,12 @@ audio{
 }
 
 
+.frase p {
+    z-index: 2;
+    position: relative;
+    top: -24vh;
+    left: 76vw;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 410%;
+    color: white;
+}

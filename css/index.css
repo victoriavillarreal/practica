@@ -2,6 +2,7 @@
 *{box-sizing: border-box;
     width: fit-content;
     height: fit-content;
+    font-family: 'Julius Sans One';
 }
 
 body{
@@ -44,17 +45,18 @@ body{
     border-radius: 50%;
 }
 
+
 .lista-header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     position: absolute;
     z-index: 2;
-    right: 31px;
-    top: -2px;
-    width: 30%;
+    right: 8px;
+    top: 76px;
     justify-content: center;
-    margin: 3px;
+    margin: 6px;
+    width: 274px;
 }
 
 ul li{
@@ -64,9 +66,9 @@ ul li{
 .lista-header li a{
     text-transform: uppercase;
     width: 20%;
-    padding: 2px;
+    padding: 5px;
     text-decoration:none;
-    color: black;
+    color: white;
     font-size: 90%;
     font-weight: bolder;
 }
@@ -208,6 +210,15 @@ div.fotos{
     font-size: 200%;
 }
 
+.frase p {
+    z-index: 2;
+    position: relative;
+    top: -18vh;
+    left: 61vw;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 243%;
+    color: white;
+}
 
 /* DESKTOP */
 @media only screen and (min-device-width: 1200px){
@@ -241,13 +252,16 @@ div.body{
 }
 
 .lista-header{
-    position: absolute;
-    top: 15px;
-    font-size: 19px;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
+        position: absolute;
+        top: 77px;
+        font-size: 19px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        right: 31px;
+        width: 41%;
 }
+
 
 div.todoslosbody{
     display: flex;
@@ -298,6 +312,10 @@ p{
     flex-wrap: wrap;
     width: 17%;
     justify-content: center;
+}
+
+.lista-footer li a{
+    padding:0;
 }
 
 .main-footer{
@@ -354,4 +372,14 @@ p{
     width: 100%;
     justify-content: center;
     margin-bottom:0;
+}
+
+.frase p{
+    z-index: 2;
+    position: relative;
+    top: -23vh;
+    left: 76vw;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 326%;
+    color: white;
 }
