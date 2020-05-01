@@ -419,13 +419,10 @@ p.dos{
     margin-left:10px;
 }
 
-p.album{
-    text-align:center;
-}
-
 .fotos a{
     text-decoration:none;
     color:black;
+    text-align: center;
 }
 
 .losdetalles a{
@@ -547,8 +544,8 @@ body .bodygenero{
         width: 34vw;
         height: 4vh;
         position: relative;
-        top: -4vh;
-        left: 33vw;
+        top: -12vw;
+        left: 85vw;
         font-family: 'Cedarville Cursive', cursive;
     }
 
@@ -569,24 +566,49 @@ body .bodygenero{
         flex-direction: row;
         width: 100%;
     }
-    
-    .fotos{
+
+    div.dato{
+        width: 41%;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        width:102%;
+        align-content: center;
     }
+
+    .fotos{
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* width:102%; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .fotos a{
+        margin-top: 16px;
+    }
+
+    p.album {
+        width: 102%;
+    }  /* borrar este */
+
     .fotos .secciones{
         width: 40%;
     }
+
     .losdetalles{
         flex-direction: row;
         justify-content: center;
         width: 63%;
     }
+
     .losdetalles a{
         margin-left: 68px;
         width:147px;
     }
+
     p .track{
         margin: 0 16px;
     }
@@ -599,7 +621,7 @@ body .bodygenero{
     }
 
     .fotos img.ftrack{
-        width: 25%;
+        width: 63%;
     }
 
     .cancion{
@@ -646,8 +668,8 @@ body .bodygenero{
     .frase p{
     z-index: 2;
     position: relative;
-    top: -28vh;
-    left: 74vw;
+    top: -12vw;
+    left: 85vw;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 326%;
     color: white;
@@ -696,3 +718,9 @@ body .bodygenero{
     body .bodytrack{
         width:95%;
     }
+
+    ul li a.opcion{
+        font-size: 160%;
+    }
+
+}
