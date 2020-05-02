@@ -244,8 +244,8 @@ p.detalles.cambio{
 .frase p {
     z-index: 2;
     position: relative;
-    top: -19vh;
-    left: 59vw;
+    top: -155px;
+    left: 223px;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 243%;
     color: white;
@@ -417,7 +417,7 @@ audio{
 .frase p {
     z-index: 2;
     position: relative;
-    top: -24vh;
+    top: -23vh;
     left: 76vw;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 410%;
