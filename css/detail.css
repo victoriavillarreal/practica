@@ -511,28 +511,6 @@ body .bodygenero{
     padding:0;
 }
 
-<<<<<<< HEAD
-div.banner{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 97%;
-    margin-top: 2%;
-    padding: 1%;
-}
-    
-img.banner{
-    width: 23%;
-    height: 12vw;
-}
-=======
-    .primeracolumn{
-         width: 17%;
-         justify-content: center;  
-         flex-direction: row;
->>>>>>> 9f692314869ab9f71a7e674860cebb6b7c3f326f
-
 .primeracolumn{
     width: 17%;
     justify-content: center;  
@@ -593,7 +571,6 @@ div.dato{
     align-content: center;
 }
 
-<<<<<<< HEAD
 .fotos{
     display: flex;
     flex-wrap: wrap;
@@ -601,15 +578,6 @@ div.dato{
     align-items: baseline;
     justify-content: center;
 }
-=======
-    .fotos{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: center;
-    }
->>>>>>> 9f692314869ab9f71a7e674860cebb6b7c3f326f
 
 .fotos a{
     margin-top: 16px;
@@ -629,18 +597,11 @@ p.album {
     width: 63%;
 }
 
-<<<<<<< HEAD
 .losdetalles a{
     margin-left: 68px;
     width:147px;
+    padding:0;
 }
-=======
-    .losdetalles a{
-        margin-left: 68px;
-        width:147px;
-        padding:0;
-    }
->>>>>>> 9f692314869ab9f71a7e674860cebb6b7c3f326f
 
 p .track{
     margin: 0 16px;
@@ -757,58 +718,58 @@ ul li a.opcion{
     font-size: 160%;
 }
 
-    .fotos a{
-        padding-top:0;
-    }
+.fotos a{
+    padding-top:0;
+}
 
-    .losdetalles a p{
-        text-align:center;
-    }
+.losdetalles a p{
+    text-align:center;
+}
 
+div.banner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
     
-    div.banner{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
+.banner{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
     
+.banner ul{
+    display:flex;
+    padding:0;
+    width:800%;
+    animation: cambio 7s infinite;
+}
     
-    .banner{
-        width:90%;
-        margin:auto;
-        overflow:hidden;
-    }
+.banner li{
+    width:400%;
+    list-style:none;
+}
     
-    .banner ul{
-        display:flex;
-        padding:0;
-        width:800%;
-       
-        
-        animation: cambio 7s infinite;
-        
-    }
+.banner img{
+    width: 113%;
+    height: 12vw;
+}
     
-    .banner li{
-        width:400%;
-        list-style:none;
-    }
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left:0;}
     
-    .banner img{
-            width: 113%;
-            height: 12vw;
-    }
+    25% {margin-left: 0%;}
+    45% {margin-left:0%;}
     
-    @keyframes cambio {
-        0% {margin-left: 0;}
-        20% {margin-left:0;}
+    50% {margin-left: -100%;}
+    70% {margin-left:-100%;}
     
-        25% {margin-left: 0%;}
-        45% {margin-left:0%;}
-    
-        50% {margin-left: -100%;}
-        70% {margin-left:-100%;}
-    
-        75%{margin-left: -100%;}
-        100% {margin-left:-100%;}
-    }
+    75%{margin-left: -100%;}
+    100% {margin-left:-100%;}
+}
+
+}
+
+
+

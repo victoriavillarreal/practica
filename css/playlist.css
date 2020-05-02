@@ -424,8 +424,6 @@ audio{
     color: white;
 }
 
-<<<<<<< HEAD
-=======
 div.banner{
     display: flex;
     flex-wrap: wrap;
@@ -443,10 +441,7 @@ div.banner{
     display:flex;
     padding:0;
     width:800%;
-   
-    
-    animation: cambio 7s infinite;
-    
+   animation: cambio 7s infinite;
 }
 
 .banner li{
@@ -471,5 +466,6 @@ div.banner{
 
     75%{margin-left: -100%;}
     100% {margin-left:-100%;}
->>>>>>> 9f692314869ab9f71a7e674860cebb6b7c3f326f
+}
+
 }
