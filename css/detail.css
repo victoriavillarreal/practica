@@ -75,8 +75,8 @@ ul li{
 .frase p{
     z-index: 2;
     position: relative;
-    top: -19vh;
-    left: 59vw;
+    top: -151px;
+    left: 217px;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 243%;
     color: white}
@@ -663,8 +663,8 @@ p.dos{
 .frase p{
     z-index: 2;
     position: relative;
-    top: -12vw;
-    left: 85vw;
+    top: -29vh;
+    left: 76vw;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 326%;
     color: white;
