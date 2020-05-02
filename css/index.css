@@ -218,12 +218,12 @@ div.fotos{
 
 .frase p {
     z-index: 2;
-    position: relative;
-    top: -143px;
-    left: 219px;
+    position: absolute;
+    right: 3vw;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 243%;
     color: white;
+    margin-top: 0px;
 }
 
 /* DESKTOP */
@@ -267,8 +267,6 @@ div.body{
     right: 31px;
     width: 41%;
 }
-
-
 
 div.todoslosbody{
     display: flex;
@@ -376,24 +374,11 @@ p{
     margin-bottom:0;
 }
 
-.frase p{
-    z-index: 2;
-    position: relative;
-    top: -23vh;
-    left: 76vw;
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 326%;
-    color: white;
-}
-
-
 div.banner{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-
-
 
 .banner{
     width:90%;
@@ -405,9 +390,7 @@ div.banner{
     display:flex;
     padding:0;
     width:800%;
-    
     animation: cambio 7s infinite;
-    
 }
 
 .banner li{
@@ -432,4 +415,16 @@ div.banner{
 
     75%{margin-left: -100%;}
     100% {margin-left:-100%;}
+}
+
+p.pp{
+    z-index: 2;
+    position: absolute;
+    top: -11vh;
+    right: 2vw;
+    color: white;
+    font-size: 400%;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
 }

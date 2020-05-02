@@ -72,14 +72,15 @@ ul li{
     font-weight: bolder;
 }
 
-.frase p{
+.frase p {
     z-index: 2;
-    position: relative;
-    top: -151px;
-    left: 217px;
+    position: absolute;
+    right: 3vw;
+    top: -5vh;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 243%;
-    color: white}
+    color: white;
+}
 
 div.banner{
     display: none;
@@ -532,16 +533,6 @@ body .bodygenero{
     width: 4vw;
     height:8vh;
 }
-    
-.frase p{
-    z-index: 2;
-    width: 34vw;
-    height: 4vh;
-    position: relative;
-    top: -12vw;
-    left: 85vw;
-    font-family: 'Cedarville Cursive', cursive;
-}
 
 div.body{
     width: 90%;
@@ -660,17 +651,6 @@ p.dos{
     font-size:140%;
 }
 
-.frase p{
-    z-index: 2;
-    position: relative;
-    top: -29vh;
-    left: 76vw;
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 326%;
-    color: white;
-    width: fit-content;
-}
-
 .datostop p.nombreg{
     padding-top:27px;
 }
@@ -767,6 +747,16 @@ div.banner{
     
     75%{margin-left: -100%;}
     100% {margin-left:-100%;}
+}
+
+p.pp{
+    z-index: 2;
+    position: absolute;
+    top: -11vh;
+    right: 2vw;
+    color: white;
+    font-size: 400%;
+    font-family: 'Cedarville Cursive', cursive;
 }
 
 }
