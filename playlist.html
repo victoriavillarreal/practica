@@ -10,6 +10,11 @@
     <link href='https://fonts.googleapis.com/css?family=Prociono' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
 </head>
 <body>
     
@@ -35,25 +40,54 @@
         </header>
        
         <!-- banner -->
-        <div class="banner">
-            <ul>
-                <li><img src="img/foto1-banner.jpg" class="banner"> </li>
-                <li><img src="img/foto2-banner.jpg" class="banner"> </li>
-                <li><img src="img/foto3-banner.jpg" class="banner"> </li>
-                <li><img src="img/foto4-banner.jpg" class="banner"> </li>
-                <li><img src="img/foto5-banner.jpg" alt="" class="banner"></li>
-                <li><img src="img/foto6-banner.jpg" alt="" class="banner"></li>
-                <li><img src="img/foto7-banner.jpg" alt="" class="banner"></li>
-                <li><img src="img/foto8-banner.jpg" alt="" class="banner"></li>
+        <div class="uk-position-relative uk-visible-toggle uk-light"  tabindex="-1"  uk-slider="autoplay: true" autoplay-interval: 10>
+
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m">
+                <li>
+                    <img src="img/foto1-banner.jpg" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                <li>
+                    <img src="img/foto2-banner.jpg" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                <li>
+                    <img src="img/foto3-banner.jpg" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                <li>
+                    <img src="img/foto5-banner.jpg" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                <li>
+                    <img src="img/foto6-banner.jpg" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                <li>
+                    <img src="img/foto7-banner.jpg" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                <li>
+                    <img src="img/foto8-banner.jpg" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                <li>
+                    <img src="img/foto9-banner.jpg" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
             </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
         </div>
        
         
         <!-- buscador -->
-        <div class="buscador">
-            <img src="img/buscador.png" class="imagen-buscador">
-            <!-- sacar la imagen cuando sepamos programar un buscador -->
-        </div>
+        <form class="uk-search uk-search-default">
+            <span uk-search-icon></span>
+            <input class="uk-search-input" type="search" placeholder="Search...">
+        </form>
 
         
         <!-- body -->
