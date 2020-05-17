@@ -21,120 +21,6 @@ body{
     border-left: rgb(2555,215,0) solid 3px;
 }
 
-.main-header{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%; 
-    height: 112px;
-}
-
-.headerimage{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-}
-
-.imagen-logo{
-    position: absolute;
-    width: 17%;
-    height: 7%;
-    z-index: 3;
-    top: 3px;
-    left: 28px;
-    border-radius: 50%;
-}
-
-.lista-header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: absolute;
-    z-index: 2;
-    right: 8px;
-    top: 76px;
-    justify-content: center;
-    margin: 6px;
-    width: 274px;
-}
-
-ul li{
-    list-style: none;
-}
-
-.lista-header li a{
-    text-transform: uppercase;
-    width: 20%;
-    padding: 9px;
-    text-decoration:none;
-    color: white;
-    font-size: 90%;
-    font-weight: bolder;
-}
-
-.frase p {
-    z-index: 2;
-    position: absolute;
-    right: 3vw;
-    top: -5vh;
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 243%;
-    color: white;
-}
-
-div.banner{
-    display: none;
-}
-
-.buscador{
-    display:flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
-.imagen-buscador{
-    width: 25vh;
-    height: 3vh;
-}
-
-.main-footer{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: grey;
-    margin-top: 9%;
-}
-
-.lista-footer{
-    display: flex;
-    flex-wrap: wrap;
-    width: 37vw;
-    font-size: 10px;
-    position: relative;
-    left: -8vw;
-    font-weight: bold;
-}
-
-.iconofooter{
-    width: 8vw;
-    height: 4vh;
-    position: relative;
-    top: 2vh;
-    margin-right: 2vw;
-    left: -6vw;
-}
-
-.logo-deezer{
-    width: 15vw;
-    height: 6vh;
-    position: relative;
-    right: 0vw;
-    top: 1vh;
-}
-
 .barra-opciones{
     display: flex;
     flex-wrap: wrap;
@@ -492,26 +378,6 @@ body .bodygenero{
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
 
-.imagen-buscador {
-    width: 26%;
-    height: 10%;
-}
-
-.lista-header{
-    position: absolute;
-    top: 77px;
-    font-size: 19px;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
-    right: 31px;
-    width: 44%;
-}
-
-.lista-header li a{
-    padding:0;
-}
-
 .primeracolumn{
     width: 17%;
     justify-content: center;  
@@ -655,41 +521,6 @@ p.dos{
     padding-top:27px;
 }
 
-.lista-footer{
-    font-size: 114%;
-    display: flex;
-    flex-wrap: wrap;
-    width: 17%;
-    left: -2vh;
-    justify-content: center;
-}
-    
-ul li{
-    padding-right: 1vw;
-    font-size:65%;
-}
-    
-.main-footer{
-    height: 11vh;
-    margin-top: 7vh;
-}
-    
-.logo-deezer{
-    width: 6vw;
-    height: 9vh;
-    position: relative;
-    right: -49vw;
-}
-    
-.iconofooter{
-    width: 4vw;
-    height: 5vh;
-    position: relative;
-    top: 3vh;
-    margin-right: 4vw;
-    left: 21vw;
-}
-
 body .bodytrack{
     width:95%;
 }
@@ -705,60 +536,7 @@ ul li a.opcion{
 .losdetalles a p{
     text-align:center;
 }
-
-div.banner{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
     
-.banner{
-    width:90%;
-    margin:auto;
-    overflow:hidden;
-}
-    
-.banner ul{
-    display:flex;
-    padding:0;
-    width:800%;
-    animation: cambio 7s infinite;
-}
-    
-.banner li{
-    width:400%;
-    list-style:none;
-}
-    
-.banner img{
-    width: 113%;
-    height: 12vw;
-}
-    
-@keyframes cambio {
-    0% {margin-left: 0;}
-    20% {margin-left:0;}
-    
-    25% {margin-left: 0%;}
-    45% {margin-left:0%;}
-    
-    50% {margin-left: -100%;}
-    70% {margin-left:-100%;}
-    
-    75%{margin-left: -100%;}
-    100% {margin-left:-100%;}
-}
-
-p.pp{
-    z-index: 2;
-    position: absolute;
-    top: -13vh;
-    right: 2vw;
-    color: white;
-    font-size: 400%;
-    font-family: 'Cedarville Cursive', cursive;
-}
-
 }
 
 
