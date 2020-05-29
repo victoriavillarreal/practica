@@ -18,7 +18,9 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/tracks/t
 
             contenidoTrack += "<div class='caja'>";
             contenidoTrack += "<img src='" + element.artist.picture_big + "' alt='' class='secciones' >";
+            contenidoTrack += "<a href='detail.html#querystring'>";
             contenidoTrack += "<p>" + element.title + "</p>";
+            contenidoTrack += "</a>";
             contenidoTrack += "</div>";
         }
 
@@ -29,6 +31,34 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/tracks/t
         console.log("El error fue" + error);
     })
 
+
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/albums/albums")
+
+    .then (function (respuestaAlbums) {
+        return respuestaAlbums.json();
+    })
+    .then (function (informacionAlbums) {
+        console.log(informacionAlbums);
+
+        var album = document.querySelector(".albums");
+        
+        var contenidoAlbum = "";
+
+        for (let i = 0; i < informacionAlbums.data.length; i++) {
+            var element = informacionAlbums.data[i];
+
+            contenidoAlbum += "<div class='caja'>";
+            contenidoAlbum += "<img src='" + element.artist.picture_big + "' alt='' class='secciones' >";
+            contenidoAlbum += "<a href='detail.html#querystring'>";
+            contenidoAlbum += "<p>" + element.title + "</p>";
+            contenidoAlbum += "</a>";
+            contenidoAlbum += "</div>";
+            
+        }
+
+        album.innerHTML = contenidoAlbum;
+
+    })
 
 
 

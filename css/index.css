@@ -72,14 +72,23 @@ p{
     padding: 0px; 
     text-align: center;
     margin-top: 20%;
+    color:black;
+}
+
+.titulogrande p{
+    color:white;
 }
 
 .caja{
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:25%;
-    margin-right:8%;
+    padding: 18px;
+    margin-right: 3%;
+    margin-top: 3%;
+    border-radius: 5%;
+    background-color: grey;
 }
 
 div.fotos{
