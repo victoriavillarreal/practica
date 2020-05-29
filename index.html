@@ -86,16 +86,26 @@
         
 
         <!-- buscador -->
-        <form class="uk-search uk-search-default">
+        <!-- <form class="uk-search uk-search-default">
             <span uk-search-icon></span>
             <input class="uk-search-input" type="search" placeholder="Search...">
+        </form> -->
+        <form action="results.html" method="get">
+            <input type="text" name="buscador" placeholder="Buscá canciones, artistas, albums..">
+            <button type="submit">SEARCH</button>
         </form>
 
+        
+        <!-- body -->
         <div class="titulogrande">
             <p>Home</p>
         </div>
 
-        <!-- body -->
+        <div class="search-results">
+
+        </div>
+
+
         <div class="todoslosbody">
             <div class="body primerbody">
                 <div class="titulos">
@@ -182,6 +192,7 @@
                 </div>
             </div>
         </div>
+
         <!-- footer -->
         <footer class="main-footer">
             <ul class="lista-footer">
