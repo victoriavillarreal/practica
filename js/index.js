@@ -16,12 +16,18 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/tracks/t
         for (let i = 0; i < informacionTracks.data.length; i++) {
             var element = informacionTracks.data[i];
 
-            contenidoTrack += "<div class='caja'>";
+            contenidoTrack += "<div class='caja uk-text-center'>";
+            contenidoTrack += '<div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">';
             contenidoTrack += "<img src='" + element.artist.picture_big + "' alt='' class='secciones' >";
-            contenidoTrack += "<a href='detail.html#querystring'>";
-            contenidoTrack += "<p>" + element.title + "</p>";
+            contenidoTrack += '<div class="uk-position-center">';
+            contenidoTrack += '<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>';
+            contenidoTrack += '</div>'
+            contenidoTrack += '</div>'
+            contenidoTrack += "<a href='detail.html?cancionId=" + element.id +"'>";
+            contenidoTrack += "<p class='uk-margin-small-top'>" + element.title + "</p>";
             contenidoTrack += "</a>";
             contenidoTrack += "</div>";
+
         }
 
         track.innerHTML = contenidoTrack;
@@ -49,7 +55,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/albums/a
 
             contenidoAlbum += "<div class='caja'>";
             contenidoAlbum += "<img src='" + element.artist.picture_big + "' alt='' class='secciones' >";
-            contenidoAlbum += "<a href='detail.html#querystring'>";
+            contenidoAlbum += "<a href='detail.html?albumId=" + element.id +"'>";
             contenidoAlbum += "<p>" + element.title + "</p>";
             contenidoAlbum += "</a>";
             contenidoAlbum += "</div>";
@@ -57,6 +63,34 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/albums/a
         }
 
         album.innerHTML = contenidoAlbum;
+
+    })
+
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/artists/artists")
+
+    .then (function (respuestaArtists) {
+        return respuestaArtists.json();
+    })
+    .then (function (informacionArtists) {
+        console.log(informacionArtists);
+
+        var artists = document.querySelector(".artists");
+        
+        var contenidoArtists = "";
+
+        for (let i = 0; i < informacionArtists.data.length; i++) {
+            var element = informacionArtists.data[i];
+
+            contenidoArtists += "<div class='caja'>";
+            contenidoArtists += "<img src='" + element.picture_big + "' alt='' class='secciones' >";
+            contenidoArtists += "<a href='detail.html?albumId=" + element.id +"'>";
+            contenidoArtists += "<p>" + element.name + "</p>";
+            contenidoArtists += "</a>";
+            contenidoArtists += "</div>";
+            
+        }
+
+        artists.innerHTML = contenidoArtists;
 
     })
 
