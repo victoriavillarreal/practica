@@ -1,0 +1,22 @@
+/* MOBILE FIRST */
+*{box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Julius Sans One';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin:0;
+    background-image: url(../img/fondo.jpg);
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-right: rgb(2555,215,0) solid 3px;
+    border-left: rgb(2555,215,0) solid 3px;
+}

@@ -21,6 +21,10 @@ body{
     border-left: rgb(2555,215,0) solid 3px;
 }
 
+.titulogrande p{
+    color:white;
+}
+
 p{
     font-family: 'Raleway', sans-serif;
 }
@@ -28,7 +32,6 @@ p{
 a{
     text-decoration: none;
     color: black;
-    font-size: 13px;
 }
 
 .titulos{
@@ -39,8 +42,7 @@ h1{
     text-orientation: sideways;
     transform: rotate(-180deg);
     margin-left: 0;
-    font-family: 'Julius Sans One';
-    margin-right: 12px;
+    font-family: 'Julius Sans One'
 }
 
 
@@ -82,7 +84,7 @@ p{
 }
 
 .caja{
-    width: 30%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,7 +156,6 @@ h1{
     background-color: rgb(220, 187, 12);
     padding: 10px;
     border-radius: 10px;
-    margin-right: 0;
 }
 
 div.fotos{
@@ -181,7 +182,6 @@ p{
     align-items: center;
     padding:18px;
     margin-right:3%;
-    height: 16vw;
 }
 
 p{
