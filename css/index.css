@@ -65,8 +65,8 @@ div.body{
 img.secciones{
     border-radius: 50%;
     border: 1px solid black;
-    width: 123%;
-    height:10vh;
+    width: 123% !important;
+    height:6vh;
 }
 
 p{
@@ -86,11 +86,12 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 18px;
+    padding: 14px;
     margin-right: 3%;
     margin-top: 3%;
     border-radius: 5%;
     background-color: grey;
+    height: 40vw;
 }
 
 div.fotos{
