@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Géneros</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Prociono' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-
+    
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css" />
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
-
-    <script src="js/results.js"></script>
-    <script src="js/index.js"></script>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/general.css">
     
+    <script src="js/results.js"></script>
+    <script src="js/generos.js"></script>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/generos.css">
+
 </head>
 <body>
-
+    
     <div class="container">
 
         <!-- header -->
         <header class="main-header">
-            
-            
+                    
+            <img src="img/header-img.jpg" class="headerimage"> 
             
             <img src="img/logo.png" class="imagen-logo"> <!-- insertar imagen del logo -->
 
             <ul class="lista-header">
                 <li><a href="index.html" class="link-index">home</a></li>  
-				<li><a href="generos.html" class="link-generos">géneros</a></li>
+                <li><a href="generos.html" class="link-generos">géneros</a></li>
                 <li><a href="playlist.html" class="link-playlist">playlist</a></li>
             </ul>
 
@@ -87,111 +87,55 @@
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
         
         </div>
-        
 
-        <!-- buscador -->
-        <!-- <form class="uk-search uk-search-default">
-            <span uk-search-icon></span>
-            <input class="uk-search-input" type="search" placeholder="Search...">
-        </form> -->
-        <form action="results.html" method="get">
-            <input type="text" name="buscador" placeholder="Buscá canciones, artistas, albums..">
-            <button type="submit">SEARCH</button>
-        </form>
-
-        
         <!-- body -->
+
         <div class="titulogrande">
-            <p>Home</p>
+            <p>Géneros</p>
         </div>
 
         <div class="search-results">
 
         </div>
 
-
         <div class="todoslosbody">
-            <div class="body primerbody">
+            <div class="body">
                 <div class="titulos">
-                    <a href="detail.html#opcion2"><h1>TRACKS</h1></a>
+                    <a href="detail.html"><!-- nombre genero --></a>
                 </div>
                 <div class="informacion">
-                    <div class="fotos tracks">
-                        <!--div class="caja">
-                            <img src="imagenquevienedealsdkasdmsa""  class="secciones ">
-                            <a href="detail.html#querystringquecorpasdsanjkfsajknsad"> <p class="uno titulo">nombredelacaocisandjksanfjksabnfsak </p> </a>
-                        </div>
-                        <div class="caja">
-                            <img src="img/playlist.track4.png"  class="secciones foto-track">
-                            <a href="detail.html#unpocomas"> <p class="dos titulo">Un poco más de frío </p></a>
-                        </div>
-                        <div class="caja">
-                            <img src="img/playlist.track7.jpg"  class="secciones foto-track">   
-                            <a href="detail.html#laultima"> <p class="tres titulo">La última vez</p> </a>
-                        </div> -->
+                    <div class="fotos">
+
                     </div>
                 </div>
             </div>
             <div class="body">
                 <div class="titulos">
-                    <a href="detail.html#opcion3"><h1>ALBUMS</h1></a>
-                </div>
-                <div class="informacion">
-                    <div class="fotos albums">
-                        <!--div class="caja">
-                            <img src="img/album-1.jpg"  class="secciones">
-                            <a href="detail.html#reputation"> <p class="cuatro">Reputation</p></a>
-                        </div>
-                        <div class="caja">
-                            <img src="img/album-2.png"  class="secciones">
-                            <a href="detail.html#rosa"><p class="cinco">Rosa</p></a>
-                        </div>
-                        <div class="caja">
-                            <img src="img/album-3.jpg"  class="secciones">
-                            <a href="detail.html#sobreelamor"><p class="seis">Sobre El Amor Y Sus Efectos</p></a>
-                        </div>-->
-                    </div>
-                </div>
-            </div>
-            <div class="body tercerbody">
-                <div class="titulos">
-                    <a href="detail.html#opcion1"><h1>ARTISTAS</h1></a>
-                </div>
-                <div class="informacion">
-                    <div class="fotos artists">
-                        <!--div class="caja">
-                            <img src="img/artista-1.jpg"  class="secciones">
-                            <a href="detail.html#taylor"><p class="siete">Taylor Swift</p> </a>
-                        </div>
-                        <div class="caja">
-                            <img src="img/artista-2.jpg"  class="secciones">
-                            <a href="detail.html#cami"><p class="ocho">Cami</p> </a>
-                        </div>
-                        <div class="caja">
-                            <img src="img/artista-3.jpg"  class="secciones">  
-                            <a href="detail.html#morat"><p class="nueve">Morat</p> </a>
-                        </div>-->
-                    </div>
-                </div>
-            </div>
-            <div class="body cuartobody">
-                <div class="titulos">
-                    <h1>PLAYLISTS</h1>
+                    <a href="detail.html"><!-- nombre genero --></a>
                 </div>
                 <div class="informacion">
                     <div class="fotos">
-                        <div class="caja">
-                            <img src="img/playlist-1.jpg"  class="secciones">
-                            <a href=""><p class="diez">Chill</p> </a> <!-- link vacío porque no existe esta playlist todavía (entonces no está en la página de detalle) -->
-                        </div>
-                        <div class="caja">
-                            <img src="img/playlist-2.jpg"  class="secciones">
-                            <a href=""><p class="once">Lo mejor de marzo</p> </a> <!-- link vacío porque no existe esta playlist todavía (entonces no está en la página de detalle) -->
-                        </div>
-                        <div class="caja">
-                            <img src="img/playlist-3.jpg"  class="secciones"> 
-                            <a href=""><p class="doce">En ingles</p> </a> <!-- link vacío porque no existe esta playlist todavía (entonces no está en la página de detalle) -->
-                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="titulos">
+                    <a href="detail.html"><!-- nombre genero --></a>
+                </div>
+                <div class="informacion">
+                    <div class="fotos">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="titulos">
+                    <a href="detail.html"><!-- nombre genero --></a>
+                </div>
+                <div class="informacion">
+                    <div class="fotos">
+                        
                     </div>
                 </div>
             </div>
@@ -214,9 +158,8 @@
             <img src="img/logo-deezer.png"  class="logo-deezer">  
         
         </footer>
+
     </div>
 
 </body>
 </html>
-
-
