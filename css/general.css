@@ -15,12 +15,8 @@
 }
 
 .imagen-logo{
-    position: absolute;
-    width: 6%;
-    height: 9%;
-    z-index: 3;
-    top: 21px;
-    left: 52px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -28,10 +24,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: absolute;
-    z-index: 2;
-    right: 8px;
-    top: 76px;
     justify-content: center;
     margin: 6px;
     width: 274px;
@@ -49,21 +41,19 @@ ul li{
     color: white;
     font-size: 73%;
     font-weight: bolder;
+    font-family: 'Julius Sans One';
 }
 
-.frase img{ 
+/* .frase img{ 
     z-index: 2;
     width: 74vw;
     height: 4vh;
     position: relative;
     top: -33px;
     left: 71px;
-} 
+}  */
 
 .frase p {
-    z-index: 2;
-    position: absolute;
-    right: 3vw;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 243%;
     color: white;
@@ -75,19 +65,19 @@ div.banner{
     display: none;
 }
 
-.buscador{
+/* .buscador{
     display:flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     margin-top: 2%;
     margin-bottom: 2%;
-}
+} */
 
-.imagen-buscador{
+/* .imagen-buscador{
     width: 48%;
     height: 8%;
-}
+} */
 
 .main-footer{
     display: flex;
@@ -128,41 +118,64 @@ div.banner{
 /* DESKTOP */
 @media only screen and (min-device-width: 1200px) {
 
-.frase img{
+.main-header{
+    height: 110px;
+}
+
+div.logo{
+    width: 6%;
+    margin-right: 2vw;
+    margin-top: 0.5vw;
+}
+
+.frase{
+    margin-top: 1.5vw;
+    margin-right: 25vw;
+}
+
+div.buscador{
+    margin-top: 3vw;
+    margin-left: 23vw;
+    width: 4vw;
+}
+
+/* .frase img{
     z-index: 2;
     width: 71%;
     position: relative;
     left: 50%;
-}
+} */
 
-.imagen-buscador {
+/* .imagen-buscador {
     width: 26%;
     height: 10%;
-}
+} */
 
 .lista-header{
-    position: absolute;
-    top: 53px;
     font-size: 19px;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
-    right: 31px;
-    width: 36%;
+    width: 118%;
+}
+
+.lista-header li a{
+    font-size: 90%;
+}
+
+div.links{
+    margin-top: 3vw;
+    width: 21vw;
 }
 
 p.pp{
-    z-index: 2;
-    position: absolute;
     padding-top: 0;
-    top: -2vh;
-    right: 8px;
     color: white;
     font-size: 312%;
     font-family: 'Cedarville Cursive', cursive;
     width: 75%;
     height: 67px;
-    border-bottom: 2px rgb(220, 187, 12) solid;
+    /* border-bottom: 2px rgb(220, 187, 12) solid; */
 }
 
 

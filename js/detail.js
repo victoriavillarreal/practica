@@ -37,8 +37,8 @@ function traemeCancion(detailCancionId){
         
         var contenidoTracks = "";
 
-        for (let i = 0; i < informacionDetailCancion.length ; i++) {
-            var element = informacionDetailCancion[i];
+        //for (let i = 0; i < informacionDetailCancion.length ; i++) {
+            var element = informacionDetailCancion;
             
 
             contenidoTracks += "<div class='body bodytrack'>";
@@ -65,7 +65,7 @@ function traemeCancion(detailCancionId){
             contenidoTracks += "<a href='playlist.html'><p>Add to playlist</p></a> ";
             contenidoTracks += "</div>";
             contenidoTracks += "</div>";
-        }
+        //}
 
         contenedorTracks.innerHTML = contenidoTracks;
 

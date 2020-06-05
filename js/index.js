@@ -98,7 +98,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/albums/a
 
     })
 
-
+    document.addEventListener("touchstart", function(){}, true);
 
 
 
