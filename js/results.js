@@ -1,6 +1,11 @@
 window.onload = function() {
 
-var queryString = location.search;
+    
+    
+
+
+
+    var queryString = location.search;
 var queryStringObj = new URLSearchParams(queryString);
 
 var resultadosBuscador = queryStringObj.get("q");

@@ -17,8 +17,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre")
 
             contenidoGenero += "<div>";
             contenidoGenero += "<img src='" + element.picture_big + "' class='secciones' >";
-            contenidoGenero += "</div>";
-            contenidoGenero += "<div>";
             contenidoGenero += "<a href='detail.html?cancionId=" + element.id + "'>";
             contenidoGenero += "<p>" + element.name + "</p>";
             contenidoGenero += "</a>";
