@@ -156,15 +156,16 @@ p.pp{
     position: absolute;
     padding-top: 0;
     top: -2vh;
-    right: -51vw;
+    right: 8px;
     color: white;
     font-size: 312%;
     font-family: 'Cedarville Cursive', cursive;
-    width: 129%;
+    width: 75%;
     height: 67px;
     border-bottom: 2px rgb(220, 187, 12) solid;
-
 }
+
+
 
 div.banner{
     display: flex;

@@ -16,7 +16,6 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
     
     <script src="js/detail.js"></script>
-    <script src="js/results.js"></script>
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/general.css">
 </head>
@@ -89,9 +88,10 @@
         
 
         <!-- buscador -->
-        <form class="uk-search uk-search-default">
-            <span uk-search-icon></span>
-            <input class="uk-search-input" type="search" placeholder="Search...">
+
+        <form action="results.html" method="get">
+            <input type="text" name="q" placeholder="Buscá canciones, artistas, albums..">
+            <button type="submit">SEARCH</button>
         </form>
 
         <!-- la barra con las cuatro opciones -->
@@ -399,7 +399,7 @@
 
         <!-- datos primertrack -->
         <div class="containertracks">
-        <div class="body bodytrack"> <a name="endgame"></a>
+        <!--div class="body bodytrack"> <a name="endgame"></a>
             <div class="lasfotos"> 
                 <div class="cancion">
                     <h2>End game</h2>
@@ -417,9 +417,9 @@
             </div>
             <div class="losdetalles">
                 <div class="fecha"><p>RELEASE DATE: 02/12/2017</p></div>
-                <a href="playlist.html"><p>Add to playlist</p></a> <!-- Cuando sepamos como hacerlo completar bien el href -->
-            </div>
-        </div>
+                <a href="playlist.html"><p>Add to playlist</p></a> 
+            </div>-->
+        </div> 
 
         <!-- datos segundotrack -->
         <div class="body bodytrack"> <a name="blancksp"></a>

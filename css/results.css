@@ -1,4 +1,4 @@
-/* MOBILE FIRST */
+=/* MOBILE FIRST */
 *{box-sizing: border-box;
     width: fit-content;
     height: fit-content;
@@ -19,4 +19,190 @@ body{
     flex-wrap: wrap;
     border-right: rgb(2555,215,0) solid 3px;
     border-left: rgb(2555,215,0) solid 3px;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.titulos{
+    display:flex;}
+
+h1{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(-180deg);
+    margin-left: 0;
+    font-family: 'Julius Sans One';
+    margin-right: 12px;
+}
+
+
+div.body{
+    display: flex;
+    align-items: center;
+    border-bottom: black 2px solid;
+    padding-block-start: 26px;
+    width:90%;
+    padding-block-end: 26px;
+    background-color: #9e9c9cf2;
+}
+
+.primerbody{
+    border-top: black solid 2px;
+}
+
+.cuartobody{
+    border-bottom: 0px;
+}
+
+img.secciones{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 123% !important;
+    height:6vh;
+}
+
+p{
+    margin: 0px; 
+    padding: 0px; 
+    text-align: center;
+    margin-top: 20%;
+    color:black;
+}
+
+.titulogrande p{
+    color:white;
+}
+
+.caja{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+    margin-right: 3%;
+    margin-top: 3%;
+    border-radius: 5%;
+    background-color: grey;
+    height: 40vw;
+}
+
+div.fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todoslosbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulogrande{
+    margin-bottom: 7%;
+    color: white;
+}
+
+.titulogrande p{
+    font-size: 145%;
+    font-family: 'Julius Sans One';
+}
+
+
+
+/* DESKTOP */
+@media only screen and (min-device-width: 1200px){
+
+div.body{
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width:48%;
+    border: 0px;
+    background-color: #9e9c9cf2;
+    margin: 9px;
+    border-radius:2%;
+}
+
+.container{
+    border-right: solid 8px  rgb(220, 187, 12);
+    border-left: solid 8px  rgb(220, 187, 12);
+}
+
+div.todoslosbody{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 3%;
+    flex-direction:row;
+}
+
+.primerbody{
+    border: 0px;
+}
+
+h1{
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    margin-top: 0;
+    background-color: rgb(220, 187, 12);
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 0;
+}
+
+div.fotos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+img.secciones{
+    height: 8vw;
+    width: 113%;
+}
+
+p{
+    font-size: 20px;
+}
+
+.caja{
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:18px;
+    margin-right:3%;
+    height: 16vw;
+}
+
+p{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 18px;
+    margin: 0;
+}
+
+.titulogrande p{
+    background-color: none;
+    font-family: 'Julius Sans One';
+    font-size:400%;
+}
+
+.titulogrande{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom:0;
+}
+
 }
