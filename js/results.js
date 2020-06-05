@@ -34,6 +34,8 @@ function traemeResultados (event){
             contenidoResultado += "<p>" + element.title + "</p>";
             contenidoResultado += "</a>"
             contenidoResultado += "</div>";
+
+            console.log(element.type);
             
         }
 
