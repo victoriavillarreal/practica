@@ -15,7 +15,25 @@ function traemeResultados (event){
     .then(function(informacionBuscador){
         console.log(informacionBuscador);
 
+        var resultado = document.querySelector(".search-results");
         
+        var contenidoResultado = "";
+
+        for (let i = 0; i < informacionBuscador.data.length; i++) {
+            var element = informacionBuscador.data[i];
+            var cancionId = element.id;
+
+            contenidoResultado += "<div class='caja'>";
+            contenidoResultado += "<img src='" + element.artist.picture_big + "' alt='' class='secciones' >";
+            contenidoResultado += "<a href='detail.html?cancionId=" + cancionId +"'>";
+            contenidoResultado += "<p>" + element.title + "</p>";
+            contenidoResultado += "</a>"
+            contenidoResultado += "</div>";
+            
+        }
+
+        resultado.innerHTML = contenidoResultado;
+
 
     })
 
