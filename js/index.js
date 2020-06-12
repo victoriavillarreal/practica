@@ -19,7 +19,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/tracks/t
             var element = informacionTracks.data[i];
             var cancionId = element.id;
 
-            contenidoTrack += "<div>";
+            contenidoTrack += "<div class='caja'>";
             contenidoTrack += '<div>';
             contenidoTrack += "<img src='" + element.artist.picture_big + "' alt='' class='secciones' >";
             contenidoTrack += '</div>'

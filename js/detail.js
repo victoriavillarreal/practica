@@ -33,7 +33,6 @@ else{
 
 
 
-
 function traemeCancion(detailCancionId){
 
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + detailCancionId)
@@ -73,7 +72,7 @@ function traemeCancion(detailCancionId){
            contenidoTracks += "</div>";
            contenidoTracks += "<div class='dato'>";
            contenidoTracks += "<img src='" + element.artist.picture_big + "' alt='' class='secciones margin ftrack' >";
-           contenidoTracks += "<a href='detail.html?albumId=" + artistId +"'> Artist:" + element.artist.name + "</a>";
+           contenidoTracks += "<a href='detail.html?artistId=" + artistId +"'> Artist:" + element.artist.name + "</a>";
            contenidoTracks += "</div>";
            contenidoTracks += "</div>";
            contenidoTracks += "</div>";
@@ -129,6 +128,63 @@ function traemeCancion(detailCancionId){
 
 
    })
+function traemeAlbum(detailAlbumId){
+
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + detailAlbumId)
+
+   .then (function (respuesta) {
+       return respuesta.json();
+   })
+   .then (function (informacionDetailAlbum) {
+       console.log(informacionDetailAlbum);
+
+       var contenedorAlbum = document.querySelector(".contenedor-todo");
+       
+       var contenidoAlbum = "";
+
+
+           var element = informacionDetailAlbum;
+           var artistId = element.artist.id;
+           
+            contenidoAlbum += '<div class = "titulos">'
+            contenidoAlbum  += '<h2> ALBUM </h2>'
+            contenidoAlbum  += '</div>'
+            contenidoAlbum  += "<div class='body bodytrack'>";
+            contenidoAlbum  += "<div class='lasfotos'>";
+            contenidoAlbum  += "<div class='cancion'>";
+            contenidoAlbum  += "<h2>" + element.title + "</h2>";
+            contenidoAlbum  += "</div>";
+            contenidoAlbum  += "<div class='fotos'>";
+            contenidoAlbum  += "<div class='dato'>";
+            contenidoAlbum  += "<img src='" + element.cover_big + "' alt='' class='secciones margin ftrack' >";
+            contenidoAlbum  += "<p class='track'> Portada </p>";
+            contenidoAlbum  += "</div>";
+            contenidoAlbum  += "<div class='dato'>";
+            contenidoAlbum  += "<img src='" + element.cover + "' alt='' class='secciones margin ftrack' >";
+            contenidoAlbum  += "<a href='detail.html?artistId=" + artistId +"'> Artista:" + element.artist.name + "</a>";
+            contenidoAlbum  += "</div>";
+            contenidoAlbum  += "</div>";
+            contenidoAlbum  += "</div>";
+            contenidoAlbum  += "<div class='losdetalles'>";
+            contenidoAlbum  += "<div class='fecha'>";
+            contenidoAlbum  += "<p> Release date:" + element.release_date +  "</p>";
+            contenidoAlbum  += "</div>";
+            contenidoAlbum  += "</div>";
+            contenidoAlbum  += "</div>";
+
+
+       contenedorAlbum.innerHTML = contenidoAlbum;
+
+   })
+}
+
+
+
+if (cancionPlaylist == null) {
+    playlist = [];
+} else {
+    playlist = JSON.parse(cancionPlaylist);
+}
 
 }
 
