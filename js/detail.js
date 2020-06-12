@@ -47,12 +47,12 @@ function traemeCancion(detailCancionId){
        var contenedorTracks = document.querySelector(".contenedor-todo");
        
        var contenidoTracks = "";
-
+       var playlistCancionId;
 
         var element = informacionDetailCancion;
            var albumId = element.album.id;
            var artistId = element.artist.id;
-           var playlistCancionId = element.id;
+           playlistCancionId = element.id;
            
             contenidoTracks += '<div class = "titulos">'
             contenidoTracks += '<h2> TRACK </h2>'
@@ -87,25 +87,49 @@ function traemeCancion(detailCancionId){
            contenidoTracks += "</div>";
 
 
-       contenedorTracks.innerHTML = contenidoTracks;
+           contenedorTracks.innerHTML = contenidoTracks;
+
+        var playlist = [];
+        var agregar = document.querySelector('.agregar');
+
+        var cancionPlaylist = window.localStorage.getItem("playlist");
+        // window.localStorage.setItem('playlistCancionId', cancionPlaylist);
+
+
+
+        if (cancionPlaylist == null) {
+            playlist = [];
+        } else {
+            playlist = JSON.parse(cancionPlaylist);
+        }
+        
+        if (playlist.includes(playlistCancionId)) {
+            document.querySelector('.agregar').innerHTML = "Remove from playlist";
+        }
+
+        agregar.addEventListener('click', function(agregarTrack){
+            agregarTrack.preventDefault();
+    
+        if (playlist.includes(playlistCancionId)) {
+            var array = playlist.indexOf(playlistCancionId);
+            playlist.splice(array,1);
+        } else{
+            playlist.push(playlistCancionId);
+        }
+
+        
+
+        console.log(playlist);
+
+        window.localStorage.setItem('playlist', JSON.stringify(playlist));
+
+        console.log(playlist);
+
+})
+
 
    })
-}
 
-var cancionPlaylist = window.localStorage.getItem("playlistCancionId");
-
-window.localStorage.setItem('playlistCancionId', cancionPlaylist);
-
-console.log('cancionPlaylist');
-
-if (cancionPlaylist == null) {
-    playlist = [];
-} else {
-    playlist = JSON.parse(cancionPlaylist);
-}
-
-if (playlist.includes(cancionPlaylist)) {
-    document.querySelector('.agregar').innerHTML = "Remove from playlist";
 }
 
 
@@ -113,6 +137,17 @@ if (playlist.includes(cancionPlaylist)) {
 
 
 
-//noborrar
+
+//array de ids canciones en stoarge session 
+//AGREGAR O ELEMINIAR UNA CANCION
+//GET ITEM 
+//PARSE
+//VERIFICAR SI EL ELEMENTO YA ESTA
+//ELIMINAR O AGREGAR
+//ARRARY PUSH
+//VOLVES A GUARDAR EL ARRAY CON SETIME
+
+
+// no borrar
 }
-//noborrar
+// no borrar
