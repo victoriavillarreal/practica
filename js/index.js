@@ -19,12 +19,9 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/tracks/t
             var element = informacionTracks.data[i];
             var cancionId = element.id;
 
-            contenidoTrack += "<div class='caja uk-text-center'>";
-            contenidoTrack += '<div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">';
+            contenidoTrack += "<div class='caja'>";
+            contenidoTrack += '<div>';
             contenidoTrack += "<img src='" + element.artist.picture_big + "' alt='' class='secciones' >";
-            contenidoTrack += '<div class="uk-position-center">';
-            contenidoTrack += '<span class="uk-transition-fade" uk-icon="icon: plus; ratio: 2"></span>';
-            contenidoTrack += '</div>'
             contenidoTrack += '</div>'
             contenidoTrack += "<a href='detail.html?cancionId=" + cancionId +"'>";
             contenidoTrack += "<p class='uk-margin-small-top'>" + element.title + "</p>";

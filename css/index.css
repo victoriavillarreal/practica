@@ -153,6 +153,7 @@ div.todoslosbody{
     margin-top: 3%;
     flex-direction:row;
     justify-content: center;
+    margin-left: 2%;
 }
 
 .primerbody{
@@ -326,4 +327,8 @@ p{
 }
 
 
+
 }
+
+
+
