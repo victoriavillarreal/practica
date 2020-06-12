@@ -24,7 +24,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/tracks/t
             contenidoTrack += "<img src='" + element.artist.picture_big + "' alt='' class='secciones' >";
             contenidoTrack += '</div>'
             contenidoTrack += "<a href='detail.html?cancionId=" + cancionId +"'>";
-            contenidoTrack += "<p class='uk-margin-small-top'>" + element.title + "</p>";
+            contenidoTrack += "<p>" + element.title + "</p>";
             contenidoTrack += "</a>";
             contenidoTrack += "</div>";
 
@@ -148,6 +148,13 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/albums/a
       document.body.style.backgroundSize = "initial";
 
    };
+
+
+   
+   
+
+
+
 
 
 

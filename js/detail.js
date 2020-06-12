@@ -43,14 +43,15 @@ function traemeCancion(detailCancionId){
    .then (function (informacionDetailCancion) {
        console.log(informacionDetailCancion);
 
-       var contenedorTracks = document.querySelector(".contenedor-todo");
+       var contenedorTracks = document.querySelector("..contenedor-todo");
        
        var contenidoTracks = "";
 
 
-           var element = informacionDetailCancion;
+        var element = informacionDetailCancion;
            var albumId = element.album.id;
            var artistId = element.artist.id;
+           var playlistCancionId = element.id;
            
             contenidoTracks += '<div class = "titulos">'
             contenidoTracks += '<h2> TRACK </h2>'
@@ -80,7 +81,7 @@ function traemeCancion(detailCancionId){
            contenidoTracks += "<p> Release date:" + element.release_date +  "</p>";
            contenidoTracks += "<p> Duration: " + element.duration +  " seconds</p>";
            contenidoTracks += "</div>";
-           contenidoTracks += "<a href='playlist.html'><p>Add to playlist</p></a> ";
+           contenidoTracks += "<a href='playlist.html?playlistCancionId=" + playlistCancionId + "' class='agregar'><p>Add to playlist</p></a> ";
            contenidoTracks += "</div>";
            contenidoTracks += "</div>";
 
@@ -90,7 +91,11 @@ function traemeCancion(detailCancionId){
    })
 }
 
+var cancionPlaylist = window.localStorage.getItem("playlistCancionId");
 
+window.localStorage.setItem('playlistCancionId', cancionPlaylist);
+
+console.log('cancionPlaylist');
 
 function traemeAlbum(detailAlbumId){
 
@@ -144,6 +149,15 @@ function traemeAlbum(detailAlbumId){
 
 
 
+if (cancionPlaylist == null) {
+    playlist = [];
+} else {
+    playlist = JSON.parse(cancionPlaylist);
+}
+
+if (playlist.includes(cancionPlaylist)) {
+    document.querySelector('.agregar').innerHTML = "Remove from playlist";
+}
 
 
 

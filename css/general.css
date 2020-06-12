@@ -120,6 +120,13 @@ div.banner{
 
 .main-header{
     height: 110px;
+    background-color: black;
+    position: fixed;
+    z-index: 3;
+}
+
+.banner-fotos{
+    margin-top: 8vw;
 }
 
 div.logo{
@@ -177,8 +184,6 @@ p.pp{
     height: 67px;
     /* border-bottom: 2px rgb(220, 187, 12) solid; */
 }
-
-
 
 div.banner{
     display: flex;

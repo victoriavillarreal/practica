@@ -24,6 +24,10 @@ body{
     width: 100%;
 }
 
+p{
+    font-family: 'Julius Sans One';
+}
+
 div.tuplaylist{
     display: flex;
     flex-wrap: wrap;
