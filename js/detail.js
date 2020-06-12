@@ -43,7 +43,7 @@ function traemeCancion(detailCancionId){
    .then (function (informacionDetailCancion) {
        console.log(informacionDetailCancion);
 
-       var contenedorTracks = document.querySelector("..contenedor-todo");
+       var contenedorTracks = document.querySelector(".contenedor-todo");
        
        var contenidoTracks = "";
 
