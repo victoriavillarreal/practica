@@ -262,7 +262,6 @@ else{
 console.log(detailCancionId);
 
 
-<<<<<<< HEAD
      fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + detailCancionId)
 
     .then (function (respuesta) {
@@ -309,8 +308,6 @@ console.log(detailCancionId);
 
     })
 }
-=======
->>>>>>> 12aa55bec8d82bf4ae21da384611cf9ac1c8ee18
 
 function traemeAlbum(detailAlbumId){
     fetch("jdinwifnffeie/www.laapidedeezer.com/elmetodoqueelegi" + detailAlbumId);

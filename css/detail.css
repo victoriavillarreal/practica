@@ -2,7 +2,7 @@
 *{box-sizing: border-box;
     width: fit-content; 
     height: fit-content;
-    font-family: 'Julius Sans One';
+    /* font-family: 'Julius Sans One'; */
 }
 
 body{
@@ -11,6 +11,7 @@ body{
     justify-content: center;
     margin:0;
     background-image: url(../img/fondo.jpg);
+    width: 100%;
 }
 
 .container{
@@ -19,6 +20,11 @@ body{
     flex-wrap: wrap;
     border-right: rgb(2555,215,0) solid 3px;
     border-left: rgb(2555,215,0) solid 3px;
+    width: 100%;
+}
+
+p{
+    font-family: 'Julius Sans One';
 }
 
 .barra-opciones{
@@ -58,12 +64,14 @@ ul li a.opcion {
     margin: 0 12px;
     justify-content: center;
     color: white;
+    font-family: 'Julius Sans One';
 }
 
 .titulos h2{
     margin-bottom: 4vh;
     text-transform: uppercase;
     font-size: 36px; 
+    font-family: 'Julius Sans One';
 }
 
 .body{
@@ -90,14 +98,13 @@ ul li a.opcion {
 .artista h2{
     font-size: 30px;
     text-align: center;
+    font-family: 'Julius Sans One';
 }
     
-
 .fotos .secciones{
     border-radius: 50%;
     height: 9vh;
     width: 23vw;
-    border: 1px solid black;
 }
 
 p.dos{
@@ -112,6 +119,7 @@ p.dos{
     font-size: 78%;
     margin-left: 9px;
     font-weight: bold;
+    font-family: 'Julius Sans One';
 }
 
 .segundacolumn{
@@ -148,7 +156,6 @@ p.dos{
     border-radius: 50%;
     height: 5vh;
     width: 13vw;
-    border: 1px solid black;
 }
 
 .top{
@@ -181,14 +188,12 @@ p.dos{
     border-radius: 50%;
     height: 9vh;
     width: 23vw;
-    border: 1px solid black;
 }
 
 .imagen-artistag img{
     border-radius: 50%;
     height: 5vh;
     width: 13vw;
-    border: 1px solid black;
 }
 
 .datostop audio{
@@ -203,6 +208,7 @@ p.dos{
     color:black;
     font-weight: bold;
     padding-left: 5px;
+    font-family: 'Julius Sans One';
 }
 
 .datostop{
@@ -310,6 +316,7 @@ p.dos{
     color:black;
     text-align: center;
     padding-top: 15px;
+    font-family: 'Julius Sans One';
 }
 
 div.dato{
@@ -536,6 +543,59 @@ ul li a.opcion{
 .losdetalles a p{
     text-align:center;
 }
+
+.search-box {
+    -webkit-transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
+    transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: #ebebeb;
+  }
+  .search-box + label .search-icon {
+    color: black;
+  }
+  .search-box:hover {
+    color: white;
+    background: #c8c8c8;
+    box-shadow: 0 0 0 5px #3d4752;
+  }
+  .search-box:hover + label .search-icon {
+    color: white;
+  }
+  .search-box:focus {
+    -webkit-transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
+    transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding-left: 15px;
+    cursor: text;
+    width: 300px;
+    border-radius: auto;
+    background: #ebebeb;
+    color: black;
+  }
+  .search-box:focus + label .search-icon {
+    color: black;
+  }
+  .search-box:not(:focus) {
+    text-indent: -5000px;
+  }
+  
+  #search-submit {
+    position: relative;
+    left: -5000px;
+  }
+  
+  .search-icon {
+    position: relative;
+    left: -30px;
+    color: white;
+    cursor: pointer;
+  }
     
 }
 

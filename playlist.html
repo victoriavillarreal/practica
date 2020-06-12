@@ -14,7 +14,10 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
-    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/yeti/bootstrap.min.css">
+
     <script src="js/playlist.js"></script>
     <link rel="stylesheet" href="css/playlist.css">
     <link rel="stylesheet" href="css/general.css">
@@ -26,20 +29,31 @@
         <!-- header -->
         <header class="main-header">
             
-            
-            
-            <img src="img/logo.png" class="imagen-logo"> <!-- insertar imagen del logo -->
-
-            <ul class="lista-header">
-                <li><a href="index.html" class="link-index">home</a></li>  
-				<li><a href="generos.html" class="link-generos">géneros</a></li>
-                <li><a href="playlist.html" class="link-playlist">playlist</a></li>
-            </ul>
-
-            <div class="frase">
-                <p class="pp">Ploptune</p> 
+            <div class="logo">
+                <img src="img/logo.png" class="imagen-logo"> 
             </div>
-                
+            
+            <div class="frase">
+                <p class="pp">Ploptune</p>
+            </div>
+
+            <!-- buscador -->
+            <div class="buscador">
+                <form class="search-container" action="results.html" method="GET">
+                    <input id="search-box" type="text" class="search-box" name="q" />
+                    <label for="search-box"><span class="glyphicon glyphicon-search search-icon"></span></label>
+                    <input type="submit" id="search-submit" />
+                </form>
+            </div>
+
+            <div class="links">
+                <ul class="lista-header">
+                    <li><a href="index.html" class="link-index">home</a></li>  
+				    <li><a href="generos.html" class="link-generos">géneros</a></li>
+                    <li><a href="playlist.html" class="link-playlist">playlist</a></li>
+                </ul>
+            </div>
+            
         </header>
        
         <!-- banner -->
@@ -84,13 +98,6 @@
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
         
         </div>
-       
-        <!-- buscador -->
-
-        <form action="results.html" method="get">
-            <input type="text" name="q" placeholder="Buscá canciones, artistas, albums..">
-            <button type="submit">SEARCH</button>
-        </form>
 
         
         <!-- body -->
