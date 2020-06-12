@@ -98,8 +98,59 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/albums/a
 
     })
 
-    document.addEventListener("touchstart", function(){}, true);
 
+    //js buscador
+    document.addEventListener("touchstart", function(){}, true);
+    //js buscador
+
+
+    //PAGINA DE BIENVENIDA
+    var titulo = document.querySelector('#titulo');
+
+
+   var saludo = document.getElementById('saludo');
+
+   var span = document.querySelector('.bienvenida span');
+   var container = document.querySelector(".container")
+   var all = document.querySelector('body');
+
+
+
+   /* Evento para el título */
+   titulo.onmouseover = function() {
+      var nombre = prompt('¿Como te llamas?');
+
+      if (nombre == null || nombre == "") {
+         saludo.innerHTML = "bienvid@";
+      } else {
+         saludo.innerHTML = "bienvid@ " + nombre;
+      }      
+
+      saludo.style.textTransform = 'uppercase';
+
+      titulo.style.display = "none";
+      span.style.display = "block";
+   }
+
+
+
+ 
+   /* Evento para el span */
+   span.addEventListener("click", mostrarPersonajes);
+
+   function mostrarPersonajes() {
+      var bienvenida = document.querySelector('.bienvenida');
+      var personajes = document.querySelector('.personajes');
+
+
+      bienvenida.style.display = "none";
+      personajes.style.display = "block";
+      container.style.display = "flex";
+      document.body.style.backgroundImage = "url('img/fondo.jpg')";
+      document.body.style.height = "fit-content";
+      document.body.style.backgroundSize = "initial";
+
+   };
 
 
 
