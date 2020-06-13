@@ -145,7 +145,6 @@ p.dos{
     display:flex;
     flex-direction: column;
     height: 20vh;
-    overflow-y: scroll;
 }
 
 .artista h2.taylor{
@@ -160,8 +159,9 @@ p.dos{
 
 .top{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     margin-bottom: 15px;
     border-bottom: dashed 1px black;
     width: 102%;
@@ -386,9 +386,10 @@ body .bodygenero{
 @media only screen and (min-device-width: 1200px){
 
 .primeracolumn{
-    width: 17%;
-    justify-content: center;  
-    flex-direction: row;
+    width: 55%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
     
 .fotos .secciones{
@@ -396,7 +397,7 @@ body .bodygenero{
 }
     
 .segundacolumn{
-    width: 83%;
+    width: 45%;
     flex-direction: column;
     flex-wrap: wrap;
     border-left: solid 2px black;
@@ -407,17 +408,43 @@ body .bodygenero{
     height:8vh;
 }
 
+.secciones{
+    width: 61%;
+    height: 40%;
+}
+
 div.body{
     width: 90%;
     justify-items: center;
     align-items: center;
+    
+}
+
+.top5{
+    flex-direction:column;
 }
     
+.contenedor-todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
 .top {
     border-bottom: 0;
-    width: 33%;
-    border-right: 1px dashed black;
+    width: 54%;
+    
+    border-bottom: 1px dashed black;
     justify-content: center;
+    width:100%;
+    text-align:center;
+}
+
+.nombres p{
+    font-size: 30px;
+    padding-top: 20px
 }
     
 .lascanciones {
@@ -452,7 +479,8 @@ p.album {
 }  
 
 .fotos .secciones{
-    width: 40%;
+    width: 50%;
+    height: 50%;
 }
 
 .losdetalles{
@@ -518,6 +546,7 @@ p.dos{
 .top .imagentop img.cancion {
     width: 6vw;
     height: 10vh;
+    margin-bottom:3%;
 }
 
 .artista h2.regg{

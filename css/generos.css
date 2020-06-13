@@ -124,8 +124,9 @@ div.fotos{
 div.body{
     justify-items: center;
     align-items: center;
-    flex-direction: column;
-    width:48%;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:100%;
     border: 0px;
     background-color: #9e9c9cf2;
     margin: 9px;
@@ -161,14 +162,14 @@ h1{
 div.fotos{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 25%;
     justify-content: center;
     
 }
 
 img.secciones{
     height: 8vw;
-    width: 113%;
+    width: 80%;
 }
 
 p{
@@ -176,12 +177,19 @@ p{
 }
 
 .caja{
-    width: 25%;
+    width: 78%;
     display:flex;
     flex-direction: column;
     align-items: center;
     padding:18px;
     margin-right:3%;
+}
+
+.caja-adentro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 p{

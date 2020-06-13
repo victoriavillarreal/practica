@@ -124,7 +124,7 @@ div.body{
     justify-items: center;
     align-items: center;
     flex-direction: column;
-    width:48%;
+    width:100%;
     border: 0px;
     background-color: #9e9c9cf2;
     margin: 9px;
@@ -163,6 +163,7 @@ div.fotos{
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    padding-left:2%;
     
 }
 
@@ -176,13 +177,13 @@ p{
 }
 
 .caja{
-    width: 25%;
+    width: 16%;
     display:flex;
     flex-direction: column;
     align-items: center;
     padding:18px;
     margin-right:3%;
-    height: 16vw;
+    height: 14vw;
 }
 
 p{

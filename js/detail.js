@@ -14,20 +14,11 @@ else if(queryStringObj.has("albumId")){
     traemeAlbum(detailAlbumId);
 }
 
-else if (queryStringObj.has("artistId")){
+else {
     var detailArtistId = queryStringObj.get("artistId");
     traemeArtist(detailArtistId);
 }
 
-else if (queryStringObj.has("playlistId")){
-    var detailPlaylistId = queryStringObj.get("playlistId");
-    traemePlaylist(detailPlaylistId);
-}
-
-else{
-    var detailGeneroId = queryStringObj.get("generoId");
-    traemeGenero(detailGeneroId);
-}
 
 ;
 
@@ -109,11 +100,11 @@ function traemeCancion(detailCancionId){
         agregar.addEventListener('click', function(agregarTrack){
             agregarTrack.preventDefault();
     
-        if (playlist.includes(playlistCancionId)) {
-            var array = playlist.indexOf(playlistCancionId);
-            playlist.splice(array,1);
-        } else{
-            playlist.push(playlistCancionId);
+            if (playlist.includes(playlistCancionId)) {
+                var array = playlist.indexOf(playlistCancionId);
+                playlist.splice(array,1);
+            } else{
+                playlist.push(playlistCancionId);
         }
 
         
@@ -124,10 +115,13 @@ function traemeCancion(detailCancionId){
 
         console.log(playlist);
 
+    })
+
+
 })
+}
 
 
-   })
 function traemeAlbum(detailAlbumId){
 
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + detailAlbumId)
@@ -179,18 +173,84 @@ function traemeAlbum(detailAlbumId){
 }
 
 
+function traemeArtist(detailArtistId) {
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + detailArtistId)
 
-if (cancionPlaylist == null) {
-    playlist = [];
-} else {
-    playlist = JSON.parse(cancionPlaylist);
+   .then (function (respuesta) {
+       return respuesta.json();
+   })
+   .then (function (informacionDetailArtist) {
+       console.log(informacionDetailArtist);
+
+       var contenedorArtist = document.querySelector(".contenedor-todo");
+       
+       var contenidoArtist = "";
+
+           var element = informacionDetailArtist;
+           
+            contenidoArtist += '<div class = "titulos">';
+            contenidoArtist  += '<h2> ARTIST </h2>';
+            contenidoArtist  += '</div>';
+            contenidoArtist += '<div class="body">';
+            contenidoArtist += '<div class="primeracolumn">';
+            contenidoArtist += '<div class="artista">';
+            contenidoArtist += "<h2>" + element.name + "</h2>";
+            contenidoArtist += "</div>";
+            contenidoArtist += '<div class="fotos">';
+            contenidoArtist  += "<img src='" + element.picture_big + "' alt='' class='secciones' >";
+            contenidoArtist += "</div>";
+            contenidoArtist += '<div class="nombres">';
+            contenidoArtist += "<p> Fans:" + element.nb_fan +  "</p>";
+            contenidoArtist += "</div>";
+            contenidoArtist += "</div>";
+            contenidoArtist += '<div class="segundacolumn">';
+            contenidoArtist += "</div>";
+            contenidoArtist += "</div>";
+
+
+       contenedorArtist.innerHTML = contenidoArtist;
+
+   })
+
+
+   fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + detailArtistId + "/top")
+
+   .then (function (respuesta) {
+       return respuesta.json();
+   })
+   .then (function (informacionTop) {
+       console.log(informacionTop);
+
+       var contenedorTop = document.querySelector(".segundacolumn");
+       
+       var contenidoTop = "";
+
+       for (let i = 0; i < 4; i++) {
+        var element = informacionTop.data[i];
+        var cancionId = element.id;
+
+        contenidoTop += "<div class='top5'>";
+        contenidoTop +=  "<div class='lascanciones'>";
+        contenidoTop += "<div class='top'>";
+        contenidoTop += "<div class='imagentop'>";
+        contenidoTop += "<img src='" + element.album.cover + "' alt='' class='cancion' >";
+        contenidoTop += "</div>";
+        contenidoTop += "<div class='datostop'>";
+        contenidoTop += "<a href='detail.html?cancionId=" + cancionId +"'class=cancion'>" + element.title + "</a>";
+        contenidoTop += "</div>";
+        contenidoTop += "</div>";
+        contenidoTop += "</div>";
+
+        
+
+    }
+
+
+       contenedorTop.innerHTML = contenidoTop;
+
+   })
+
 }
-
-}
-
-
-
-
 
 
 
