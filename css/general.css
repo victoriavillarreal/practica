@@ -3,21 +3,35 @@
 .main-header{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 97px;
+    width: 98%;
+    height: 82px;
+    background-color: black;
+    z-index: 3;
+    position: fixed;
 }
 
-.headerimage{
+/* .headerimage{
     height: 100%;
     width: 100%;
     position: relative;
     z-index: 1;
+} */
+
+div.logo{
+    height: 14vw;
+    width: 16vw;
+    margin-top: 2vw;
+    margin-left: 3vw;
 }
 
 .imagen-logo{
     width: 100%;
-    height: 60%;
+    height: 100%;
     border-radius: 50%;
+}
+
+div.frase{
+    margin-left: 41vw;
 }
 
 .lista-header{
@@ -44,14 +58,9 @@ ul li{
     font-family: 'Julius Sans One';
 }
 
-/* .frase img{ 
-    z-index: 2;
-    width: 74vw;
-    height: 4vh;
-    position: relative;
-    top: -33px;
-    left: 71px;
-}  */
+div.uk-position-relative{
+    margin-top: 36vw;
+}
 
 .frase p {
     font-family: 'Cedarville Cursive', cursive;
@@ -65,19 +74,30 @@ div.banner{
     display: none;
 }
 
-/* .buscador{
-    display:flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-} */
+div.buscador{
+    width: 14vw;
+    height: 11vw;
+    position: absolute;
+    top: 23vw;
+    right: 57vw;
+}
 
-/* .imagen-buscador{
-    width: 48%;
-    height: 8%;
-} */
+label{
+    position: absolute;
+    top: 1vw;
+    left: 10vw;
+}
+
+#search-box{
+    width: 46vw;
+    height: 7vw;
+}
+
+div.links{
+    position: absolute;
+    top: 11vw;
+    right: -8vw;
+}
 
 .main-footer{
     display: flex;
@@ -93,17 +113,20 @@ div.banner{
     width: 45%;
     font-size: 12px;
     position: relative;
-    left: -34px;
+    left: -25px;
     font-weight: bold;
+}
+
+div.iconos-redes{
+    position: relative;
+    top: 4vw;
+    left: -7vw;
 }
 
 .iconofooter{
     width: 8vw;
-    height: 20%;
-    position: relative;
-    top: 19px;
+    height: 34%;
     margin-right: 5px;
-    left: -16%;
 }
 
 .logo-deezer{
@@ -111,8 +134,62 @@ div.banner{
     height: 15%;
     position: relative;
     right: -5%;
-    top: 7px;
+    top: 4px;
 }
+
+/* buscador */
+.search-box {
+    -webkit-transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
+    transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: #ebebeb;
+  }
+  .search-box + label .search-icon {
+    color: black;
+  }
+  .search-box:hover {
+    color: white;
+    background: #c8c8c8;
+    box-shadow: 0 0 0 5px #3d4752;
+  }
+  .search-box:hover + label .search-icon {
+    color: white;
+  }
+  .search-box:focus {
+    -webkit-transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
+    transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding-left: 15px;
+    cursor: text;
+    width: 300px;
+    border-radius: auto;
+    background: #ebebeb;
+    color: black;
+  }
+  .search-box:focus + label .search-icon {
+    color: black;
+  }
+  .search-box:not(:focus) {
+    text-indent: -5000px;
+  }
+  
+  #search-submit {
+    position: relative;
+    left: -5000px;
+  }
+  
+  .search-icon {
+    position: relative;
+    left: -30px;
+    color: white;
+    cursor: pointer;
+  }
 
 
 /* DESKTOP */
@@ -131,32 +208,38 @@ div.banner{
 
 div.logo{
     width: 6%;
+    height: 74%;
     margin-right: 2vw;
-    margin-top: 0.5vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
 }
 
-.frase{
+div.frase{
     margin-top: 1.5vw;
     margin-right: 25vw;
+    margin-left: 0px;
 }
 
 div.buscador{
     margin-top: 3vw;
     margin-left: 23vw;
     width: 4vw;
+    height: 3vw;
+    position: initial;
 }
 
-/* .frase img{
-    z-index: 2;
-    width: 71%;
-    position: relative;
-    left: 50%;
-} */
+#search-box{
+    width: 2.7vw;
+    height: 2.7vw;
+}
 
-/* .imagen-buscador {
-    width: 26%;
-    height: 10%;
-} */
+label{
+    position: initial;
+}
+
+div.uk-position-relative{
+    margin-top: 9vw;
+}
 
 .lista-header{
     font-size: 19px;
@@ -173,6 +256,7 @@ div.buscador{
 div.links{
     margin-top: 3vw;
     width: 21vw;
+    position: initial;
 }
 
 p.pp{

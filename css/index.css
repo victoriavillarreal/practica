@@ -11,7 +11,7 @@ body{
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
 }
 
 .bienvenida{
@@ -25,7 +25,10 @@ body{
     border-right: rgb(2555,215,0) solid 3px;
     border-left: rgb(2555,215,0) solid 3px;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
+
 
 p{
     font-family: 'Raleway', sans-serif;
@@ -55,9 +58,11 @@ div.body{
     align-items: center;
     border-bottom: black 2px solid;
     padding-block-start: 26px;
-    width:100%;
+    width:90%;
     padding-block-end: 26px;
     background-color: #9e9c9cf2;
+    border-radius: 2%;
+    margin-bottom: 2vw;
 }
 
 .primerbody{
@@ -78,7 +83,7 @@ p{
     margin: 0px; 
     padding: 0px; 
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
     color:black;
 }
 
