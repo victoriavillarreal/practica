@@ -154,7 +154,7 @@ function traemeAlbum(detailAlbumId){
             contenidoAlbum  += "<p class='track'> Portada </p>";
             contenidoAlbum  += "</div>";
             contenidoAlbum  += "<div class='dato'>";
-            contenidoAlbum  += "<img src='" + element.cover + "' alt='' class='secciones margin ftrack' >";
+            contenidoAlbum  += "<img src='" + element.artist.picture_big + "' alt='' class='secciones margin ftrack' >";
             contenidoAlbum  += "<a href='detail.html?artistId=" + artistId +"'> Artista:" + element.artist.name + "</a>";
             contenidoAlbum  += "</div>";
             contenidoAlbum  += "</div>";
@@ -225,7 +225,7 @@ function traemeArtist(detailArtistId) {
        
        var contenidoTop = "";
 
-       for (let i = 0; i < 4; i++) {
+       for (let i = 0; i < 5; i++) {
         var element = informacionTop.data[i];
         var cancionId = element.id;
 
