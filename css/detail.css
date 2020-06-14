@@ -402,7 +402,15 @@ body .bodygenero{
     border-left: solid 2px black;
     padding-left:20px;
 }
+
+.seg{
+    width: 45%;
+}
     
+.gentop{
+    width:45% !important; 
+}
+
 .top .imagentop .cancion{
     width: 4vw;
     height:8vh;
@@ -478,7 +486,7 @@ p.album {
 }  
 
 .fotos .secciones{
-    width: 80%;
+    width: 60%;
     height: 50%;
 }
 
@@ -539,7 +547,7 @@ p.dos{
 }
 
 .body .generos{
-    width:17%;
+    width:55%;
 }
 
 .top .imagentop img.cancion {
@@ -548,8 +556,8 @@ p.dos{
     margin-bottom:3%;
 }
 
-.artista h2.regg{
-    font-size:140%;
+.artista h2{
+    font-size:67px;
 }
 
 .datostop p.nombreg{

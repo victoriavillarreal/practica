@@ -17,12 +17,12 @@ else if(queryStringObj.has("albumId")){
 else {
     var detailArtistId = queryStringObj.get("artistId");
     traemeArtist(detailArtistId);
-}
+};
 
-
-;
-
-
+if(queryStringObj.has("generoId")){
+    var detailGeneroId = queryStringObj.get("generoId");
+    traemeGenero(detailGeneroId);
+};
 
 function traemeCancion(detailCancionId){
 
@@ -153,7 +153,7 @@ function traemeAlbum(detailAlbumId){
             contenidoAlbum  += "<img src='" + element.cover_big + "' alt='' class='secciones margin ftrack' >";
             contenidoAlbum  += "<p class='track'> Portada </p>";
             contenidoAlbum  += "</div>";
-            contenidoAlbum  += "<div class='dato'>";
+            contenidoAlbum  += "<div class='dato vinc'>";
             contenidoAlbum  += "<img src='" + element.artist.picture_big + "' alt='' class='secciones margin ftrack' >";
             contenidoAlbum  += "<a href='detail.html?artistId=" + artistId +"'> Artista:" + element.artist.name + "</a>";
             contenidoAlbum  += "</div>";
@@ -161,10 +161,11 @@ function traemeAlbum(detailAlbumId){
             contenidoAlbum  += "</div>";
             contenidoAlbum  += "<div class='losdetalles'>";
             contenidoAlbum  += "<div class='fecha'>";
-            contenidoAlbum  += "<p> Release date:" + element.release_date +  "</p>";
+            contenidoAlbum  += "<p class='hola'> Release date:" + element.release_date +  "</p>";
             contenidoAlbum  += "</div>";
             contenidoAlbum  += "</div>";
             contenidoAlbum  += "</div>";
+
 
 
        contenedorAlbum.innerHTML = contenidoAlbum;
@@ -251,6 +252,92 @@ function traemeArtist(detailArtistId) {
    })
 
 }
+
+function traemeGenero(detailGeneroId){
+
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + detailGeneroId)
+
+   .then (function (respuesta) {
+       return respuesta.json();
+   })
+   .then (function (informacionDetailGenero) {
+       console.log(informacionDetailGenero);
+
+       var contenedorGenero = document.querySelector(".contenedor-todo");
+       
+       var contenidoGenero = "";
+
+
+           var element = informacionDetailGenero;
+           
+           
+            contenidoGenero += '<div class = "titulos">';
+            contenidoGenero += '<h2> GÉNEROS </h2>';
+            contenidoGenero  += '</div>';
+            contenidoGenero  += "<div class='body bodygenero'>";
+            contenidoGenero  += "<div class='primeracolumn generos'>";
+            contenidoGenero  += "<div class='artista'>";
+            contenidoGenero  += "<h2>" + element.name + "</h2>";
+            contenidoGenero  += '</div>'
+            contenidoGenero  += "<div class='fotos'>";
+            contenidoGenero += "<img src='" + element.picture_big + "' alt='' class='secciones' >";
+            contenidoGenero  += '</div>';
+            contenidoGenero  += '</div>';
+            contenidoGenero  += "<div class='segundacolumn seg'>";
+            contenidoGenero  += "<div class='top5'>";
+            contenidoGenero += '<h2> ARTISTAS </h2>';
+            contenidoGenero  += '</div>';
+            contenidoGenero  += "<div class='lascanciones'>";
+            contenidoGenero  += "<div class='top gentop'>";
+            contenidoGenero  += '</div>';
+            contenidoGenero  += '</div>';
+            contenidoGenero  += '</div>';
+            contenidoGenero  += '</div>';
+
+
+
+
+       contenedorGenero.innerHTML = contenidoGenero;
+
+   })
+
+   fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + detailGeneroId + "/artists")
+
+   .then (function (respuesta) {
+       return respuesta.json();
+   })
+   .then (function (informacionGeneroArtist) {
+       console.log(informacionGeneroArtist);
+
+       var contenedorGArtist = document.querySelector(".lascanciones");
+       
+       var contenidoGArtist = "";
+
+       for (let i = 0; i < 10; i++) {
+        var element = informacionGeneroArtist.data[i];
+        var artistId = element.id;
+        
+        contenidoGArtist += "<div class='top gentop'>";
+        contenidoGArtist += "<div class='imagentop'>";
+        contenidoGArtist += "<img src='" + element.picture_big + "' alt='' class='cancion' >";
+        contenidoGArtist += "</div>";
+        contenidoGArtist += "<div class='datostop'>";
+        contenidoGArtist += "<a href='detail.html?artistId=" + artistId +"'class=nombrecancion'>" + element.name + "</a>";
+        contenidoGArtist += "</div>";
+        contenidoGArtist += "</div>";
+        
+
+    }
+
+
+       contenedorGArtist.innerHTML = contenidoGArtist;
+
+   })
+
+
+}
+
+
 
 
 

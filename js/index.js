@@ -102,6 +102,8 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/albums/a
 
 
     //PAGINA DE BIENVENIDA
+
+    
     var titulo = document.querySelector('#titulo');
 
 
@@ -118,16 +120,20 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/albums/a
       var nombre = prompt('¿Como te llamas?');
 
       if (nombre == null || nombre == "") {
-         saludo.innerHTML = "bienvid@";
-      } else {
-         saludo.innerHTML = "bienvid@ " + nombre;
-      }      
+        saludo.innerHTML = "bienvid@";
+     } else {
+        saludo.innerHTML = "bienvid@ " + nombre;
+     }   
 
       saludo.style.textTransform = 'uppercase';
 
       titulo.style.display = "none";
       span.style.display = "block";
+    
+
    }
+
+
 
 
 
