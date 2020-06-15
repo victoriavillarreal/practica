@@ -125,6 +125,21 @@ div.fotos{
     font-family: 'Julius Sans One';
 }
 
+.uk-card-default {
+    background: none; 
+    color: black; 
+    box-shadow: none;
+
+}
+
+.uk-icon{
+    left: 50%;
+    top: 50%;
+    height: 4vh;
+    width: 2vw;
+    border-radius: 50%;
+}
+
 
 
 /* DESKTOP */
@@ -293,7 +308,6 @@ p{
     width: 100%;
     
     
-    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;

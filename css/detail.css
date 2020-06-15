@@ -379,6 +379,25 @@ body .bodygenero{
     width:94%;
 }
 
+.uk-child-width-1-2\@m>* {
+    width: 95%;
+}
+
+.uk-grid-item-match>:not([class*=uk-width]), .uk-grid-match>*>:not([class*=uk-width]) {
+    box-sizing: border-box;
+    width: 50%;
+    flex: auto;
+}
+
+
+.uk-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 
 /*desktop*/
@@ -404,11 +423,11 @@ body .bodygenero{
 }
 
 .seg{
-    width: 45%;
+    width: 55%;
 }
     
 .gentop{
-    width:45% !important; 
+    width:50% !important; 
 }
 
 .top .imagentop .cancion{
@@ -422,7 +441,7 @@ body .bodygenero{
 }
 
 div.body{
-    width: 90%;
+    width: 100%;
     justify-items: center;
     align-items: center;
     border-radius:2%;
@@ -524,10 +543,12 @@ p.dos{
 
 .cancion h2{
     font-size:27px;
+    color: black;
 }
 
 .losdetalles{
     font-size:19px;
+    width: 19% !important;
 }
 
 .lasfotos{
@@ -547,7 +568,7 @@ p.dos{
 }
 
 .body .generos{
-    width:55%;
+    width:45%;
 }
 
 .top .imagentop img.cancion {

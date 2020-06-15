@@ -17,11 +17,11 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre")
             var generoId = element.id;
 
             contenidoGenero += "<div class='fotos'>";
-            contenidoGenero += "<div class='caja'>";
+            contenidoGenero += "<div class='caja uk-animation-toggle'>";
             contenidoGenero += "<div class='caja-adentro'>";
-            contenidoGenero += "<img src='" + element.picture_big + "' class='secciones' >";
+            contenidoGenero += "<img src='" + element.picture_big + "' class='secciones uk-card uk-card-default  uk-animation-slide-bottom-small' >";
             contenidoGenero += "<a href='detail.html?generoId=" + generoId + "'>";
-            contenidoGenero += "<p>" + element.name + "</p>";
+            contenidoGenero += "<p class='uk-card uk-card-default  uk-animation-slide-bottom-small'>" + element.name + "</p>";
             contenidoGenero += "</a>";
             contenidoGenero += "</div>";
             contenidoGenero += "</div>";

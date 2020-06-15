@@ -47,7 +47,8 @@ function traemeCancion(detailCancionId){
             contenidoTracks += '<div class = "titulos">'
             contenidoTracks += '<h2> TRACK </h2>'
             contenidoTracks += '</div>'
-           contenidoTracks += "<div class='body bodytrack'>";
+            contenidoTracks += "<div class='uk-child-width-1-2@m uk-grid-match' uk-grid>"
+           contenidoTracks += "<div class='body bodytrack uk-card uk-card-default uk-card-body' uk-scrollspy='cls: uk-animation-slide-left; repeat: true'>";
            contenidoTracks += "<div class='lasfotos'>";
            contenidoTracks += "<div class='cancion'>";
            contenidoTracks += "<h2>" + element.title + "</h2>";
@@ -73,6 +74,7 @@ function traemeCancion(detailCancionId){
            contenidoTracks += "<p> Duration: " + element.duration +  " seconds</p>";
            contenidoTracks += "</div>";
            contenidoTracks += "<a href='playlist.html?playlistCancionId=" + playlistCancionId + "' class='agregar'><p>Add to playlist</p></a> ";
+           contenidoTracks += "</div>";
            contenidoTracks += "</div>";
            contenidoTracks += "</div>";
 
@@ -143,7 +145,8 @@ function traemeAlbum(detailAlbumId){
             contenidoAlbum += '<div class = "titulos">'
             contenidoAlbum  += '<h2> ALBUM </h2>'
             contenidoAlbum  += '</div>'
-            contenidoAlbum  += "<div class='body bodytrack'>";
+            contenidoAlbum += "<div class='uk-child-width-1-2@m uk-grid-match' uk-grid>"
+            contenidoAlbum  += "<div class='body bodytrack uk-card uk-card-default uk-card-body' uk-scrollspy='cls: uk-animation-slide-left; repeat: true'>";
             contenidoAlbum  += "<div class='lasfotos'>";
             contenidoAlbum  += "<div class='cancion'>";
             contenidoAlbum  += "<h2>" + element.title + "</h2>";
@@ -162,6 +165,7 @@ function traemeAlbum(detailAlbumId){
             contenidoAlbum  += "<div class='losdetalles'>";
             contenidoAlbum  += "<div class='fecha'>";
             contenidoAlbum  += "<p class='hola'> Release date:" + element.release_date +  "</p>";
+            contenidoAlbum  += "</div>";
             contenidoAlbum  += "</div>";
             contenidoAlbum  += "</div>";
             contenidoAlbum  += "</div>";
@@ -192,7 +196,8 @@ function traemeArtist(detailArtistId) {
             contenidoArtist += '<div class = "titulos">';
             contenidoArtist  += '<h2> ARTIST </h2>';
             contenidoArtist  += '</div>';
-            contenidoArtist += '<div class="body">';
+            contenidoArtist += "<div class='uk-child-width-1-2@m uk-grid-match' uk-grid>"
+            contenidoArtist += "<div class='body uk-card uk-card-default uk-card-body' uk-scrollspy='cls: uk-animation-slide-left; repeat: true'>";
             contenidoArtist += '<div class="primeracolumn">';
             contenidoArtist += '<div class="artista">';
             contenidoArtist += "<h2>" + element.name + "</h2>";
@@ -205,6 +210,7 @@ function traemeArtist(detailArtistId) {
             contenidoArtist += "</div>";
             contenidoArtist += "</div>";
             contenidoArtist += '<div class="segundacolumn">';
+            contenidoArtist += "</div>";
             contenidoArtist += "</div>";
             contenidoArtist += "</div>";
 
@@ -274,7 +280,8 @@ function traemeGenero(detailGeneroId){
             contenidoGenero += '<div class = "titulos">';
             contenidoGenero += '<h2> GÉNEROS </h2>';
             contenidoGenero  += '</div>';
-            contenidoGenero  += "<div class='body bodygenero'>";
+            contenidoGenero += "<div class='uk-child-width-1-2@m uk-grid-match' uk-grid>"
+            contenidoGenero += "<div class='body bodygenero uk-card uk-card-default uk-card-body' uk-scrollspy='cls: uk-animation-slide-left; repeat: true'>";
             contenidoGenero  += "<div class='primeracolumn generos'>";
             contenidoGenero  += "<div class='artista'>";
             contenidoGenero  += "<h2>" + element.name + "</h2>";
@@ -293,11 +300,15 @@ function traemeGenero(detailGeneroId){
             contenidoGenero  += '</div>';
             contenidoGenero  += '</div>';
             contenidoGenero  += '</div>';
+            contenidoGenero  += '</div>';
 
 
 
 
        contenedorGenero.innerHTML = contenidoGenero;
+
+
+       
 
    })
 

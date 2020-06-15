@@ -115,6 +115,13 @@ div.fotos{
     font-family: 'Julius Sans One';
 }
 
+.uk-card-default {
+    background: none; 
+    color: black; 
+    box-shadow: none;
+
+}
+
 
 
 /* DESKTOP */
@@ -258,5 +265,6 @@ p{
     color: white;
     cursor: pointer;
   }
+
 
 }
