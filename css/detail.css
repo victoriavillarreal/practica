@@ -61,6 +61,7 @@ ul li a.opcion {
     display: flex;
     flex-wrap: wrap;
     width:100%;
+    padding: 0;
     margin: 0 12px;
     justify-content: center;
     color: white;
@@ -90,6 +91,8 @@ ul li a.opcion {
 .primeracolumn{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
     width: 34%;
     height:100%;
 }
@@ -103,9 +106,12 @@ ul li a.opcion {
     
 .fotos .secciones{
     border-radius: 50%;
-    height: 9vh;
-    width: 23vw;
+    height: 12vh;
+    margin-bottom: 16%;
+    width: 32vw;
+
 }
+
 
 p.dos{
     width: 77%;
@@ -127,8 +133,8 @@ p.dos{
     flex-direction: column;
     flex-wrap: wrap;
     width:65%;
-    border-left: solid 2px black;
     padding-left: 11px;
+    border-top: solid 2px black;
 }
 
 .containertracks{
@@ -140,10 +146,14 @@ p.dos{
     overflow-y: scroll;
 }
 
+.fans{
+    padding-top: 11%;
+}
 
 .lascanciones{
     display:flex;
     flex-direction: column;
+    width: 94%;
 }
 
 .artista h2.taylor{
@@ -181,6 +191,7 @@ p.dos{
     display:flex;
     justify-content: center;
     width: 100%;
+    flex-direction: column;
 }
 
 .foto-genero img{
@@ -253,19 +264,21 @@ p.dos{
 .cancion{
     display:flex;
     flex-wrap: wrap;
-}
-
-.cancion h2{
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-    transform: rotate(-180deg);
-    margin-left: 0vh;
-    height: 180px;
-    text-align: center;
+    width: 78vw;
+    justify-content: center;
 }
 
 .lasfotos{
-    display: flex;
+    width: 22% !important;
+}
+
+.cancion h2{
+    text-align: center;
+    padding-bottom: 14%;
+}
+
+.lasfotos{
+    display: block;
     width:39%;
     align-items:center;
 }
@@ -279,7 +292,7 @@ p.dos{
     position: relative;
     right: -54px;
     border-left: dashed 2px black;
-    padding: 30px 33px;
+    padding: 30px 14px;
 }
 
 .unpocochico{
@@ -308,6 +321,7 @@ p.dos{
     flex-direction: column;
     margin-top: 10px;
     margin-left:10px;
+    align-items: center;
 }
 
 .fotos a{
@@ -322,6 +336,7 @@ div.dato{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 21%;
 }
 
 .losdetalles a{
@@ -336,6 +351,7 @@ div.dato{
 
 .fecha p{
     text-align: center;
+    width: 8%;
 }
 
 .generos{
@@ -385,7 +401,7 @@ body .bodygenero{
 
 .uk-grid-item-match>:not([class*=uk-width]), .uk-grid-match>*>:not([class*=uk-width]) {
     box-sizing: border-box;
-    width: 50%;
+    width: 58%;
     flex: auto;
 }
 
@@ -397,6 +413,10 @@ body .bodygenero{
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.fecha{
+    font-size: 115%;
 }
 
 
@@ -411,7 +431,8 @@ body .bodygenero{
 }
     
 .fotos .secciones{
-    width: 23vh;
+    height: 9vh;
+    width: 23vw;
 }
     
 .segundacolumn{
@@ -419,7 +440,9 @@ body .bodygenero{
     flex-direction: column;
     flex-wrap: wrap;
     border-left: solid 2px black;
+    border-top: 0;
     padding-left:20px;
+    background-color: #3233332b;
 }
 
 .seg{
@@ -486,6 +509,7 @@ div.dato{
     flex-direction: column;
     align-items: center;
     align-content: center;
+    padding: 0;
 }
 
 .fotos{
@@ -507,13 +531,22 @@ p.album {
 .fotos .secciones{
     width: 60%;
     height: 50%;
+    margin:0;
 }
 
 .losdetalles{
     flex-direction: row;
     justify-content: center;
-    width: 48%;
+    padding: 41px 15px;
+    width: 53% !important;
 }
+
+
+.fecha{
+    font-size: 93%;
+}
+
+
 
 .losdetalles a{
     margin-left: 68px;
@@ -524,6 +557,13 @@ p.album {
 p .track{
     margin: 0 16px;
 }
+
+
+.uk-grid-match>*>:not([class*=uk-width]) {
+    box-sizing: border-box;
+    width: 42%; 
+    flex: auto;
+}
     
 p .album{
     margin: 0 16px;
@@ -533,17 +573,33 @@ p.dos{
     width:87%;
 }
 
+.albumdetalle{
+    width: 13% !important;
+}
+
+.datoalbum{
+    width: 47% !important;
+}
+
 .fotos img.ftrack{
     width: 63%;
 }
 
 .cancion{
     height:100%;
+    width:8%;
+    display:block;
 }
 
 .cancion h2{
     font-size:27px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(-180deg);
+    margin-left: 0vh;
+    height: 180px;
     color: black;
+    padding:0;
 }
 
 .losdetalles{
@@ -553,6 +609,8 @@ p.dos{
 
 .lasfotos{
     width:52%;
+    display:flex;
+    
     }
 
 .cancion .letramedium{
@@ -599,6 +657,10 @@ ul li a.opcion{
 
 .losdetalles a p{
     text-align:center;
+}
+
+.fecha p{
+    width: 110%;
 }
 
 .search-box {
