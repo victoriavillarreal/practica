@@ -318,6 +318,8 @@ div.banner{
     flex-wrap: wrap;
     width: 17%;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0.5vw;
 }
 
 ul li{
@@ -325,23 +327,27 @@ ul li{
 }
 
 .main-footer{
-    height: 11vh;
+    height: 8vh;
     margin-top: 7vh;
 }
 
 .logo-deezer{
-    width: 6vw;
-    height: 9vh;
+    width: 5vw;
+    height: 6vh;
     position: relative;
     right: -49vw;
+    top: 0.6vw;
 }
 
 .iconofooter{
     width: 4vw;
     height: 5vh;
-    position: relative;
-    top: -6vh;
     margin-right: 4vw;
+}
+
+div.iconos-redes{
+    position: relative;
+    top: 1vw;
     left: 21vw;
 }
 
