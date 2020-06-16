@@ -60,11 +60,11 @@ function traemeCancion(detailCancionId){
            contenidoTracks += "</div>";
            contenidoTracks += "<div class='dato'>";
            contenidoTracks += "<img src='" + element.album.cover + "' alt='' class='secciones margin ftrack' >";
-           contenidoTracks += "<a href='detail.html?albumId=" + albumId +"'> Album:" + element.album.title + "</a>";
+           contenidoTracks += "<a href='detail.html?albumId=" + albumId +"'> Album: " + element.album.title + "</a>";
            contenidoTracks += "</div>";
            contenidoTracks += "<div class='dato'>";
            contenidoTracks += "<img src='" + element.artist.picture_big + "' alt='' class='secciones margin ftrack' >";
-           contenidoTracks += "<a href='detail.html?artistId=" + artistId +"'> Artist:" + element.artist.name + "</a>";
+           contenidoTracks += "<a href='detail.html?artistId=" + artistId +"'> Artist: " + element.artist.name + "</a>";
            contenidoTracks += "</div>";
            contenidoTracks += "</div>";
            contenidoTracks += "</div>";
