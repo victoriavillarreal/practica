@@ -20,18 +20,21 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/tracks/t
             var cancionId = element.id;
             var playlistCancionId = element.id;
 
-            contenidoTrack += "<div class='caja uk-text-center uk-animation-toggle'>";
+            if (window == onload) {
+                contenidoTrack += "<div uk-spinner></div>"
+            } else {
+                contenidoTrack += "<div class='caja uk-text-center uk-animation-toggle uk-card uk-card-default uk-card-body'>";
             contenidoTrack += '<div class="uk-inline-clip uk-transition-toggle uk-light">';
             contenidoTrack += "<img src='" + element.artist.picture_big + "' alt='' class='secciones uk-card uk-card-default  uk-animation-slide-bottom-small' >";
             contenidoTrack += '<div class="uk-position-center">';
-            contenidoTrack += '<a class="uk-position-absolute uk-transform-center icono" style="left: 50%; top: 50%" href="playlist.html?playlistCancionId='+ playlistCancionId + '" uk-marker></a>';
+            contenidoTrack += '<a class="uk-position-absolute uk-transform-center icono agregar" style="left: 50%; top: 50%" href="playlist.html?playlistCancionId='+ playlistCancionId + '" uk-marker></a>';
             contenidoTrack += '</div>'
             contenidoTrack += '</div>'
             contenidoTrack += "<a href='detail.html?cancionId=" + cancionId +"'>";
             contenidoTrack += "<p class='uk-card uk-card-default  uk-animation-slide-bottom-small'>" + element.title + "</p>";
             contenidoTrack += "</a>";
             contenidoTrack += "</div>";
-
+            }  
 
         }
 

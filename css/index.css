@@ -215,6 +215,11 @@ p{
     padding:18px;
     margin-right:3%;
     height: 16vw;
+    background-color: grey !important;
+}
+
+.uk-card-default {
+    background-color: grey;
 }
 
 p{
@@ -235,6 +240,9 @@ p{
     width: 100%;
     justify-content: center;
     margin-bottom:0;
+}
+.uk-grid {
+    margin-left: 0px; 
 }
   
   .search-box {

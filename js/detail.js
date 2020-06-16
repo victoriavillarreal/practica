@@ -54,8 +54,8 @@ function traemeCancion(detailCancionId){
            contenidoTracks += "<h2>" + element.title + "</h2>";
            contenidoTracks += "</div>";
            contenidoTracks += "<div class='fotos'>";
-           contenidoTracks += "<div class='dato'>";
-           contenidoTracks += "<img src='" + element.artist.picture_medium + "' alt='' class='secciones margin ftrack' >";
+           contenidoTracks += "<div class='dato uk-animation-toggle'>";
+           contenidoTracks += "<img src='" + element.artist.picture_medium + "' alt='' class='secciones margin ftrack ' >";
            contenidoTracks += "<p class='track'> Portada </p>";
            contenidoTracks += "</div>";
            contenidoTracks += "<div class='dato'>";

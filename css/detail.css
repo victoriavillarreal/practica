@@ -529,8 +529,8 @@ p.album {
 }  
 
 .fotos .secciones{
-    width: 60%;
-    height: 50%;
+    width: 60% !important;
+    height: 50% !important;
     margin:0;
 }
 

@@ -24,13 +24,19 @@ window.onload = function() {
                 var element = informacionBuscador.data[i];
                 var cancionId = element.id;
 
-                contenidoResultado += "<div class='caja uk-animation-toggle'>";
+                if (window === onload) {
+                    contenidoResultado += "<div uk-spinner></div>"
+                } else{
+                    contenidoResultado += "<div class='caja uk-animation-toggle'>";
                 contenidoResultado += "<img src='" + element.artist.picture_big + "' alt='' class='secciones uk-card uk-card-default  uk-animation-slide-bottom-small' >";
                 contenidoResultado += "<a href='detail.html?cancionId=" + cancionId +"'>";
                 contenidoResultado += "<p class='uk-card uk-card-default  uk-animation-slide-bottom-small'>" + element.title + "</p>";
                 contenidoResultado += "</a>"
                 contenidoResultado += "</div>";
 
+                }
+
+                
                 console.log(element.type);
             
             }
