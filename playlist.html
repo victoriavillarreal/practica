@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/yeti/bootstrap.min.css">
+  
 
     <script src="js/playlist.js"></script>
     <link rel="stylesheet" href="css/playlist.css">
@@ -103,12 +103,12 @@
         <!-- body -->
         <div class="tuplaylist">
             <h1 class="playlist"> TU PLAYLIST </h1>
-            <p class="nombre"> cambiar nombre </p> <!-- agregar herramienta para cambiar nombre playlist -->
+            Nombre de tu playlist: <input type="text" name="nombre">
         </div>
 
         <div class="body">
             <div class="secciones">
-                <div class="artista">
+                <!--div class="artista">
                     <h1 class="artista"> Taylor Swift </h1> 
                 </div>
                 <div class="ccanciones">
@@ -116,9 +116,9 @@
                         <img src="img/playlist.track1.jpg" class="cancion"> 
                         <div class="info">
                             <h2> LOVER </h2> 
-                            <audio src="canciones/lover.mp3" controls></audio> <!-- borrar cuando sepamos api -->
+                            <audio src="canciones/lover.mp3" controls></audio> 
                             <p class="detalles"> Taylor Swift - pop - Lover </p> 
-                            <a href="detail.html#lover" class="vermas"> VER MÁS</a> <!-- poner link a pagina de detalle -->
+                            <a href="detail.html#lover" class="vermas"> VER MÁS</a> 
                         </div>
                     </div>
                     <div class="canciones cancion2">
@@ -127,10 +127,9 @@
                             <h2> BLANK SPACE </h2>
                             <audio width= "400" controls>
                                 <source src="canciones/blankspace.mp3" type= "audio/mp3">
-                            </audio> <!-- borrar cuando sepamos api -->
+                            </audio> 
                             <p class="detalles"> Taylor Swift - pop - 1989 </p> 
-                            <a href="detail.html#blanksp" class="vermas"> VER MÁS</a> <!-- poner link a pagina de detalle -->
-                        </div>
+                            <a href="detail.html#blanksp" class="vermas"> VER MÁS</a> 
                     </div>
                     <div class="canciones cancion3">
                         <img src="img/playlist.track3.jpg" class="cancion"> 
@@ -138,95 +137,16 @@
                             <h2> END GAME </h2> 
                             <audio width= "400" controls>
                                 <source src="canciones/endgame.mp3" type= "audio/mp3">
-                            </audio> <!-- borrar cuando sepamos api -->
+                            </audio> 
                             <p class="detalles cambio2"> Taylor Swift - pop - Reputation </p> 
-                            <a href="detail.html#endgame" class="vermas"> VER MÁS</a> <!-- poner link a pagina de detalle -->
+                            <a href="detail.html#endgame" class="vermas"> VER MÁS</a> 
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="secciones">
-                <div class="artista">
-                    <h1 class="artista"> Cami </h1> 
-                </div>
-                <div class="ccanciones">
-                    <div class="canciones cancion1">
-                        <img src="img/playlist.track4.png" class="cancion"> 
-                        <div class="info">
-                            <h2 class="chico"> UN POCO MAS DE FRÍO </h2> 
-                            <audio width= "400" controls>
-                                <source src="canciones/unpocomasdefrio.mp3" type= "audio/mp3">
-                            </audio> <!-- borrar cuando sepamos api -->
-                            <p class="detalles"> Cami - pop - Rosa </p> 
-                            <a href="detail.html#unpocomas" class="vermas"> VER MÁS</a> <!-- poner link a pagina de detalle -->
-                        </div>
-                    </div>
-                    <div class="canciones cancion2">
-                        <img src="img/playlist.track4.jpg" class="cancion"> 
-                        <div class="info">
-                            <h2> TU SIEMPRE </h2> 
-                            <audio width= "400" controls>
-                                <source src="canciones/tusiempre.mp3" type= "audio/mp3">
-                            </audio> <!-- borrar cuando sepamos api -->
-                            <p class="detalles"> Cami - pop - Monstruo </p> 
-                            <a href="detail.html#tusiempre" class="vermas"> VER MÁS</a> <!-- poner link a pagina de detalle -->
-                        </div>
-                    </div>
-                    <div class="canciones cancion3">
-                        <img src="img/playlist.track6.jpg" class="cancion"> 
-                        <div class="info">
-                            <h2> LA DESPEDIDA </h2> 
-                            <audio width= "400" controls>
-                                <source src="canciones/ladespedida.mp3" type= "audio/mp3">
-                            </audio> <!-- borrar cuando sepamos api -->
-                            <p class="detalles"> Cami - pop - Monstruo </p> 
-                            <a href="detail.html#ladespedida" class="vermas"> VER MÁS</a> <!-- poner link a pagina de detalle -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="secciones">
-                <div class="artista">
-                    <h1 class="artista"> Morat </h1> 
-                </div>
-                <div class="ccanciones">
-                    <div class="canciones cancion1">
-                        <img src="img/playlist.track7.jpg" class="cancion"> 
-                        <div class="info">
-                            <h2 class="margen"> LA ÚLTIMA VEZ </h2> 
-                            <audio width= "400" controls>
-                                <source src="canciones/laultimavez.mp3" type= "audio/mp3">
-                            </audio> <!-- borrar cuando sepamos api -->
-                            <p class="detalles cambio"> Morat - pop - Sobre El Amor Y Sus Efectos </p> 
-                            <a href="detail.html#laultima" class="vermas"> VER MÁS</a> <!-- poner link a pagina de detalle -->
-                        </div>
-                    </div>
-                    <div class="canciones cancion2">
-                        <img src="img/playlist.track8.jpg" class="cancion"> 
-                        <div class="info">
-                            <h2> BESOS EN GUERRA </h2> 
-                            <audio width= "400" controls>
-                                <source src="canciones/besosenguerra.mp3" type= "audio/mp3">
-                            </audio> <!-- borrar cuando sepamos api -->
-                            <p class="detalles"> Morat - pop - Balas Perdidas </p> 
-                            <a href="detail.html#besos" class="vermas"> VER MÁS</a> <!-- poner link a pagina de detalle -->
-                        </div>
-                    </div>
-                    <div class="canciones cancion3">
-                        <img src="img/playlist.track9.jpg" class="cancion"> 
-                        <div class="info">
-                            <h2> NO SE VA </h2> 
-                            <audio width= "400" controls>
-                                <source src="canciones/noseva.mp3" type= "audio/mp3">
-                            </audio> <!-- borrar cuando sepamos api -->
-                            <p class="detalles"> Morat - pop - Balas Perdidas </p> 
-                            <a href="detail.html#noseva" class="vermas"> VER MÁS</a> <!-- poner link a pagina de detalle -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </div> 
+                </div> -->
+            </div> 
 
+
+        </div>
         <!-- footer -->
         <footer class="main-footer">
             <ul class="lista-footer">

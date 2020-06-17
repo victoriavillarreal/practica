@@ -1,5 +1,6 @@
 window.onload = function() {
 
+    
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/tracks/tracks")
 
@@ -41,7 +42,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/tracks/t
         track.innerHTML = contenidoTrack;
 
         
-
     })
     .catch (function (error){
         console.log("El error fue" + error);

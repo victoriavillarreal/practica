@@ -154,23 +154,53 @@ h1.artista{
     margin-bottom: 3vw;
 }
 
-div.ccanciones{
+div.canciones{
     width: 100%;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+    display: flex;
+    margin: 0.5%;
+    height: 22vh;
+    border-radius: 2%;
+}
+
+div.secciones{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 img.cancion{ 
-    width: 25%;
-    height: 6vw;
+    width: 20%;
+    height: 7vw;
 }
 
-p.detalles{
+a.detalles{
     font-size: 108%;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
 }
 
 .vermas{
     font-size: 90%;
+    margin: 7% 0px;
+}
+
+.agregar p{
+    text-transform: uppercase;
+    color: black;
+    padding: 5%;
+    width: 113%;
+    background-color: grey;
+}
+
+h2{
+    margin-bottom:7%;
+}
+
+div.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .cancion1{
@@ -211,6 +241,14 @@ h2.chico{
 div.info{
     padding-left: 2vw;
 }
+
+iframe{
+    width: 30vw;
+    height: 10.7vh;
+    margin-top:10%;
+}
+    
+
 
 p.detalles.cambio{
     font-size: 72%;

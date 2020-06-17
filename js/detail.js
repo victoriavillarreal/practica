@@ -97,6 +97,10 @@ function traemeCancion(detailCancionId){
         
         if (playlist.includes(playlistCancionId)) {
             document.querySelector('.agregar').innerHTML = "Remove from playlist";
+            document.querySelector('.agregar').style.textTransform = "uppercase";
+            document.querySelector('.agregar').style.padding = "2%";
+            document.querySelector('.agregar').style.backgroundColor = "grey";
+            document.querySelector('.agregar').style.color = "black";
         }
 
         agregar.addEventListener('click', function(agregarTrack){

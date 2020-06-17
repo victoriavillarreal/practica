@@ -5,6 +5,10 @@ window.onload = function() {
 
     var resultadosBuscador = queryStringObj.get("q");
 
+    var loader = document.getElementById("loader");
+    loader.style.display = "block";
+    
+
     function traemeResultados (event){
         fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + resultadosBuscador)
     
@@ -38,6 +42,9 @@ window.onload = function() {
 
                 
                 console.log(element.type);
+
+                var loader = document.getElementById("loader");
+                setTimeout(function(){loader.style.display= "none";},5000);
             
             }
 
