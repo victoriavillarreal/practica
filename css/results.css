@@ -17,9 +17,10 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-right: rgb(2555,215,0) solid 3px;
-    border-left: rgb(2555,215,0) solid 3px;
+    border-right: solid 3px  rgb(220, 187, 12);
+    border-left: solid 3px  rgb(220, 187, 12);
     width: 100%;
+    padding: 0;
 }
 
 p{
@@ -65,7 +66,7 @@ div.body{
 
 img.secciones{
     border-radius: 50%;
-    width: 123% !important;
+    width: 123%;
     height:6vh;
 }
 
@@ -176,7 +177,7 @@ div.fotos{
 
 img.secciones{
     height: 8vw;
-    width: 113%;
+    width: 82%;
 }
 
 p{

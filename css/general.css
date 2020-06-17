@@ -3,11 +3,13 @@
 .main-header{
     display: flex;
     flex-wrap: wrap;
-    width: 98%;
+    width: 100%;
     height: 82px;
     background-color: black;
     z-index: 3;
     position: fixed;
+    border-right: solid 3px  rgb(220, 187, 12);
+    border-left: solid 3px  rgb(220, 187, 12);
 }
 
 /* .headerimage{
@@ -197,9 +199,8 @@ div.iconos-redes{
 
 .main-header{
     height: 110px;
-    background-color: black;
-    position: fixed;
-    z-index: 3;
+    border-right: solid 8px  rgb(220, 187, 12);
+    border-left: solid 8px  rgb(220, 187, 12);
 }
 
 .banner-fotos{
@@ -222,19 +223,22 @@ div.frase{
 
 div.buscador{
     margin-top: 3vw;
-    margin-left: 23vw;
+    margin-right: 15vw;
+    margin-left: 10vw;
     width: 4vw;
     height: 3vw;
     position: initial;
 }
 
 #search-box{
-    width: 2.7vw;
+    width: 19.7vw;
     height: 2.7vw;
 }
 
 label{
-    position: initial;
+    position: absolute;
+    top: 3.7vw;
+    left: 58vw;
 }
 
 div.uk-position-relative{

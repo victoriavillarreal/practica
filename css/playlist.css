@@ -168,6 +168,10 @@ p.detalles.cambio{
     font-size: 61%;
 }
 
+a{
+    font-family: 'Julius Sans One';
+}
+
 
 /* DESKTOP */
 @media only screen and (min-device-width: 1200px){

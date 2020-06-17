@@ -26,10 +26,6 @@ body{
     color:white;
 }
 
-p{
-    font-family: 'Raleway', sans-serif;
-}
-
 a{
     text-decoration: none;
     color: black;
@@ -55,6 +51,7 @@ div.body{
     width:90%;
     padding-block-end: 26px;
     background-color: #9e9c9cf2;
+    border-radius: 2%;
 }
 
 /* .primerbody{
@@ -75,8 +72,9 @@ p{
     margin: 0px; 
     padding: 0px; 
     text-align: center;
-    margin-top: 20%;
+    margin-top: 1vw;
     color:black;
+    font-family: 'Raleway', sans-serif;
 }
 
 .titulogrande p{
@@ -99,7 +97,7 @@ p{
     margin-top: 3%;
     border-radius: 5%;
     background-color: grey;
-    height: 23vh;
+    height: 20vh;
 }
 
 div.fotos{
@@ -185,7 +183,7 @@ div.fotos{
 
 img.secciones{
     height: 8vw;
-    width: 80%;
+    width: 10vw;
 }
 
 p{
@@ -199,6 +197,7 @@ p{
     align-items: center;
     padding:18px;
     margin-right:3%;
+    height: 30vh;
 }
 
 .caja-adentro{
@@ -281,8 +280,5 @@ p{
     cursor: pointer;
   }
 
-  .caja{
-      height: 30vh;
-  }
 
 }

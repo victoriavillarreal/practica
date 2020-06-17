@@ -21,6 +21,7 @@ body{
     border-right: rgb(2555,215,0) solid 3px;
     border-left: rgb(2555,215,0) solid 3px;
     width: 100%;
+    padding: 0px;
 }
 
 p{
@@ -424,6 +425,10 @@ p.track{
     margin-top: 1vw;
 }
 
+a{
+    font-family: 'Julius Sans One';
+}
+
 
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
@@ -577,7 +582,7 @@ p.album {
 
 .losdetalles a{
     margin-left: 68px;
-    width:147px;
+    width: 174px;
     padding:0;
 }
 

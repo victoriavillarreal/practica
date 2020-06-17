@@ -102,6 +102,7 @@ window.onload = function(){
                 playlist = JSON.parse(cancionPlaylist);
             }
             
+            
             if (playlist.includes(playlistCancionId)) {
                 document.querySelector('.agregar').innerHTML = "Remove from playlist";
                 document.querySelector('.agregar').style.textTransform = "uppercase";
@@ -119,8 +120,6 @@ window.onload = function(){
                 } else{
                     playlist.push(playlistCancionId);
             }
-    
-            
     
             console.log(playlist);
     
@@ -181,9 +180,7 @@ window.onload = function(){
                 contenidoAlbum  += "</div>";
                 contenidoAlbum  += "</div>";
     
-    
-    
-           contenedorAlbum.innerHTML = contenidoAlbum;
+        contenedorAlbum.innerHTML = contenidoAlbum;
     
        })
     }
@@ -388,7 +385,7 @@ window.onload = function(){
                 contenidoPlaylist  += "<div class='fotos'>";
                 contenidoPlaylist += "<img src='" + element.picture_big + "' alt='' class='secciones' >";
                 contenidoPlaylist += '<div class="nombres">';
-                contenidoPlaylist += "<p class='fans'> Creation Date:" + element.creation_date +  "</p>";
+                contenidoPlaylist += "<p class='fans'> Creation Date: " + element.creation_date +  "</p>";
                 contenidoPlaylist += "</div>";
                 contenidoPlaylist  += '</div>';
                 contenidoPlaylist  += '</div>';

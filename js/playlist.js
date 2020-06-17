@@ -87,7 +87,7 @@ window.onload = function() {
 
     var queryString = location.search;
     var queryStringObj = new URLSearchParams(queryString);
-    var nombrePlaylist = queryStringObj.get('n');
+    var nombrePlaylist = queryStringObj.get('n'); 
     console.log(nombrePlaylist);
 
     // botonNombrePlaylist.onclick = function () {
@@ -96,17 +96,17 @@ window.onload = function() {
     //     console.log('nombreGuardadoPlaylist')
     // }
     
+    var nombreLocalStorage = window.localStorage.getItem(nombrePlaylist);
+    var nombreGuardadoPlaylist = JSON.parse(nombreLocalStorage);
 
     if (nombreGuardadoPlaylist == null) {
         botonNombrePlaylist.addEventListener('click', guardarNombre);
 
         function guardarNombre (){
-            var nombreLocalStorage = window.localStorage.getItem('nombrePlaylist');
-            var nombreGuardadoPlaylist = JSON.parse(nombreLocalStorage);
-            // console.log('nombreGuardadoPlaylist');
+            window.localStorage.setItem('nombreGuardadoPlaylist', JSON.stringify(nombreGuardadoPlaylist));
         } 
     } else {
-        tituloPlaylist = nombreGuardadoPlaylist;
+        tituloPlaylist = nombrePlaylist;
         inputPlaylist.innerHTML = '';
     }
 
