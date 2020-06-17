@@ -80,6 +80,13 @@ window.onload = function() {
 
     })
 }
+//Manera de hacer el remove from playlist------>
+//var quitarCancion = document.querySelector( ".boton-quitarCancion");
+//quitarCancion.addEventListener('click', function(idQuerySelector){
+//var indiceEnPlaylist = playlist.indexOf(idQuerySelector);
+//playlist.splice(indiceEnPlaylist,1)
+//Ahora guardar todo en el local storage
+//}
 
     var botonNombrePlaylist = document.querySelector('#boton-playlist');
     var tituloPlaylist = document.querySelector('.playlist');
