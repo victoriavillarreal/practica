@@ -56,19 +56,21 @@ window.onload = function() {
                 document.querySelector('.agregar').style.marginTop = "3%";
                 
             }
+            var quitarCancion = document.querySelector(".agregar");
+            quitarCancion.addEventListener('click', function(quitarCancion){
+            var array = playlist.indexOf(playlistCancionId);
+            playlist.splice(array,1);})
     
-            agregar.addEventListener('click', function(agregarTrack){
-                agregarTrack.preventDefault();
+            // agregar.addEventListener('click', function(agregarTrack){
+            //     agregarTrack.preventDefault();
         
-                if (playlist.includes(playlistCancionId)) {
-                    var array = playlist.indexOf(playlistCancionId);
-                    playlist.splice(array,1);
-                } else{
-                    playlist.push(playlistCancionId);
-            }
-    
+            //     if (playlist.includes(playlistCancionId)) {
+            //         var array = playlist.indexOf(playlistCancionId);
+            //         playlist.splice(array,1);
+            //     } else{
+            //         playlist.push(playlistCancionId);
+            // }
             
-    
             console.log(playlist);
     
             window.localStorage.setItem('playlist', JSON.stringify(playlist));
@@ -78,15 +80,8 @@ window.onload = function() {
         })
 
 
-    })
-}
-//Manera de hacer el remove from playlist------>
-//var quitarCancion = document.querySelector( ".boton-quitarCancion");
-//quitarCancion.addEventListener('click', function(idQuerySelector){
-//var indiceEnPlaylist = playlist.indexOf(idQuerySelector);
-//playlist.splice(indiceEnPlaylist,1)
-//Ahora guardar todo en el local storage
-//}
+    }
+
 
     var botonNombrePlaylist = document.querySelector('#boton-playlist');
     var tituloPlaylist = document.querySelector('.playlist');
