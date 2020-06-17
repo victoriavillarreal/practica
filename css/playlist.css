@@ -16,7 +16,7 @@ body{
 iframe{
     height: 8.5vh;
     border: 2px grey;
-    width: 74%;
+    width: 80%;
 }
 
 .container{
@@ -120,6 +120,7 @@ div.secciones{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 div.info{

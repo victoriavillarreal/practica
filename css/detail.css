@@ -44,6 +44,7 @@ p{
     padding: 0;
 }
 
+
 ul li.barra {
     display: flex;
     flex-wrap: wrap;
@@ -153,6 +154,7 @@ p.dos{
     display:flex;
     flex-direction: column;
     width: 94%;
+    align-items: center;
 }
 
 .artista h2.taylor{
@@ -636,7 +638,11 @@ p.dos{
     width:52%;
     display:flex;
     
-    }
+}
+
+iframe{
+    height:13.5vh;
+}
 
 .cancion .letramedium{
     font-size:23px;

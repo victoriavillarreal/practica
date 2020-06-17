@@ -394,10 +394,10 @@ window.onload = function(){
                 contenidoPlaylist  += '</div>';
                 contenidoPlaylist  += "<div class='segundacolumn seg'>";
                 contenidoPlaylist  += "<div class='top5'>";
-                contenidoPlaylist += '<h2> 10 TRACKS DE LA PLAYLIST </h2>';
+                contenidoPlaylist += '<h2> 5 TRACKS DE LA PLAYLIST </h2>';
                 contenidoPlaylist  += '</div>';
                 contenidoPlaylist  += "<div class='lascanciones cancion-playlist'>";
-                contenidoPlaylist  += "<div class='top gentop'>";
+                contenidoPlaylist  += "<div class='top datostop'>";
                 contenidoPlaylist  += '</div>';
                 contenidoPlaylist  += '</div>';
                 contenidoPlaylist  += '</div>';
@@ -422,7 +422,7 @@ window.onload = function(){
            
                 var contenidoTrackPlaylist = "";
     
-                for (let i = 0; i < 10; i++) {
+                for (let i = 0; i < 5; i++) {
                     var element = informacionPlaylistTrack.data[i];
                     var cancionId = element.id;
     
@@ -430,7 +430,7 @@ window.onload = function(){
                         contenidoTrackPlaylist += "<div uk-spinner></div>"
                     } else {
             
-                    contenidoTrackPlaylist += "<div class='top gentop'>";
+                    contenidoTrackPlaylist += "<div class='top datostop'>";
                     contenidoTrackPlaylist += "<div class='imagentop'>";
                     contenidoTrackPlaylist += "<img src='" + element.album.cover_big + "' alt='' class='cancion' >";
                     contenidoTrackPlaylist += "</div>";
