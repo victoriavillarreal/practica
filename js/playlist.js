@@ -25,14 +25,14 @@ window.onload = function() {
             var contenedorPlaylist = document.querySelector(".secciones");
             var contenidoPlaylist = "";
 
-
+            contenidoPlaylist +='<div class="container-can">'
+            contenidoPlaylist += '<iframe scrolling="no" frameborder="1px" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+cancionId+'&app_id=1" width="700" height="350"></iframe>'
             contenidoPlaylist += "<div class='canciones'>";
-            
-            contenidoPlaylist += '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+cancionId+'&app_id=1" width="700" height="350"></iframe>'
             contenidoPlaylist += "<a href='detail.html?cancionId=" + cancionId +"' class='vermas'> VER MÁS </a>";
             contenidoPlaylist += "<a href='playlist.html?playlistCancionId=" + playlistCancionId + "' class='agregar'><p>Add to playlist</p></a> ";
             contenidoPlaylist += "</div>";
             contenidoPlaylist += "</div>";
+            
 
 
             contenedorPlaylist.innerHTML += contenidoPlaylist;
@@ -49,11 +49,12 @@ window.onload = function() {
             if (playlist.includes(playlistCancionId)) {
                 document.querySelector('.agregar').innerHTML = "Remove from playlist";
                 document.querySelector('.agregar').style.textTransform = "uppercase";
-                document.querySelector('.agregar').style.padding = "2%";
-                document.querySelector('.agregar').style.width = "105%";
+                document.querySelector('.agregar').style.padding = "1%";
+                document.querySelector('.agregar').style.width = "80%";
                 document.querySelector('.agregar').style.backgroundColor = "grey";
                 document.querySelector('.agregar').style.color = "black";
-        
+                document.querySelector('.agregar').style.marginTop = "3%";
+                
             }
     
             agregar.addEventListener('click', function(agregarTrack){
@@ -76,11 +77,10 @@ window.onload = function() {
     
         })
 
-        
 
     })
 
-   
+    
         
 }
 

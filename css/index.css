@@ -171,7 +171,8 @@ div.todoslosbody{
     flex-wrap: wrap;
     width: 94%;
     margin-top: 3%;
-    flex-direction:row;
+    flex-direction:column;
+    align-items: center;
     justify-content: center;
     margin-left: 2%;
 }
