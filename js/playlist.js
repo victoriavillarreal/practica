@@ -79,10 +79,37 @@ window.onload = function() {
 
 
     })
-
-    
-        
 }
+
+    var botonNombrePlaylist = document.querySelector('#boton-playlist');
+    var tituloPlaylist = document.querySelector('.playlist');
+    var inputPlaylist = document.querySelector('.nombre-playlist')
+
+    var queryString = location.search;
+    var queryStringObj = new URLSearchParams(queryString);
+    var nombrePlaylist = queryStringObj.get('n');
+    console.log(nombrePlaylist);
+
+    // botonNombrePlaylist.onclick = function () {
+    //     window.localStorage.getItem('nombrePlaylist');
+    //     nombreGuardadoPlaylist = JSON.parse(nombrePlaylist);
+    //     console.log('nombreGuardadoPlaylist')
+    // }
+    
+
+    if (nombreGuardadoPlaylist == null) {
+        botonNombrePlaylist.addEventListener('click', guardarNombre);
+
+        function guardarNombre (){
+            var nombreLocalStorage = window.localStorage.getItem('nombrePlaylist');
+            var nombreGuardadoPlaylist = JSON.parse(nombreLocalStorage);
+            // console.log('nombreGuardadoPlaylist');
+        } 
+    } else {
+        tituloPlaylist = nombreGuardadoPlaylist;
+        inputPlaylist.innerHTML = '';
+    }
+
 
 
 

@@ -103,7 +103,13 @@
         <!-- body -->
         <div class="tuplaylist">
             <h1 class="playlist"> TU PLAYLIST </h1>
-            Nombre de tu playlist: <input type="text" name="nombre">
+            <div class="nombre-playlist">
+                Nombre de tu playlist:
+                <form action="playlist.html" method="GET">
+                    <input type="text" name="n" style="height: 1.4vw;">
+                    <input type="submit" value="Enviar" id="boton-playlist">
+                </form>
+            </div>
         </div>
 
         <div class="body">
