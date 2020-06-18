@@ -389,9 +389,6 @@ div.dato{
     width:34.5%
 }
 
-.taylor{
-    font-size:142%;
-}
 
 body .bodygenero{
     width:94%;
@@ -423,6 +420,7 @@ body .bodygenero{
 
 p.track{
     margin-top: 1vw;
+    color: black;
 }
 
 a{
@@ -432,6 +430,11 @@ a{
 
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
+
+.container{
+    border-right: solid 8px  rgb(220, 187, 12);
+    border-left: solid 8px  rgb(220, 187, 12);
+}
 
 .primeracolumn{
     width: 67%;

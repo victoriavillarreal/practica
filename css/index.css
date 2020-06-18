@@ -75,7 +75,7 @@ div.body{
 
 img.secciones{
     border-radius: 50%;
-    width: 123% !important;
+    width: 123%;
     height:6vh;
 }
 
@@ -201,7 +201,7 @@ div.fotos{
 
 img.secciones{
     height: 10vw;
-    width: 113%;
+    width: 90%;
 }
 
 p{
