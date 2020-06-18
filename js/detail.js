@@ -79,7 +79,7 @@ window.onload = function(){
                contenidoTracks += "<p> Release date:" + element.release_date +  "</p>";
                contenidoTracks += "<p> Duration: " + element.duration +  " seconds</p>";
                contenidoTracks += "</div>";
-               contenidoTracks += "<a href='playlist.html?playlistCancionId=" + playlistCancionId + "' class='agregar'><p>Add to playlist</p></a> ";
+               contenidoTracks += "<button class='agregar'>Add to playlist</button> ";
                contenidoTracks += "</div>";
                contenidoTracks += "</div>";
                contenidoTracks += '<iframe scrolling="no" frameborder="1px" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+element.id+'&app_id=1" width="700" height="350"></iframe>';
@@ -88,8 +88,7 @@ window.onload = function(){
     
                contenedorTracks.innerHTML = contenidoTracks;
     
-            var playlist = [];
-            var agregar = document.querySelector('.agregar');
+            var playlist = []
     
             var cancionPlaylist = window.localStorage.getItem("playlist");
             // window.localStorage.setItem('playlistCancionId', cancionPlaylist);
@@ -101,36 +100,27 @@ window.onload = function(){
             } else {
                 playlist = JSON.parse(cancionPlaylist);
             }
+
+            var agregar = document.querySelector('.agregar');
             
-            
-            if (playlist.includes(playlistCancionId)) {
-                document.querySelector('.agregar').innerHTML = "Remove from playlist";
-                document.querySelector('.agregar').style.textTransform = "uppercase";
-                document.querySelector('.agregar').style.padding = "2%";
-                document.querySelector('.agregar').style.backgroundColor = "grey";
-                document.querySelector('.agregar').style.color = "black";
-            }
     
             agregar.addEventListener('click', function(agregarTrack){
                 agregarTrack.preventDefault();
+                var agregar = document.querySelector('.agregar');
         
                 if (playlist.includes(playlistCancionId)) {
                     var array = playlist.indexOf(playlistCancionId);
                     playlist.splice(array,1);
                 } else{
                     playlist.push(playlistCancionId);
-            }
+                    agregar.innerHTML = "Remove from playlist";
+                }
+                window.localStorage.setItem('playlist', JSON.stringify(playlist));
     
-            console.log(playlist);
+            })
     
-            window.localStorage.setItem('playlist', JSON.stringify(playlist));
-    
-            console.log(playlist);
     
         })
-    
-    
-    })
     }
     
     

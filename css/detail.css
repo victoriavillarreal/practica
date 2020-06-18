@@ -89,6 +89,12 @@ ul li a.opcion {
     margin: 0 12px;
 }
 
+
+.agregar{
+    width: 20% !important;
+    margin-left: 8% !important;
+}
+
 .primeracolumn{
     display: flex;
     flex-wrap: wrap;
