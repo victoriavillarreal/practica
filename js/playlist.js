@@ -58,6 +58,8 @@ window.onload = function() {
         })
     }
 
+    
+
 
     var botonNombrePlaylist = document.querySelector('#boton-playlist');
     var tituloPlaylist = document.querySelector('.playlist');
