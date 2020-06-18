@@ -22,11 +22,16 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-right: rgb(2555,215,0) solid 3px;
-    border-left: rgb(2555,215,0) solid 3px;
+    border-right: rgb(220, 187, 12) solid 3px;
+    border-left: rgb(220, 187, 12) solid 3px;
     width: 100%;
     margin: 0px;
     padding: 0px;
+}
+
+.main-header{
+    border-left: 0px !important;
+    border-right: solid 6px rgb(220, 187, 12) !important;
 }
 
 
@@ -145,9 +150,9 @@ div.fotos{
 /* DESKTOP */
 @media only screen and (min-device-width: 1200px){
 
-    body{
-        background-image: url(../img/bienvenida.jpg);
-    }
+body{
+    background-image: url(../img/bienvenida.jpg);
+}
 
 div.body{
     justify-items: center;
@@ -164,6 +169,10 @@ div.body{
     border-right: solid 8px  rgb(220, 187, 12);
     border-left: solid 8px  rgb(220, 187, 12);
     display: none;
+}
+
+.main-header{
+    border-right: solid 16px rgb(220, 187, 12) !important;
 }
 
 div.todoslosbody{
@@ -215,7 +224,7 @@ p{
     align-items: center;
     padding:18px;
     margin-right:3%;
-    height: 16vw;
+    height: 18vw;
     background-color: grey !important;
 }
 

@@ -433,6 +433,10 @@ a{
     font-family: 'Julius Sans One';
 }
 
+.lista-footer{
+    font-weight: lighter !important;
+}
+
 
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
@@ -707,6 +711,7 @@ ul li a.opcion{
 .fecha p{
     width: 110%;
 }
+
 
 .search-box {
     -webkit-transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
