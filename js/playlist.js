@@ -38,21 +38,20 @@ window.onload = function() {
             contenedorPlaylist.innerHTML += contenidoPlaylist;
 
     
-            
-            var agregar = document.querySelector('.agregar');
-            document.querySelector(".container-can").innerHTML.style.display="block";
-    
-            agregar.addEventListener('click', function(agregarTrack){
-                agregarTrack.preventDefault();
-                playlist = JSON.parse(element.id);
-        
-                if (playlist.includes(element.id)) {
-                    document.querySelector(".container-can").innerHTML.style.display="none";
-                    var array = playlist.indexOf(element.id);
+            var remove = document.querySelector(".agregar");
+
+            remove.addEventListener('click',function(removePlaylist){
+                removePlaylist.preventDefault();
+
+                var cancionPlaylist = window.localStorage.getItem("playlist");
+                playlist = JSON.parse(cancionPlaylist);
+
+                if (playlist.includes(cancionId)) {
+                    document.querySelector(".container-can").style.display="none";
+                    var array = playlist.indexOf(playlistCancionId);
                     playlist.splice(array,1);
-                    window.localStorage.setItem('playlist', JSON.stringify(playlist));
-                } 
-    
+                }
+                window.localStorage.setItem('playlist', JSON.stringify(playlist));
             })
 
         })
