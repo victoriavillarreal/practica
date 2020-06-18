@@ -167,7 +167,7 @@ window.onload = function() {
     
     
        /* Evento para el título */
-       titulo.onmouseover = function() {
+        titulo.onmouseover = function() {
           var nombre = prompt('¿Como te llamas?');
     
           if (nombre == null || nombre == "") {
@@ -180,9 +180,8 @@ window.onload = function() {
     
           titulo.style.display = "none";
           span.style.display = "block";
-        
     
-       }
+        }
     
     
     

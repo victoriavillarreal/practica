@@ -29,7 +29,7 @@ window.onload = function() {
             contenidoPlaylist += '<iframe scrolling="no" frameborder="1px" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+cancionId+'&app_id=1" width="700" height="350"></iframe>'
             contenidoPlaylist += "<div class='canciones'>";
             contenidoPlaylist += "<a href='detail.html?cancionId=" + cancionId +"' class='vermas'> VER MÁS </a>";
-            contenidoPlaylist += "<a href='playlist.html?playlistCancionId=" + playlistCancionId + "' class='agregar'><p>Add to playlist</p></a> ";
+            contenidoPlaylist += "<button class='agregar'><p>Remove from playlist</p></button> ";
             contenidoPlaylist += "</div>";
             contenidoPlaylist += "</div>";
             
@@ -37,50 +37,27 @@ window.onload = function() {
 
             contenedorPlaylist.innerHTML += contenidoPlaylist;
 
-            
-
-            
-            var resultadoPlaylist = window.localStorage.getItem('playlist');
-
-            playlist = JSON.parse(resultadoPlaylist);
-
-            var agregar = document.querySelector('.agregar');
-
-            if (playlist.includes(playlistCancionId)) {
-                document.querySelector('.agregar').innerHTML = "Remove from playlist";
-                document.querySelector('.agregar').style.textTransform = "uppercase";
-                document.querySelector('.agregar').style.padding = "1%";
-                document.querySelector('.agregar').style.width = "80%";
-                document.querySelector('.agregar').style.backgroundColor = "grey";
-                document.querySelector('.agregar').style.color = "black";
-                document.querySelector('.agregar').style.marginTop = "3%";
-                
-            }
-            var quitarCancion = document.querySelector(".agregar");
-            quitarCancion.addEventListener('click', function(quitarCancion){
-            var array = playlist.indexOf(playlistCancionId);
-            playlist.splice(array,1);})
     
-            // agregar.addEventListener('click', function(agregarTrack){
-            //     agregarTrack.preventDefault();
-        
-            //     if (playlist.includes(playlistCancionId)) {
-            //         var array = playlist.indexOf(playlistCancionId);
-            //         playlist.splice(array,1);
-            //     } else{
-            //         playlist.push(playlistCancionId);
-            // }
-            
-            console.log(playlist);
-    
-            window.localStorage.setItem('playlist', JSON.stringify(playlist));
-    
-            console.log(playlist);
-    
+            var remove = document.querySelector(".agregar");
+
+            remove.addEventListener('click',function(removePlaylist){
+                removePlaylist.preventDefault();
+
+                var cancionPlaylist = window.localStorage.getItem("playlist");
+                playlist = JSON.parse(cancionPlaylist);
+
+                if (playlist.includes(cancionId)) {
+                    document.querySelector(".container-can").style.display="none";
+                    var array = playlist.indexOf(playlistCancionId);
+                    playlist.splice(array,1);
+                }
+                window.localStorage.setItem('playlist', JSON.stringify(playlist));
+            })
+
         })
-
-
     }
+
+    
 
 
     var botonNombrePlaylist = document.querySelector('#boton-playlist');
