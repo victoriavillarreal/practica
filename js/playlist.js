@@ -63,33 +63,52 @@ window.onload = function() {
 
     var botonNombrePlaylist = document.querySelector('#boton-playlist');
     var tituloPlaylist = document.querySelector('.playlist');
-    var inputPlaylist = document.querySelector('.nombre-playlist')
+    var inputPlaylist = document.querySelector('.nombre-playlist');
 
     var queryString = location.search;
     var queryStringObj = new URLSearchParams(queryString);
     var nombrePlaylist = queryStringObj.get('n'); 
     console.log(nombrePlaylist);
 
-    // botonNombrePlaylist.onclick = function () {
-    //     window.localStorage.getItem('nombrePlaylist');
-    //     nombreGuardadoPlaylist = JSON.parse(nombrePlaylist);
-    //     console.log('nombreGuardadoPlaylist')
-    // }
-    
-    var nombreLocalStorage = window.localStorage.getItem(nombrePlaylist);
-    var nombreGuardadoPlaylist = JSON.parse(nombreLocalStorage);
 
-    if (nombreGuardadoPlaylist == null) {
+    // if (nombrePlaylist == null) {
+    //     inputPlaylist;
+    //     botonNombrePlaylist.addEventListener('click', guardarNombre);
+
+    //     function guardarNombre (){
+    //         var nombreLocalStorage = window.localStorage.getItem(nombrePlaylist);
+    //         var nombreGuardadoPlaylist = JSON.parse(nombreLocalStorage);
+    //         window.localStorage.setItem('nombreGuardadoPlaylist', JSON.stringify(nombreGuardadoPlaylist));
+    //     } 
+    // } else {
+    //     tituloPlaylist.innerHTML = nombrePlaylist;
+    //     inputPlaylist.innerHTML = '';
+    // }
+
+    // if (nombreGuardadoPlaylist == null) {
+    //     inputPlaylist;
+    // } else{
+    //     tituloPlaylist.innerHTML = nombreGuardadoPlaylist;
+    //     inputPlaylist.innerHTML = '';
+    // }
+
+
+    window.localStorage.setItem('nombrePlaylist', nombrePlaylist);
+
+    if (nombrePlaylist == null) {
+        inputPlaylist;
         botonNombrePlaylist.addEventListener('click', guardarNombre);
 
         function guardarNombre (){
-            window.localStorage.setItem('nombreGuardadoPlaylist', JSON.stringify(nombreGuardadoPlaylist));
+            window.localStorage.setItem('nombrePlaylist', nombrePlaylist);
         } 
-    } else {
-        tituloPlaylist = nombrePlaylist;
+    } else{
+        var nombreLocalStorage = window.localStorage.getItem('nombrePlaylist');
+        // var nombreParaUsar = JSON.parse(nombreLocalStorage);
+
+        tituloPlaylist.innerHTML = nombreLocalStorage;
         inputPlaylist.innerHTML = '';
     }
-
 
 
 
