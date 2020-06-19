@@ -109,7 +109,7 @@ window.onload = function() {
         
     } else{
         var nombreSessionStorage = window.sessionStorage.getItem('nombrePlaylist');
-        // var nombreParaUsar = JSON.parse(nombreLocalStorage);
+        // var nombreParaUsar = JSON.parse(nombreSessionStorage);
 
         tituloPlaylist.innerHTML = nombreSessionStorage;
         inputPlaylist.innerHTML = '';
