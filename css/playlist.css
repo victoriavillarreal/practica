@@ -173,6 +173,10 @@ a{
     font-family: 'Julius Sans One';
 }
 
+.lista-footer{
+    font-weight: lighter !important;
+}
+
 
 /* DESKTOP */
 @media only screen and (min-device-width: 1200px){

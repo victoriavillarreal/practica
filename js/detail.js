@@ -158,13 +158,13 @@ window.onload = function(){
                 contenidoAlbum  += "</div>";
                 contenidoAlbum  += "<div class='dato datoalbum vinc'>";
                 contenidoAlbum  += "<img src='" + element.artist.picture_big + "' alt='' class='secciones margin ftrack' >";
-                contenidoAlbum  += "<a href='detail.html?artistId=" + artistId +"'> Artista:" + element.artist.name + "</a>";
+                contenidoAlbum  += "<a href='detail.html?artistId=" + artistId +"'> Artista: " + element.artist.name + "</a>";
                 contenidoAlbum  += "</div>";
                 contenidoAlbum  += "</div>";
                 contenidoAlbum  += "</div>";
                 contenidoAlbum  += "<div class='losdetalles albumdetalle'>";
                 contenidoAlbum  += "<div class='fecha'>";
-                contenidoAlbum  += "<p class='hola'> Release date:" + element.release_date +  "</p>";
+                contenidoAlbum  += "<p class='hola'> Release date: " + element.release_date +  "</p>";
                 contenidoAlbum  += "</div>";
                 contenidoAlbum  += "</div>";
                 contenidoAlbum  += "</div>";
@@ -204,7 +204,7 @@ window.onload = function(){
                 contenidoArtist  += "<img src='" + element.picture_big + "' alt='' class='secciones foto-artist' >";
                 contenidoArtist += "</div>";
                 contenidoArtist += '<div class="nombres">';
-                contenidoArtist += "<p class='fans'> Fans:" + element.nb_fan +  "</p>";
+                contenidoArtist += "<p class='fans'> Fans: " + element.nb_fan +  "</p>";
                 contenidoArtist += "</div>";
                 contenidoArtist += "</div>";
                 contenidoArtist += '<div class="segundacolumn">';

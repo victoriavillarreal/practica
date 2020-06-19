@@ -43,6 +43,7 @@ div.frase{
     justify-content: center;
     margin: 6px;
     width: 274px;
+    padding: 0px;
 }
 
 ul li{
@@ -116,9 +117,9 @@ div.links{
     font-size: 12px;
     position: relative;
     left: -25px;
-    font-weight: bold;
     font-family: 'Raleway', sans-serif;
     justify-content: center;
+    color: black;
 }
 
 div.iconos-redes{

@@ -395,9 +395,6 @@ div.dato{
     width:34.5%
 }
 
-.taylor{
-    font-size:142%;
-}
 
 body .bodygenero{
     width:94%;
@@ -429,15 +426,25 @@ body .bodygenero{
 
 p.track{
     margin-top: 1vw;
+    color: black;
 }
 
 a{
     font-family: 'Julius Sans One';
 }
 
+.lista-footer{
+    font-weight: lighter !important;
+}
+
 
 /*desktop*/
 @media only screen and (min-device-width: 1200px){
+
+.container{
+    border-right: solid 8px  rgb(220, 187, 12);
+    border-left: solid 8px  rgb(220, 187, 12);
+}
 
 .primeracolumn{
     width: 67%;
@@ -704,6 +711,7 @@ ul li a.opcion{
 .fecha p{
     width: 110%;
 }
+
 
 .search-box {
     -webkit-transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
