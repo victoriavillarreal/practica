@@ -164,54 +164,32 @@ window.onload = function() {
        var container = document.querySelector(".container")
        var all = document.querySelector('body');
     
+        var personajes = document.querySelector('.personajes');
     
-    
-       /* Evento para el título */
-        titulo.onmouseover = function() {
-          var nombre = prompt('¿Como te llamas?');
-    
-          if (nombre == null || nombre == "") {
-            saludo.innerHTML = "bienvid@";
-         } else {
-            saludo.innerHTML = "bienvid@ " + nombre;
-         }   
-    
-          saludo.style.textTransform = 'uppercase';
-    
-          titulo.style.display = "none";
-          span.style.display = "block";
-    
-        }
-    
-    
-    
-    
-    
-     
-       /* Evento para el span */
-       span.addEventListener("click", mostrarPersonajes);
-    
-       function mostrarPersonajes() {
-          var bienvenida = document.querySelector('.bienvenida');
-          var personajes = document.querySelector('.personajes');
-    
-    
-          bienvenida.style.display = "none";
           personajes.style.display = "block";
           container.style.display = "flex";
           document.body.style.backgroundImage = "url('img/fondo.jpg')";
           document.body.style.height = "fit-content";
           document.body.style.backgroundSize = "initial";
     
-       };
+    
+        var nombre = prompt("Escribe tu nombre de usuario");
+        var nombreDeUsuario = localStorage.getItem("nombre");
+        var nombreSeteado = localStorage.setItem("nombreDeUsuario",nombreDeUsuario)
+
+    if (nombreSeteado != "") {
+        document.querySelector('.titulogrande p').innerHTML += " DE " + nombreDeUsuario;
+    }else{
+        nombre = prompt("Escribe tu nombre de usuario");
+        localStorage.setItem('nombre',nombre);
+        document.querySelector('.titulogrande  p').innerHTML += " DE " + nombreDeUsuario;
+    }
     
     
-       
-       
     
     
-    
-    
+
+
     
     
     // no borrar

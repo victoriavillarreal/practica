@@ -38,7 +38,7 @@ window.onload = function() {
             contenedorPlaylist.innerHTML += contenidoPlaylist;
 
     
-            var remove = document.querySelector(".agregar");
+            /*var remove = document.querySelector(".agregar");
 
             remove.addEventListener('click',function(removePlaylist){
                 removePlaylist.preventDefault();
@@ -53,7 +53,32 @@ window.onload = function() {
                 }
                 window.localStorage.setItem('playlist', JSON.stringify(playlist));
             })
+            */
 
+
+
+            var remove = document.querySelectorAll('.agregar');
+            var agregarList = new Array(remove);
+
+            for (let i = 0; i < agregarList.length; i++) {
+                const element =  agregarList[i];
+                console.log(element);
+
+                this.onclick = function (removePlaylist) {
+                    removePlaylist.preventDefault();
+                    var cancionPlaylist = window.localStorage.getItem("playlist");
+                    playlist = JSON.parse(cancionPlaylist);
+
+                    if (playlist.includes(cancionId)) {
+                        var array = playlist.indexOf(cancionId);
+                        playlist.splice(array,1);
+                        document.querySelector(".container-can").style.display="none";
+                        window.location.reload(true);
+                    }
+                    window.localStorage.setItem('playlist', JSON.stringify(playlist));
+                }
+                
+            } 
         })
     }
 
