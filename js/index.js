@@ -173,17 +173,6 @@ window.onload = function() {
           document.body.style.backgroundSize = "initial";
     
     
-        var nombre = prompt("Escribe tu nombre de usuario");
-        var nombreDeUsuario = localStorage.getItem("nombre");
-        var nombreSeteado = localStorage.setItem("nombreDeUsuario",nombreDeUsuario)
-
-    if (nombreSeteado != "") {
-        document.querySelector('.titulogrande p').innerHTML += " DE " + nombreDeUsuario;
-    }else{
-        nombre = prompt("Escribe tu nombre de usuario");
-        localStorage.setItem('nombre',nombre);
-        document.querySelector('.titulogrande  p').innerHTML += " DE " + nombreDeUsuario;
-    }
     
     
     
