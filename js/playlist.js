@@ -114,12 +114,8 @@ window.onload = function() {
     var nombrePlaylist = queryStringObj.get('n'); 
     console.log(nombrePlaylist);
 
-    window.localStorage.setItem('nombrePlaylist', nombrePlaylist);
+    window.sessionStorage.setItem('nombrePlaylist', nombrePlaylist);
     
-                
-
-    
-
     if (nombrePlaylist == null) {
         inputPlaylist;
         botonNombrePlaylist.addEventListener('click', guardarNombre);
@@ -128,14 +124,14 @@ window.onload = function() {
                 var queryString = location.search;
                 var queryStringObj = new URLSearchParams(queryString);
                 var nombrePlaylist = queryStringObj.get('n'); 
-                window.localStorage.setItem('nombrePlaylist', nombrePlaylist);
-            } 
+                window.sessionStorage.setItem('nombrePlaylist', nombrePlaylist);
+            }    
         
     } else{
-        var nombreLocalStorage = window.localStorage.getItem('nombrePlaylist');
-        // var nombreParaUsar = JSON.parse(nombreLocalStorage);
+        var nombreSessionStorage = window.sessionStorage.getItem('nombrePlaylist');
+        // var nombreParaUsar = JSON.parse(nombreSessionStorage);
 
-        tituloPlaylist.innerHTML = nombreLocalStorage;
+        tituloPlaylist.innerHTML = nombreSessionStorage;
         inputPlaylist.innerHTML = '';
     }
 

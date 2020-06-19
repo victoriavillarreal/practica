@@ -46,9 +46,27 @@ window.onload = function(){
            var playlistCancionId;
     
             var element = informacionDetailCancion;
-               var albumId = element.album.id;
-               var artistId = element.artist.id;
-               playlistCancionId = element.id;
+            var albumId = element.album.id;
+            var artistId = element.artist.id;
+            playlistCancionId = element.id;
+            var segundosAPI = element.duration
+               
+            if(segundosAPI<3600){
+                var minutos = Math.floor(segundosAPI/60); 
+                var segundos = segundosAPI%60; 
+         
+                if (segundos!=1){
+                    sec = "seconds";
+                }else{
+                    sec = "second";
+                }
+         
+                if(minutos!=1){
+                    min = "minutes";
+                }else{
+                    min = "minute";
+                }
+            }
                
                 contenidoTracks += '<div class = "titulos">'
                 contenidoTracks += '<h2> TRACK </h2>'
@@ -77,7 +95,7 @@ window.onload = function(){
                contenidoTracks += "<div class='losdetalles'>";
                contenidoTracks += "<div class='fecha'>";
                contenidoTracks += "<p> Release date:" + element.release_date +  "</p>";
-               contenidoTracks += "<p> Duration: " + element.duration +  " seconds</p>";
+               contenidoTracks += "<p> Duration: " + minutos + " " + min + " " + segundos + " " + sec +  "</p>";
                contenidoTracks += "</div>";
                contenidoTracks += "<button class='agregar'>Add to playlist</button> ";
                contenidoTracks += "</div>";
