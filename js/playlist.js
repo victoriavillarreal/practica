@@ -61,7 +61,7 @@ window.onload = function() {
             var agregarList = new Array(remove);
 
             for (let i = 0; i < agregarList.length; i++) {
-                const element =  agregarList[i];
+                var element =  agregarList[i];
                 console.log(element);
 
                 this.onclick = function (removePlaylist) {
